@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_GenralProjectVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_GenralProjectVersionString[];
+FOUNDATION_EXPORT double Pods_ClientPortalVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_ClientPortalVersionString[];
 

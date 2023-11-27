@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0E2A3F4C250BC4C52F81BE3B /* Pods_GenralProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71C8E04B40366CCB29077482 /* Pods_GenralProject.framework */; };
+		12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */; };
 		F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657FA72B1491EB00CDEEF3 /* AppDelegate.swift */; };
 		F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657FA92B1491EB00CDEEF3 /* SceneDelegate.swift */; };
 		F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */; };
@@ -27,11 +27,11 @@
 
 /* Begin PBXFileReference section */
 		23B171179BF8CD92A745F0DC /* Pods-GenralProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.release.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.release.xcconfig"; sourceTree = "<group>"; };
-		71C8E04B40366CCB29077482 /* Pods_GenralProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GenralProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8719C42E7F2DE68B6C643F8B /* Pods-ClientPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.release.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.release.xcconfig"; sourceTree = "<group>"; };
 		A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.debug.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.debug.xcconfig"; sourceTree = "<group>"; };
+		BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7138E92B8675F3A401361BB /* Pods-ClientPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.debug.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.debug.xcconfig"; sourceTree = "<group>"; };
-		F2657FA42B1491EB00CDEEF3 /* GenralProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GenralProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2657FA42B1491EB00CDEEF3 /* ClientPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientPortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2657FA72B1491EB00CDEEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2657FA92B1491EB00CDEEF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E2A3F4C250BC4C52F81BE3B /* Pods_GenralProject.framework in Frameworks */,
+				12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +76,7 @@
 		A36779171002A2BBB55C2953 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				71C8E04B40366CCB29077482 /* Pods_GenralProject.framework */,
+				BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 		F2657F9B2B1491EB00CDEEF3 = {
 			isa = PBXGroup;
 			children = (
-				F2657FA62B1491EB00CDEEF3 /* GenralProject */,
+				F2657FA62B1491EB00CDEEF3 /* ClientPortal */,
 				F2657FA52B1491EB00CDEEF3 /* Products */,
 				2CF6DC080D0A0A5F9E5F02CF /* Pods */,
 				A36779171002A2BBB55C2953 /* Frameworks */,
@@ -94,12 +94,12 @@
 		F2657FA52B1491EB00CDEEF3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F2657FA42B1491EB00CDEEF3 /* GenralProject.app */,
+				F2657FA42B1491EB00CDEEF3 /* ClientPortal.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F2657FA62B1491EB00CDEEF3 /* GenralProject */ = {
+		F2657FA62B1491EB00CDEEF3 /* ClientPortal */ = {
 			isa = PBXGroup;
 			children = (
 				F2657FC02B14946E00CDEEF3 /* Misc */,
@@ -107,7 +107,7 @@
 				F2657FB02B1491EC00CDEEF3 /* Assets.xcassets */,
 				F2657FB52B1491EC00CDEEF3 /* Info.plist */,
 			);
-			path = GenralProject;
+			path = ClientPortal;
 			sourceTree = "<group>";
 		};
 		F2657FBB2B14944100CDEEF3 /* MVVM */ = {
@@ -229,9 +229,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F2657FA32B1491EB00CDEEF3 /* GenralProject */ = {
+		F2657FA32B1491EB00CDEEF3 /* ClientPortal */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F2657FB82B1491EC00CDEEF3 /* Build configuration list for PBXNativeTarget "GenralProject" */;
+			buildConfigurationList = F2657FB82B1491EC00CDEEF3 /* Build configuration list for PBXNativeTarget "ClientPortal" */;
 			buildPhases = (
 				9E84EBCB20821C95A8A456A2 /* [CP] Check Pods Manifest.lock */,
 				F2657FA02B1491EB00CDEEF3 /* Sources */,
@@ -243,9 +243,9 @@
 			);
 			dependencies = (
 			);
-			name = GenralProject;
+			name = ClientPortal;
 			productName = ClientPortal;
-			productReference = F2657FA42B1491EB00CDEEF3 /* GenralProject.app */;
+			productReference = F2657FA42B1491EB00CDEEF3 /* ClientPortal.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -263,7 +263,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F2657F9F2B1491EB00CDEEF3 /* Build configuration list for PBXProject "GenralProject" */;
+			buildConfigurationList = F2657F9F2B1491EB00CDEEF3 /* Build configuration list for PBXProject "ClientPortal" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -276,7 +276,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F2657FA32B1491EB00CDEEF3 /* GenralProject */,
+				F2657FA32B1491EB00CDEEF3 /* ClientPortal */,
 			);
 		};
 /* End PBXProject section */
@@ -302,15 +302,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenralProject/Pods-GenralProject-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ClientPortal/Pods-ClientPortal-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-GenralProject/Pods-GenralProject-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ClientPortal/Pods-ClientPortal-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GenralProject/Pods-GenralProject-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ClientPortal/Pods-ClientPortal-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		9E84EBCB20821C95A8A456A2 /* [CP] Check Pods Manifest.lock */ = {
@@ -328,7 +328,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-GenralProject-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ClientPortal-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -499,7 +499,7 @@
 		};
 		F2657FB92B1491EC00CDEEF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */;
+			baseConfigurationReference = C7138E92B8675F3A401361BB /* Pods-ClientPortal.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -508,7 +508,7 @@
 				DEVELOPMENT_TEAM = S2V6TCQFA2;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GenralProject/Info.plist;
+				INFOPLIST_FILE = "$(PRODUCT_MODULE_NAME)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -520,7 +520,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devsonics.GenralProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsonics.ClientPortal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -530,7 +530,7 @@
 		};
 		F2657FBA2B1491EC00CDEEF3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 23B171179BF8CD92A745F0DC /* Pods-GenralProject.release.xcconfig */;
+			baseConfigurationReference = 8719C42E7F2DE68B6C643F8B /* Pods-ClientPortal.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -539,7 +539,7 @@
 				DEVELOPMENT_TEAM = S2V6TCQFA2;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GenralProject/Info.plist;
+				INFOPLIST_FILE = "$(PRODUCT_MODULE_NAME)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -551,7 +551,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.devsonics.GenralProject;
+				PRODUCT_BUNDLE_IDENTIFIER = com.devsonics.ClientPortal;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -562,7 +562,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F2657F9F2B1491EB00CDEEF3 /* Build configuration list for PBXProject "GenralProject" */ = {
+		F2657F9F2B1491EB00CDEEF3 /* Build configuration list for PBXProject "ClientPortal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2657FB62B1491EC00CDEEF3 /* Debug */,
@@ -571,7 +571,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F2657FB82B1491EC00CDEEF3 /* Build configuration list for PBXNativeTarget "GenralProject" */ = {
+		F2657FB82B1491EC00CDEEF3 /* Build configuration list for PBXNativeTarget "ClientPortal" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F2657FB92B1491EC00CDEEF3 /* Debug */,
