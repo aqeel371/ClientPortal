@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "F2657FA32B1491EB00CDEEF3"
-               BuildableName = "ClientPortal.app"
-               BlueprintName = "ClientPortal"
-               ReferencedContainer = "container:ClientPortal.xcodeproj">
+               BuildableName = "GenralProject.app"
+               BlueprintName = "GenralProject"
+               ReferencedContainer = "container:GenralProject.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -44,9 +44,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F2657FA32B1491EB00CDEEF3"
-            BuildableName = "ClientPortal.app"
-            BlueprintName = "ClientPortal"
-            ReferencedContainer = "container:ClientPortal.xcodeproj">
+            BuildableName = "GenralProject.app"
+            BlueprintName = "GenralProject"
+            ReferencedContainer = "container:GenralProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -61,9 +61,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "F2657FA32B1491EB00CDEEF3"
-            BuildableName = "ClientPortal.app"
-            BlueprintName = "ClientPortal"
-            ReferencedContainer = "container:ClientPortal.xcodeproj">
+            BuildableName = "GenralProject.app"
+            BlueprintName = "GenralProject"
+            ReferencedContainer = "container:GenralProject.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

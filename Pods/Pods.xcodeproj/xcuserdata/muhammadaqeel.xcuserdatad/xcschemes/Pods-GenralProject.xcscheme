@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4F2793F71AD00F599C1EA7C6FD27D194"
-               BuildableName = "Pods_ClientPortal.framework"
-               BlueprintName = "Pods-ClientPortal"
+               BlueprintIdentifier = "FA94DE718AFC4919AE9750F493314933"
+               BuildableName = "Pods_GenralProject.framework"
+               BlueprintName = "Pods-GenralProject"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
