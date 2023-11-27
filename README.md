@@ -40,3 +40,7 @@ If the project has storyboards.
 - These can be fixed, in Xcode, one by one, on each storyboard: Tap on the view controller in the file inspector, and be sure to tap on the actual storyboard in the white column on the left of the actual storyboard panel. 
 - Tap on the Identity Inspector (4th small button) in the right hand panel. Look at the Custom Class -> Module field. Notice it seemingly shows NewName in gray. However (still as of Xcode14.2) it is incorrect. 
 - Simply tap the drop-down, and explicitly select the new name. (If you now review that storyboard file with a text editor, you will see it is fixed.) You may prefer to change them all just using a plain text editor.
+
+# Step 2: Update remote URL
+update the remote url with this command
+`git remote set-url origin new.git.url/here`
