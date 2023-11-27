@@ -49,7 +49,7 @@ extension UIViewController{
     }
     func getVc(vc: String) -> UIViewController{
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
-        let vc = storyBoard.instantiateViewController(withIdentifier: "SideMenuVC")
+        let vc = storyBoard.instantiateViewController(withIdentifier: vc)
         
         return vc
     }

@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */; };
+		F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE512B14AFB8006E72B7 /* CBSampleViewController.swift */; };
+		F253EE542B14B035006E72B7 /* SampleTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE532B14B035006E72B7 /* SampleTabItem.swift */; };
+		F253EE562B14BF71006E72B7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE552B14BF71006E72B7 /* DashboardViewController.swift */; };
+		F253EE582B14BF95006E72B7 /* TranscationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE572B14BF95006E72B7 /* TranscationViewController.swift */; };
 		F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657FA72B1491EB00CDEEF3 /* AppDelegate.swift */; };
 		F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657FA92B1491EB00CDEEF3 /* SceneDelegate.swift */; };
 		F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */; };
@@ -31,6 +35,10 @@
 		A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.debug.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C7138E92B8675F3A401361BB /* Pods-ClientPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.debug.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.debug.xcconfig"; sourceTree = "<group>"; };
+		F253EE512B14AFB8006E72B7 /* CBSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSampleViewController.swift; sourceTree = "<group>"; };
+		F253EE532B14B035006E72B7 /* SampleTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabItem.swift; sourceTree = "<group>"; };
+		F253EE552B14BF71006E72B7 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		F253EE572B14BF95006E72B7 /* TranscationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranscationViewController.swift; sourceTree = "<group>"; };
 		F2657FA42B1491EB00CDEEF3 /* ClientPortal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClientPortal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2657FA72B1491EB00CDEEF3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2657FA92B1491EB00CDEEF3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +87,15 @@
 				BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F253EE502B14AFA2006E72B7 /* UITabbarController */ = {
+			isa = PBXGroup;
+			children = (
+				F253EE512B14AFB8006E72B7 /* CBSampleViewController.swift */,
+				F253EE532B14B035006E72B7 /* SampleTabItem.swift */,
+			);
+			path = UITabbarController;
 			sourceTree = "<group>";
 		};
 		F2657F9B2B1491EB00CDEEF3 = {
@@ -184,7 +201,10 @@
 		F2657FC42B14949700CDEEF3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				F253EE502B14AFA2006E72B7 /* UITabbarController */,
 				F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */,
+				F253EE552B14BF71006E72B7 /* DashboardViewController.swift */,
+				F253EE572B14BF95006E72B7 /* TranscationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -343,14 +363,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2B384012B14959500F4FB60 /* ApiConstants.swift in Sources */,
+				F253EE562B14BF71006E72B7 /* DashboardViewController.swift in Sources */,
 				F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */,
 				F2B384032B1495BC00F4FB60 /* ApiManager.swift in Sources */,
 				F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */,
 				F2B384072B1495E600F4FB60 /* NetworkClient.swift in Sources */,
+				F253EE582B14BF95006E72B7 /* TranscationViewController.swift in Sources */,
+				F253EE542B14B035006E72B7 /* SampleTabItem.swift in Sources */,
 				F2B3840F2B14968400F4FB60 /* Extension.swift in Sources */,
 				F2B384052B1495D500F4FB60 /* ApiRoutes.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
 				F2B384092B1495FF00F4FB60 /* API.swift in Sources */,
+				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
 			);
