@@ -21,7 +21,10 @@ class AccountsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
-        vcTitleLbl.text = titleVC + "Account"
+        vcTitleLbl.text = titleVC + " Accounts"
+        // Enable swipe to back
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     @IBAction func backAction(_ sender: Any) {

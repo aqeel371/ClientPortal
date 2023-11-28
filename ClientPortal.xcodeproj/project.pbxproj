@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */; };
+		C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207262B1621B300AF337A /* ChangePasswordVC.swift */; };
+		C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207282B162DF100AF337A /* InternalTabsVC.swift */; };
 		C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA52B15C574000CFA0F /* SigninVC.swift */; };
 		C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA72B15C5A7000CFA0F /* Enum.swift */; };
 		C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */; };
@@ -48,6 +50,8 @@
 		8719C42E7F2DE68B6C643F8B /* Pods-ClientPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.release.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.release.xcconfig"; sourceTree = "<group>"; };
 		A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.debug.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5C207262B1621B300AF337A /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
+		C5C207282B162DF100AF337A /* InternalTabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTabsVC.swift; sourceTree = "<group>"; };
 		C5FF1CA52B15C574000CFA0F /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		C5FF1CA72B15C5A7000CFA0F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
@@ -248,6 +252,8 @@
 				F253EE572B14BF95006E72B7 /* TranscationViewController.swift */,
 				C5FF1CA52B15C574000CFA0F /* SigninVC.swift */,
 				C5FF1CC02B160E09000CFA0F /* AccountsVC.swift */,
+				C5C207262B1621B300AF337A /* ChangePasswordVC.swift */,
+				C5C207282B162DF100AF337A /* InternalTabsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -423,6 +429,7 @@
 				C5FF1CC42B160EFC000CFA0F /* AccountsCVC.swift in Sources */,
 				F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */,
 				F2B384032B1495BC00F4FB60 /* ApiManager.swift in Sources */,
+				C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */,
 				F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */,
 				F2B384072B1495E600F4FB60 /* NetworkClient.swift in Sources */,
 				F253EE582B14BF95006E72B7 /* TranscationViewController.swift in Sources */,
@@ -431,6 +438,7 @@
 				C5FF1CAD2B15C7B0000CFA0F /* UIButtonX.swift in Sources */,
 				F2B3840F2B14968400F4FB60 /* Extension.swift in Sources */,
 				F2B384052B1495D500F4FB60 /* ApiRoutes.swift in Sources */,
+				C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,

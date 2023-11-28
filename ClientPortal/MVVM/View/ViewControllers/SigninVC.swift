@@ -24,10 +24,17 @@ class SigninVC: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        // Enable swipe to back
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
     //MARK: - IBActions
     
     @IBAction func forgetAction(_ sender: Any) {
+        let vc = ViewControllers.ChangePasswordVC.getViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func sigininAction(_ sender: Any) {
@@ -40,6 +47,15 @@ class SigninVC: UIViewController {
                              callback: { controller, item in
                                 controller.dismiss(animated: true, completion: {
                                     print("\(item) selected")
+                                    let vc = ViewControllers.InternalTabsVC.getViewController() as InternalTabsVC
+                                    if item.title == menuEntries[0]{
+                                        vc.typeVc = .deposit
+                                    }else if item.title == menuEntries[1]{
+                                        vc.typeVc = .withdraw
+                                    }else{
+                                        vc.typeVc = .transfer
+                                    }
+                                    self.navigationController?.pushViewController(vc, animated: true)
                                 })
         })
         menu.icon = UIImage(named: "ic_g")

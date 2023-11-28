@@ -19,7 +19,13 @@ class DashboardViewController: UIViewController {
         setupTV()
         // Do any additional setup after loading the view.
     }
+    override func viewWillAppear(_ animated: Bool) {
+        // Enable swipe to back
+        self.navigationController?.isNavigationBarHidden = false
+        self.navigationController?.navigationBar.isHidden = true
+    }
     
+    //MARK: - IBActions
     
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -72,7 +78,11 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let vc = ViewControllers.AccountsVC.getViewController() as AccountsVC
-        vc.titleVC = "Live"
+        if indexPath.row % 2 == 0 {
+            vc.titleVC = "Live"
+        } else {
+            vc.titleVC = "Demo"
+        }
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

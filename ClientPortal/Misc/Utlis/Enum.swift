@@ -17,6 +17,8 @@ enum ViewControllers:String{
     case SigninVC = "SigninVC"
     case MainVC = "MainVC"
     case AccountsVC = "AccountsVC"
+    case ChangePasswordVC = "ChangePasswordVC"
+    case InternalTabsVC = "InternalTabsVC"
     
     public func getViewController<T:UIViewController>() -> T {
         var storyBoard: Storybords = .Main
@@ -27,6 +29,10 @@ enum ViewControllers:String{
             storyBoard = .Main
         case .AccountsVC:
             storyBoard = .Main
+        case .ChangePasswordVC:
+            storyBoard = .Main
+        case .InternalTabsVC:
+            storyBoard = .Main
         }
         
         
@@ -34,4 +40,11 @@ enum ViewControllers:String{
         let initialViewController = storyboard.instantiateViewController(withIdentifier: self.rawValue)
         return initialViewController as! T
     }
+}
+
+
+enum TabType{
+    case deposit
+    case withdraw
+    case transfer
 }
