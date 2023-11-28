@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */; };
+		C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA52B15C574000CFA0F /* SigninVC.swift */; };
+		C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA72B15C5A7000CFA0F /* Enum.swift */; };
+		C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */; };
+		C5FF1CAD2B15C7B0000CFA0F /* UIButtonX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CAA2B15C7AF000CFA0F /* UIButtonX.swift */; };
+		C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CAB2B15C7B0000CFA0F /* UIViewX.swift */; };
+		C5FF1CB62B15DDC6000CFA0F /* OfferCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CB42B15DDC6000CFA0F /* OfferCVC.swift */; };
+		C5FF1CB72B15DDC6000CFA0F /* OfferCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FF1CB52B15DDC6000CFA0F /* OfferCVC.xib */; };
+		C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CB82B15FB35000CFA0F /* DashboradTVHeader.swift */; };
+		C5FF1CBB2B15FB3F000CFA0F /* DashboradTVHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FF1CBA2B15FB3F000CFA0F /* DashboradTVHeader.xib */; };
+		C5FF1CBE2B15FFA3000CFA0F /* DashboardTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CBC2B15FFA3000CFA0F /* DashboardTVC.swift */; };
+		C5FF1CBF2B15FFA3000CFA0F /* DashboardTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FF1CBD2B15FFA3000CFA0F /* DashboardTVC.xib */; };
+		C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CC02B160E09000CFA0F /* AccountsVC.swift */; };
+		C5FF1CC42B160EFC000CFA0F /* AccountsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CC22B160EFC000CFA0F /* AccountsCVC.swift */; };
+		C5FF1CC52B160EFC000CFA0F /* AccountsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5FF1CC32B160EFC000CFA0F /* AccountsCVC.xib */; };
 		F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE512B14AFB8006E72B7 /* CBSampleViewController.swift */; };
 		F253EE542B14B035006E72B7 /* SampleTabItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE532B14B035006E72B7 /* SampleTabItem.swift */; };
 		F253EE562B14BF71006E72B7 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F253EE552B14BF71006E72B7 /* DashboardViewController.swift */; };
@@ -34,6 +48,25 @@
 		8719C42E7F2DE68B6C643F8B /* Pods-ClientPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.release.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.release.xcconfig"; sourceTree = "<group>"; };
 		A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.debug.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FF1CA52B15C574000CFA0F /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
+		C5FF1CA72B15C5A7000CFA0F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
+		C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
+		C5FF1CAA2B15C7AF000CFA0F /* UIButtonX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonX.swift; sourceTree = "<group>"; };
+		C5FF1CAB2B15C7B0000CFA0F /* UIViewX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewX.swift; sourceTree = "<group>"; };
+		C5FF1CAF2B15C86C000CFA0F /* QuicksandMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuicksandMedium.ttf; sourceTree = "<group>"; };
+		C5FF1CB02B15C86C000CFA0F /* QuicksandLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuicksandLight.ttf; sourceTree = "<group>"; };
+		C5FF1CB12B15C86D000CFA0F /* QuicksandBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuicksandBold.ttf; sourceTree = "<group>"; };
+		C5FF1CB22B15C86D000CFA0F /* QuicksandRegular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuicksandRegular.ttf; sourceTree = "<group>"; };
+		C5FF1CB32B15C86D000CFA0F /* QuicksandSemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QuicksandSemiBold.ttf; sourceTree = "<group>"; };
+		C5FF1CB42B15DDC6000CFA0F /* OfferCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = OfferCVC.swift; path = ClientPortal/Misc/Utlis/OfferCVC.swift; sourceTree = SOURCE_ROOT; };
+		C5FF1CB52B15DDC6000CFA0F /* OfferCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = OfferCVC.xib; path = ClientPortal/Misc/Utlis/OfferCVC.xib; sourceTree = SOURCE_ROOT; };
+		C5FF1CB82B15FB35000CFA0F /* DashboradTVHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboradTVHeader.swift; sourceTree = "<group>"; };
+		C5FF1CBA2B15FB3F000CFA0F /* DashboradTVHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboradTVHeader.xib; sourceTree = "<group>"; };
+		C5FF1CBC2B15FFA3000CFA0F /* DashboardTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardTVC.swift; path = ClientPortal/MVVM/View/Nibs/DashboardTVC.swift; sourceTree = SOURCE_ROOT; };
+		C5FF1CBD2B15FFA3000CFA0F /* DashboardTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DashboardTVC.xib; path = ClientPortal/MVVM/View/Nibs/DashboardTVC.xib; sourceTree = SOURCE_ROOT; };
+		C5FF1CC02B160E09000CFA0F /* AccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountsVC.swift; sourceTree = "<group>"; };
+		C5FF1CC22B160EFC000CFA0F /* AccountsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountsCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/AccountsCVC.swift; sourceTree = SOURCE_ROOT; };
+		C5FF1CC32B160EFC000CFA0F /* AccountsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = AccountsCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/AccountsCVC.xib; sourceTree = SOURCE_ROOT; };
 		C7138E92B8675F3A401361BB /* Pods-ClientPortal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.debug.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.debug.xcconfig"; sourceTree = "<group>"; };
 		F253EE512B14AFB8006E72B7 /* CBSampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBSampleViewController.swift; sourceTree = "<group>"; };
 		F253EE532B14B035006E72B7 /* SampleTabItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleTabItem.swift; sourceTree = "<group>"; };
@@ -185,6 +218,12 @@
 		F2657FC22B14948300CDEEF3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C5FF1CB42B15DDC6000CFA0F /* OfferCVC.swift */,
+				C5FF1CB52B15DDC6000CFA0F /* OfferCVC.xib */,
+				C5FF1CBC2B15FFA3000CFA0F /* DashboardTVC.swift */,
+				C5FF1CBD2B15FFA3000CFA0F /* DashboardTVC.xib */,
+				C5FF1CC22B160EFC000CFA0F /* AccountsCVC.swift */,
+				C5FF1CC32B160EFC000CFA0F /* AccountsCVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -194,6 +233,8 @@
 			children = (
 				F2B384122B14973200F4FB60 /* LoadingViewNib.swift */,
 				F2B384112B14973200F4FB60 /* LoadingViewNib.xib */,
+				C5FF1CB82B15FB35000CFA0F /* DashboradTVHeader.swift */,
+				C5FF1CBA2B15FB3F000CFA0F /* DashboradTVHeader.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -205,6 +246,8 @@
 				F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */,
 				F253EE552B14BF71006E72B7 /* DashboardViewController.swift */,
 				F253EE572B14BF95006E72B7 /* TranscationViewController.swift */,
+				C5FF1CA52B15C574000CFA0F /* SigninVC.swift */,
+				C5FF1CC02B160E09000CFA0F /* AccountsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -228,6 +271,7 @@
 				F2B3840B2B14964B00F4FB60 /* ViewUtils */,
 				F2B3840C2B14966B00F4FB60 /* Global.swift */,
 				F2B3840E2B14968400F4FB60 /* Extension.swift */,
+				C5FF1CA72B15C5A7000CFA0F /* Enum.swift */,
 			);
 			path = Utlis;
 			sourceTree = "<group>";
@@ -235,6 +279,9 @@
 		F2B3840B2B14964B00F4FB60 /* ViewUtils */ = {
 			isa = PBXGroup;
 			children = (
+				C5FF1CAA2B15C7AF000CFA0F /* UIButtonX.swift */,
+				C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */,
+				C5FF1CAB2B15C7B0000CFA0F /* UIViewX.swift */,
 			);
 			path = ViewUtils;
 			sourceTree = "<group>";
@@ -242,6 +289,11 @@
 		F2B384102B1496DB00F4FB60 /* Font */ = {
 			isa = PBXGroup;
 			children = (
+				C5FF1CB12B15C86D000CFA0F /* QuicksandBold.ttf */,
+				C5FF1CB02B15C86C000CFA0F /* QuicksandLight.ttf */,
+				C5FF1CAF2B15C86C000CFA0F /* QuicksandMedium.ttf */,
+				C5FF1CB22B15C86D000CFA0F /* QuicksandRegular.ttf */,
+				C5FF1CB32B15C86D000CFA0F /* QuicksandSemiBold.ttf */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -306,10 +358,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C5FF1CB72B15DDC6000CFA0F /* OfferCVC.xib in Resources */,
 				F2657FB42B1491EC00CDEEF3 /* LaunchScreen.storyboard in Resources */,
 				F2B384142B14973E00F4FB60 /* LoadingViewNib.xib in Resources */,
 				F2657FB12B1491EC00CDEEF3 /* Assets.xcassets in Resources */,
+				C5FF1CC52B160EFC000CFA0F /* AccountsCVC.xib in Resources */,
 				F2657FAF2B1491EB00CDEEF3 /* Main.storyboard in Resources */,
+				C5FF1CBB2B15FB3F000CFA0F /* DashboradTVHeader.xib in Resources */,
+				C5FF1CBF2B15FFA3000CFA0F /* DashboardTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,19 +420,29 @@
 			files = (
 				F2B384012B14959500F4FB60 /* ApiConstants.swift in Sources */,
 				F253EE562B14BF71006E72B7 /* DashboardViewController.swift in Sources */,
+				C5FF1CC42B160EFC000CFA0F /* AccountsCVC.swift in Sources */,
 				F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */,
 				F2B384032B1495BC00F4FB60 /* ApiManager.swift in Sources */,
 				F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */,
 				F2B384072B1495E600F4FB60 /* NetworkClient.swift in Sources */,
 				F253EE582B14BF95006E72B7 /* TranscationViewController.swift in Sources */,
 				F253EE542B14B035006E72B7 /* SampleTabItem.swift in Sources */,
+				C5FF1CBE2B15FFA3000CFA0F /* DashboardTVC.swift in Sources */,
+				C5FF1CAD2B15C7B0000CFA0F /* UIButtonX.swift in Sources */,
 				F2B3840F2B14968400F4FB60 /* Extension.swift in Sources */,
 				F2B384052B1495D500F4FB60 /* ApiRoutes.swift in Sources */,
+				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
+				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
+				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
+				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
 				F2B384092B1495FF00F4FB60 /* API.swift in Sources */,
+				C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */,
+				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
 				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
+				C5FF1CB62B15DDC6000CFA0F /* OfferCVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="QuicksandSemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="DashboradTVHeader" id="iN0-l3-epB" customClass="DashboradTVHeader" customModule="ClientPortal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="693-nN-xlX" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ac.No" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qyk-7E-XKB">
+                            <rect key="frame" x="0.0" y="12.666666666666664" width="51" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uv6-FP-tbk">
+                            <rect key="frame" x="53" y="12.666666666666664" width="55" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vr5-RY-Phr">
+                            <rect key="frame" x="109.99999999999999" y="12.666666666666664" width="47.333333333333329" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJR-P4-knF">
+                            <rect key="frame" x="159.33333333333334" y="12.666666666666664" width="66.666666666666657" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equity" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ddT-Nr-KDA">
+                            <rect key="frame" x="228" y="12.666666666666664" width="47.333333333333314" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leverage" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lWG-pf-HKb">
+                            <rect key="frame" x="277.33333333333331" y="12.666666666666664" width="62.666666666666686" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Action" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GEO-nY-SPJ">
+                            <rect key="frame" x="342" y="12.666666666666664" width="49" height="15"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" name="VividCerulean"/>
+                    <constraints>
+                        <constraint firstItem="lWG-pf-HKb" firstAttribute="width" secondItem="693-nN-xlX" secondAttribute="width" multiplier="0.16" id="2TJ-9b-Bxt"/>
+                        <constraint firstAttribute="trailing" secondItem="GEO-nY-SPJ" secondAttribute="trailing" constant="2" id="2lY-Wb-Igo"/>
+                        <constraint firstItem="ddT-Nr-KDA" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="3q1-cF-tPI"/>
+                        <constraint firstItem="Uv6-FP-tbk" firstAttribute="width" secondItem="693-nN-xlX" secondAttribute="width" multiplier="0.14" id="4YN-VY-sHk"/>
+                        <constraint firstItem="GEO-nY-SPJ" firstAttribute="leading" secondItem="lWG-pf-HKb" secondAttribute="trailing" constant="2" id="66R-tQ-iGp"/>
+                        <constraint firstItem="Qyk-7E-XKB" firstAttribute="width" secondItem="693-nN-xlX" secondAttribute="width" multiplier="0.13" id="7hT-sr-gTz"/>
+                        <constraint firstItem="vr5-RY-Phr" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="8BT-5j-zKe"/>
+                        <constraint firstItem="Uv6-FP-tbk" firstAttribute="leading" secondItem="Qyk-7E-XKB" secondAttribute="trailing" constant="2" id="AVD-nh-9m1"/>
+                        <constraint firstItem="Qyk-7E-XKB" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="Cq6-mM-KvD"/>
+                        <constraint firstItem="vr5-RY-Phr" firstAttribute="leading" secondItem="Uv6-FP-tbk" secondAttribute="trailing" constant="2" id="H4w-vY-4rJ"/>
+                        <constraint firstItem="lWG-pf-HKb" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="Lz3-aF-9Mw"/>
+                        <constraint firstItem="Qyk-7E-XKB" firstAttribute="leading" secondItem="693-nN-xlX" secondAttribute="leading" id="M80-cK-XXW"/>
+                        <constraint firstItem="lWG-pf-HKb" firstAttribute="leading" secondItem="ddT-Nr-KDA" secondAttribute="trailing" constant="2" id="OkB-hN-ls6"/>
+                        <constraint firstItem="vr5-RY-Phr" firstAttribute="width" secondItem="693-nN-xlX" secondAttribute="width" multiplier="0.12" id="dMW-rE-CM8"/>
+                        <constraint firstItem="ddT-Nr-KDA" firstAttribute="width" secondItem="693-nN-xlX" secondAttribute="width" multiplier="0.12" id="l79-AV-KBI"/>
+                        <constraint firstItem="Uv6-FP-tbk" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="n50-72-eRC"/>
+                        <constraint firstItem="GEO-nY-SPJ" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="r0M-GG-p1G"/>
+                        <constraint firstAttribute="height" constant="40" id="rMv-5M-Doe"/>
+                        <constraint firstItem="IJR-P4-knF" firstAttribute="leading" secondItem="vr5-RY-Phr" secondAttribute="trailing" constant="2" id="uII-IC-PxX"/>
+                        <constraint firstItem="IJR-P4-knF" firstAttribute="centerY" secondItem="693-nN-xlX" secondAttribute="centerY" id="wbq-c8-LnQ"/>
+                        <constraint firstItem="ddT-Nr-KDA" firstAttribute="leading" secondItem="IJR-P4-knF" secondAttribute="trailing" constant="2" id="ya6-bR-kQp"/>
+                        <constraint firstItem="IJR-P4-knF" firstAttribute="width" secondItem="693-nN-xlX" secondAttribute="width" multiplier="0.17" id="ykT-y8-B8V"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="693-nN-xlX" secondAttribute="bottom" id="1o6-7d-8bx"/>
+                <constraint firstItem="693-nN-xlX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="3ou-Oc-nLg"/>
+                <constraint firstAttribute="trailing" secondItem="693-nN-xlX" secondAttribute="trailing" id="d70-wD-Lax"/>
+                <constraint firstItem="693-nN-xlX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="zOp-CJ-HnY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="81.679389312977094" y="20.774647887323944"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="VividCerulean">
+            <color red="0.0" green="0.68235294117647061" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -54,3 +54,31 @@ extension UIViewController{
         return vc
     }
 }
+
+// MARK: - UIColor
+extension UIColor {
+    func image(_ size: CGSize = CGSize(width: 1, height: 1)) -> UIImage {
+        return UIGraphicsImageRenderer(size: size).image { rendererContext in
+            self.setFill()
+            rendererContext.fill(CGRect(origin: .zero, size: size))
+        }
+    }
+    @objc class var ColorPrimary: UIColor {
+        return UIColor(named: "ColorPrimary") ?? .blue
+    }
+    @objc class var EerieBlack: UIColor {
+        return UIColor(named: "EerieBlack") ?? .blue
+    }
+    @objc class var Silver: UIColor {
+        return UIColor(named: "Silver") ?? .blue
+    }
+    @objc class var VividCerulean: UIColor {
+        return UIColor(named: "VividCerulean") ?? .blue
+    }
+    @objc class var SonicSilver: UIColor {
+        return UIColor(named: "SonicSilver") ?? .blue
+    }
+    @objc class var GhostWhite: UIColor {
+        return UIColor(named: "GhostWhite") ?? .blue
+    }
+}

@@ -18,7 +18,7 @@ class ViewController: UIViewController {
         let tabBarController = createSampleTabController()
         let menuEntries = ["Deposit", "Withdrawal", "Internal Transfer"]
         var menu = CBTabMenu(menuButtonIndex: 2,
-                             menuColor: .colorPrimary,
+                             menuColor: .ColorPrimary,
                              items: menuEntries,
                              icon: nil,
                              callback: { controller, item in
@@ -29,7 +29,7 @@ class ViewController: UIViewController {
         menu.icon = UIImage(named: "ic_g")
         tabBarController.style = .gooey(menu: menu)
         tabBarController.modalPresentationStyle = .fullScreen
-        DispatchQueue.main.asyncAfter(deadline: .now()+3, execute: {
+        DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
             self.present(tabBarController, animated: true)
         })
     }
@@ -43,7 +43,7 @@ class ViewController: UIViewController {
         
         let tabBarController = CBTabBarController()
         tabBarController.viewControllers = [dashboardVc, dashboardVc1, transcationVc]
-        (tabBarController.tabBar as? CBTabBar)?.tabbarBackground = .colorPrimary
+        (tabBarController.tabBar as? CBTabBar)?.tabbarBackground = .ColorPrimary
         tabBarController.tabBar.tintColor = .white
         return tabBarController
     }
