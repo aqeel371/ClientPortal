@@ -20,6 +20,19 @@
 		C58305E02B1735680084AD07 /* TransferTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58305DE2B1735680084AD07 /* TransferTVC.xib */; };
 		C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E12B17396B0084AD07 /* CryptoWireVC.swift */; };
 		C58305E42B174E1A0084AD07 /* CryptoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */; };
+		C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */; };
+		C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */; };
+		C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */; };
+		C58E8B1C2B1775A000E7F3D3 /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B1B2B1775A000E7F3D3 /* Menu.storyboard */; };
+		C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B202B17781000E7F3D3 /* MenuAccountsVC.swift */; };
+		C58E8B232B17793400E7F3D3 /* MenuTransactionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B222B17793400E7F3D3 /* MenuTransactionVC.swift */; };
+		C58E8B252B1779E300E7F3D3 /* MenuTrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B242B1779E300E7F3D3 /* MenuTrainingVC.swift */; };
+		C58E8B272B177A2700E7F3D3 /* MenuProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B262B177A2700E7F3D3 /* MenuProfileVC.swift */; };
+		C58E8B292B177D6A00E7F3D3 /* TradeMTView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B282B177D6A00E7F3D3 /* TradeMTView.xib */; };
+		C58E8B2B2B177D7300E7F3D3 /* TradeMTView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2A2B177D7300E7F3D3 /* TradeMTView.swift */; };
+		C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */; };
+		C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */; };
+		C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */; };
 		C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207262B1621B300AF337A /* ChangePasswordVC.swift */; };
 		C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207282B162DF100AF337A /* InternalTabsVC.swift */; };
 		C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA52B15C574000CFA0F /* SigninVC.swift */; };
@@ -74,6 +87,19 @@
 		C58305DE2B1735680084AD07 /* TransferTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TransferTVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Deposit/TransferTVC.xib; sourceTree = SOURCE_ROOT; };
 		C58305E12B17396B0084AD07 /* CryptoWireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWireVC.swift; sourceTree = "<group>"; };
 		C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsVC.swift; sourceTree = "<group>"; };
+		C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Deposit/WalletCVC.swift; sourceTree = SOURCE_ROOT; };
+		C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WalletCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Deposit/WalletCVC.xib; sourceTree = SOURCE_ROOT; };
+		C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
+		C58E8B1B2B1775A000E7F3D3 /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
+		C58E8B202B17781000E7F3D3 /* MenuAccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuAccountsVC.swift; sourceTree = "<group>"; };
+		C58E8B222B17793400E7F3D3 /* MenuTransactionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTransactionVC.swift; sourceTree = "<group>"; };
+		C58E8B242B1779E300E7F3D3 /* MenuTrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTrainingVC.swift; sourceTree = "<group>"; };
+		C58E8B262B177A2700E7F3D3 /* MenuProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProfileVC.swift; sourceTree = "<group>"; };
+		C58E8B282B177D6A00E7F3D3 /* TradeMTView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TradeMTView.xib; sourceTree = "<group>"; };
+		C58E8B2A2B177D7300E7F3D3 /* TradeMTView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeMTView.swift; sourceTree = "<group>"; };
+		C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTardesVC.swift; sourceTree = "<group>"; };
+		C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradesCVC.swift; path = ClientPortal/MVVM/View/TradesCVC.swift; sourceTree = SOURCE_ROOT; };
+		C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TradesCVC.xib; path = ClientPortal/MVVM/View/TradesCVC.xib; sourceTree = SOURCE_ROOT; };
 		C5C207262B1621B300AF337A /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		C5C207282B162DF100AF337A /* InternalTabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTabsVC.swift; sourceTree = "<group>"; };
 		C5FF1CA52B15C574000CFA0F /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
@@ -161,6 +187,7 @@
 				C5C207282B162DF100AF337A /* InternalTabsVC.swift */,
 				C58305D32B17194A0084AD07 /* ProfileVC.swift */,
 				C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */,
+				C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -177,6 +204,18 @@
 				C54402282B175C2A008209DD /* StickSkrillVC.swift */,
 			);
 			path = Deposit;
+			sourceTree = "<group>";
+		};
+		C58E8B1D2B1777BA00E7F3D3 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				C58E8B202B17781000E7F3D3 /* MenuAccountsVC.swift */,
+				C58E8B222B17793400E7F3D3 /* MenuTransactionVC.swift */,
+				C58E8B242B1779E300E7F3D3 /* MenuTrainingVC.swift */,
+				C58E8B262B177A2700E7F3D3 /* MenuProfileVC.swift */,
+				C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		F253EE502B14AFA2006E72B7 /* UITabbarController */ = {
@@ -269,6 +308,7 @@
 				F2657FAD2B1491EB00CDEEF3 /* Main.storyboard */,
 				F2657FB22B1491EC00CDEEF3 /* LaunchScreen.storyboard */,
 				C58305D82B1729A20084AD07 /* Deposit.storyboard */,
+				C58E8B1B2B1775A000E7F3D3 /* Menu.storyboard */,
 			);
 			path = SoryBoard;
 			sourceTree = "<group>";
@@ -284,6 +324,10 @@
 				C5FF1CC32B160EFC000CFA0F /* AccountsCVC.xib */,
 				C58305DD2B1735680084AD07 /* TransferTVC.swift */,
 				C58305DE2B1735680084AD07 /* TransferTVC.xib */,
+				C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */,
+				C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */,
+				C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */,
+				C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -295,6 +339,8 @@
 				F2B384112B14973200F4FB60 /* LoadingViewNib.xib */,
 				C5FF1CB82B15FB35000CFA0F /* DashboradTVHeader.swift */,
 				C5FF1CBA2B15FB3F000CFA0F /* DashboradTVHeader.xib */,
+				C58E8B2A2B177D7300E7F3D3 /* TradeMTView.swift */,
+				C58E8B282B177D6A00E7F3D3 /* TradeMTView.xib */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -302,6 +348,7 @@
 		F2657FC42B14949700CDEEF3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C58E8B1D2B1777BA00E7F3D3 /* Menu */,
 				F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */,
 				F253EE502B14AFA2006E72B7 /* UITabbarController */,
 				C58305D72B1729870084AD07 /* Main */,
@@ -419,13 +466,17 @@
 				C58305E02B1735680084AD07 /* TransferTVC.xib in Resources */,
 				C5FF1CB72B15DDC6000CFA0F /* OfferCVC.xib in Resources */,
 				F2657FB42B1491EC00CDEEF3 /* LaunchScreen.storyboard in Resources */,
+				C58E8B1C2B1775A000E7F3D3 /* Menu.storyboard in Resources */,
 				F2B384142B14973E00F4FB60 /* LoadingViewNib.xib in Resources */,
+				C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */,
 				F2657FB12B1491EC00CDEEF3 /* Assets.xcassets in Resources */,
 				C5FF1CC52B160EFC000CFA0F /* AccountsCVC.xib in Resources */,
 				F2657FAF2B1491EB00CDEEF3 /* Main.storyboard in Resources */,
 				C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */,
+				C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */,
 				C5FF1CBB2B15FB3F000CFA0F /* DashboradTVHeader.xib in Resources */,
 				C5FF1CBF2B15FFA3000CFA0F /* DashboardTVC.xib in Resources */,
+				C58E8B292B177D6A00E7F3D3 /* TradeMTView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,20 +550,29 @@
 				C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
+				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
 				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
 				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
 				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
 				C58305DF2B1735680084AD07 /* TransferTVC.swift in Sources */,
+				C58E8B252B1779E300E7F3D3 /* MenuTrainingVC.swift in Sources */,
 				F2B384092B1495FF00F4FB60 /* API.swift in Sources */,
 				C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */,
+				C58E8B232B17793400E7F3D3 /* MenuTransactionVC.swift in Sources */,
+				C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */,
 				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
 				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */,
+				C58E8B272B177A2700E7F3D3 /* MenuProfileVC.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
+				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
 				C58305D62B1726EB0084AD07 /* ForgetPassVC.swift in Sources */,
 				C5FF1CB62B15DDC6000CFA0F /* OfferCVC.swift in Sources */,
+				C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */,
+				C58E8B2B2B177D7300E7F3D3 /* TradeMTView.swift in Sources */,
+				C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */,
 				C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */,
 				C58305DC2B172F9B0084AD07 /* DepositVC.swift in Sources */,
 			);

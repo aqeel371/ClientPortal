@@ -9,21 +9,39 @@ import UIKit
 
 class PerfectMoneyVC: UIViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var tfTradingAccount: UITextField!
+    @IBOutlet weak var tfPayeeAccount: UITextField!
+    @IBOutlet weak var tfAmount: UITextField!
+    @IBOutlet weak var tvNotes: UITextView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tvNotes.delegate = self
         // Do any additional setup after loading the view.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - IBActions
+    @IBAction func depositAction(_ sender: Any) {
     }
-    */
+    
 
+}
+
+//MARK: - UITextView Delegate
+extension PerfectMoneyVC:UITextViewDelegate{
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.textColor == UIColor.Silver {
+            textView.text = nil
+            textView.textColor = UIColor.EerieBlack
+        }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.isEmpty {
+            textView.text = "Special Notes"
+            textView.textColor = UIColor.Silver
+        }
+    }
 }

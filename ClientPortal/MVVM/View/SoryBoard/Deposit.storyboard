@@ -24,21 +24,6 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="s0d-6b-0kx">
-            <objects>
-                <viewController id="Y6W-OH-hqX" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-4" y="4"/>
-        </scene>
         <!--DepositVC-->
         <scene sceneID="Ped-Zn-poH">
             <objects>
@@ -1443,6 +1428,9 @@
                                         <real key="value" value="20"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="depositAction:" destination="baY-UH-BFp" eventType="touchUpInside" id="HFJ-7h-fjf"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EPN-pj-SdN"/>
@@ -1476,6 +1464,11 @@
                             <constraint firstItem="93r-FJ-Srl" firstAttribute="leading" secondItem="EPN-pj-SdN" secondAttribute="leading" constant="30" id="zfI-lq-9TB"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfAmount" destination="XHO-vO-xT4" id="YFO-Sb-PNK"/>
+                        <outlet property="tfCurrency" destination="Lny-gB-YWb" id="bTk-NH-WLN"/>
+                        <outlet property="tfTradingAccount" destination="0z9-pd-WKS" id="Cud-qN-W6y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bTf-zX-HvT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1490,16 +1483,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Um-Jg-yEs">
-                                <rect key="frame" x="0.0" y="59" width="393" height="518.33333333333337"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="517.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-rc-4Np">
-                                        <rect key="frame" x="50" y="25" width="293" height="18"/>
+                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu7-lJ-vMH" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="51" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="50.666666666666671" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9U-vn-8Rs">
                                                 <rect key="frame" x="12" y="5" width="250" height="30"/>
@@ -1538,13 +1531,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payee Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-Ch-bdG">
-                                        <rect key="frame" x="50" y="111" width="293" height="18"/>
+                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cie-SP-Mnj" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="137" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="136.33333333333334" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgR-IP-r6l">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1574,13 +1567,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-iU-lPn">
-                                        <rect key="frame" x="50" y="197" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="196.33333333333334" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-Hj-IRx" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="222.66666666666669" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="222" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eth-T3-Zwu">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1610,13 +1603,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-Vo-2et">
-                                        <rect key="frame" x="50" y="282.66666666666669" width="293" height="17.666666666666686"/>
+                                        <rect key="frame" x="50" y="282" width="293" height="17.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-TU-4Rf" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="308.33333333333331" width="313" height="100"/>
+                                        <rect key="frame" x="40" y="307.66666666666669" width="313" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vYE-G7-BHP">
                                                 <rect key="frame" x="10" y="5" width="293" height="90"/>
@@ -1647,7 +1640,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFv-la-bjP" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="448.33333333333331" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="447.66666666666669" width="313" height="40"/>
                                         <color key="backgroundColor" name="VividCerulean"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="deb-Qh-p87"/>
@@ -1662,6 +1655,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="depositAction:" destination="lvT-7B-VEP" eventType="touchUpInside" id="hXg-VD-xri"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1705,6 +1701,12 @@
                             <constraint firstAttribute="trailing" secondItem="8Um-Jg-yEs" secondAttribute="trailing" id="bI0-wB-i7A"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfAmount" destination="eth-T3-Zwu" id="1ev-EX-uzY"/>
+                        <outlet property="tfPayeeAccount" destination="wgR-IP-r6l" id="N3w-A9-WGR"/>
+                        <outlet property="tfTradingAccount" destination="I9U-vn-8Rs" id="UiZ-Ck-cXq"/>
+                        <outlet property="tvNotes" destination="vYE-G7-BHP" id="glZ-tQ-Qgh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zl9-9g-kwK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1719,16 +1721,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-UZ-BPY">
-                                <rect key="frame" x="0.0" y="58.999999999999972" width="393" height="432.33333333333326"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="432"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuO-ym-vcS">
-                                        <rect key="frame" x="50" y="25" width="293" height="18"/>
+                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-J9-8eg" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="51" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="50.666666666666671" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-Wg-VkB">
                                                 <rect key="frame" x="12" y="5" width="250" height="30"/>
@@ -1767,13 +1769,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-7r-KFU">
-                                        <rect key="frame" x="50" y="111" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZS-Hs-Ovc" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="136.66666666666666" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="136.33333333333334" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-qN-iSC">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1803,13 +1805,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL8-Ga-gXK">
-                                        <rect key="frame" x="50" y="196.66666666666666" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="196.33333333333334" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-wX-pIc" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="222.33333333333331" width="313" height="100"/>
+                                        <rect key="frame" x="40" y="222" width="313" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A3E-xS-f9j">
                                                 <rect key="frame" x="10" y="5" width="293" height="90"/>
@@ -1840,7 +1842,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcW-si-frn" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="362.33333333333331" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="362" width="313" height="40"/>
                                         <color key="backgroundColor" name="VividCerulean"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7rP-re-BN9"/>
@@ -1855,6 +1857,9 @@
                                                 <real key="value" value="20"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="depositAction:" destination="daV-RL-dHj" eventType="touchUpInside" id="9tu-Et-Nud"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1892,6 +1897,11 @@
                             <constraint firstItem="YDO-UZ-BPY" firstAttribute="leading" secondItem="Uta-Lt-sXK" secondAttribute="leading" id="ndF-ic-TJW"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tfAmount" destination="iHh-qN-iSC" id="yZv-cS-sKR"/>
+                        <outlet property="tfTradingAccount" destination="wgY-Wg-VkB" id="Fac-Z6-iJ5"/>
+                        <outlet property="tvNotes" destination="A3E-xS-f9j" id="9HU-Rq-c6z"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BK2-7h-Fdx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

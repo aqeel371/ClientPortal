@@ -11,6 +11,7 @@ import UIKit
 enum Storybords:String {
     case Main = "Main"
     case Deposit = "Deposit"
+    case Menu = "Menu"
 }
 
 enum ViewControllers:String{
@@ -29,6 +30,12 @@ enum ViewControllers:String{
     case InstantTransferVC = "InstantTransferVC"
     case PerfectMoneyVC = "PerfectMoneyVC"
     case StickSkrillVC = "StickSkrillVC"
+    case MenuAccountsVC = "MenuAccountsVC"
+    case MenuTransactionVC = "MenuTransactionVC"
+    case MenuTrainingVC = "MenuTrainingVC"
+    case MenuProfileVC = "MenuProfileVC"
+    case MenuTardesVC = "MenuTardesVC"
+    
     
     public func getViewController<T:UIViewController>() -> T {
         var storyBoard: Storybords = .Main
@@ -61,6 +68,16 @@ enum ViewControllers:String{
             storyBoard = .Deposit
         case .StickSkrillVC:
             storyBoard = .Deposit
+        case .MenuAccountsVC:
+            storyBoard = .Menu
+        case .MenuTrainingVC:
+            storyBoard = .Menu
+        case .MenuTransactionVC:
+            storyBoard = .Menu
+        case .MenuProfileVC:
+            storyBoard = .Menu
+        case .MenuTardesVC:
+            storyBoard = .Menu
         }
         
         

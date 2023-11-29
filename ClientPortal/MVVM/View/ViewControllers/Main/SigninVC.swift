@@ -71,6 +71,8 @@ class SigninVC: UIViewController {
         })
         menu.icon = UIImage(named: "ic_g")
         tabBarController.style = .gooey(menu: menu)
+        tabBarController.delegate = self
+        tabBarController.selectedIndex = 1
         tabBarController.modalPresentationStyle = .fullScreen
         DispatchQueue.main.asyncAfter(deadline: .now(), execute: {
             self.navigationController?.pushViewController(tabBarController, animated: true)
@@ -80,14 +82,14 @@ class SigninVC: UIViewController {
     
     func createSampleTabController() -> CBTabBarController {
         let dashboardVc = getVc(vc: "DashboardViewController")
-        dashboardVc.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "ic_dashboard"), tag: 0)
+        dashboardVc.tabBarItem = UITabBarItem(title: "", image: UIImage(named: ""), tag: 0)
         let transcationVc = getVc(vc: "TranscationViewController")
         transcationVc.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "ic_transcation"), tag: 0)
-        let dashboardVc1 = getVc(vc: "DashboardViewController")
-        dashboardVc1.tabBarItem = UITabBarItem(title: "", image: UIImage(named: ""), tag: 0)
+        let menuVC = getVc(vc: "MenuVC")
+        menuVC.tabBarItem = UITabBarItem(title: "", image: UIImage(named: "ic_dashboard"), tag: 0)
         
         let tabBarController = CBTabBarController()
-        tabBarController.viewControllers = [dashboardVc, dashboardVc1, transcationVc]
+        tabBarController.viewControllers = [menuVC, dashboardVc, transcationVc]
         (tabBarController.tabBar as? CBTabBar)?.tabbarBackground = .ColorPrimary
         tabBarController.tabBar.tintColor = .white
         return tabBarController
@@ -121,4 +123,25 @@ class ResetPassPanelLayout: FloatingPanelLayout {
         .half: FloatingPanelLayoutAnchor(absoluteInset: 320.0, edge: .bottom, referenceGuide: .safeArea),
         .tip: FloatingPanelLayoutAnchor(fractionalInset: 0.2, edge: .bottom, referenceGuide: .safeArea),
     ]
+}
+
+
+//MARK: Tabbar delagate
+extension SigninVC:UITabBarControllerDelegate{
+    
+    func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if tabBarController.selectedIndex == 2 {
+            
+            let tradeView = TradeMTView.instanceFromNib()
+            if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
+                window.addSubview(tradeView)
+                tradeView.frame = window.frame
+            }
+            tradeView.selectCallBack = {
+                tabBarController.selectedIndex = 1
+            }
+        }
+    }
+    
+    
 }

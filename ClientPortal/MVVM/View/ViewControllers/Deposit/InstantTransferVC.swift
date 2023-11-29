@@ -9,6 +9,12 @@ import UIKit
 
 class InstantTransferVC: UIViewController {
 
+    //MARK: - IBOutlets
+    @IBOutlet weak var tfTradingAccount: UITextField!
+    @IBOutlet weak var tfCurrency: UITextField!
+    @IBOutlet weak var tfAmount: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -16,14 +22,10 @@ class InstantTransferVC: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    //MARK: - IBActions
+    
+    
+    @IBAction func depositAction(_ sender: Any) {
     }
-    */
-
+    
 }

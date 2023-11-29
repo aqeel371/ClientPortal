@@ -117,13 +117,18 @@ extension CryptoWireVC{
         self.embed(vc, inView: innerView)
     }
     func embedPerfectMoney(){
-        
+        let vc = ViewControllers.PerfectMoneyVC.getViewController() as PerfectMoneyVC
+        self.embed(vc, inView: innerView)
     }
     func embedStick(){
-        
+        let vc = ViewControllers.StickSkrillVC.getViewController() as StickSkrillVC
+        vc.type = .Stick
+        self.embed(vc, inView: innerView)
     }
     func embedSkrill(){
-        
+        let vc = ViewControllers.StickSkrillVC.getViewController() as StickSkrillVC
+        vc.type = .Skrill
+        self.embed(vc, inView: innerView)
     }
     
 }

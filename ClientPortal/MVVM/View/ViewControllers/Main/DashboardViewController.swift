@@ -42,6 +42,9 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func withdrawAction(_ sender: Any) {
+        let vc = ViewControllers.InternalTabsVC.getViewController() as InternalTabsVC
+        vc.typeVc = .withdraw
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
