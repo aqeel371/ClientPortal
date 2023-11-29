@@ -32,6 +32,12 @@ class AccountsVC: UIViewController {
     }
     
     
+    @IBAction func profileAction(_ sender: Any) {
+        let vc = ViewControllers.ProfileVC.getViewController() as ProfileVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 
 //MARK: -  UIcollection VIew Methods

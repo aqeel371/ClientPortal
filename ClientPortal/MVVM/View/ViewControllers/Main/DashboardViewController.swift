@@ -31,6 +31,19 @@ class DashboardViewController: UIViewController {
         self.navigationController?.popViewController(animated: true)
     }
     
+    @IBAction func profileAction(_ sender: Any) {
+        let vc = ViewControllers.ProfileVC.getViewController() as ProfileVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func depositAction(_ sender: Any) {
+        let vc = ViewControllers.DepositVC.getViewController() as DepositVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func withdrawAction(_ sender: Any) {
+    }
+    
 }
 
 //MARK: - UICollection VIew Methods

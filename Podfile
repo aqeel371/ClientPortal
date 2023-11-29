@@ -7,6 +7,7 @@ target 'ClientPortal' do
   
   # Pods for ClientPortal
   pod 'IQKeyboardManager'
+  pod 'FloatingPanel'
   pod 'Alamofire'
   pod 'SwiftyJSON'
   pod 'CBTabBarController', :git => 'https://github.com/aqeel371/cb-tabbar.git'

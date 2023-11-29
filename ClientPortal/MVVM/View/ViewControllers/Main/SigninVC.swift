@@ -7,6 +7,7 @@
 
 import UIKit
 import CBTabBarController
+import FloatingPanel
 
 class SigninVC: UIViewController {
 
@@ -33,8 +34,18 @@ class SigninVC: UIViewController {
     //MARK: - IBActions
     
     @IBAction func forgetAction(_ sender: Any) {
-        let vc = ViewControllers.ChangePasswordVC.getViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        let appearance = SurfaceAppearance()
+        
+        let fpc = FloatingPanelController()
+        let contectVC = ViewControllers.ForgetPassVC.getViewController() as ForgetPassVC
+        fpc.set(contentViewController: contectVC)
+        fpc.contentMode = .fitToBounds
+        fpc.layout = ResetPassPanelLayout()
+        fpc.isRemovalInteractionEnabled = true
+        appearance.cornerRadius = 20.0
+        fpc.surfaceView.appearance = appearance
+        fpc.addPanel(toParent: self,animated: true)
     }
     
     @IBAction func sigininAction(_ sender: Any) {
@@ -98,4 +109,16 @@ class SigninVC: UIViewController {
         }
     }
     
+}
+
+//MARK: FloatingPanelLayout
+
+class ResetPassPanelLayout: FloatingPanelLayout {
+    let position: FloatingPanelPosition = .bottom
+    let initialState: FloatingPanelState = .full
+    let anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] = [
+        .full: FloatingPanelLayoutAnchor(absoluteInset: 320.0, edge: .bottom, referenceGuide: .safeArea),
+        .half: FloatingPanelLayoutAnchor(absoluteInset: 320.0, edge: .bottom, referenceGuide: .safeArea),
+        .tip: FloatingPanelLayoutAnchor(fractionalInset: 0.2, edge: .bottom, referenceGuide: .safeArea),
+    ]
 }

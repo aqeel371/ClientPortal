@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="QuicksandMedium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="61" id="KGk-i7-Jjw" customClass="TransferTVC" customModule="ClientPortal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="61"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Sr-wG-H9x">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_bankname" translatesAutoresizingMaskIntoConstraints="NO" id="dVL-cD-bvd">
+                                <rect key="frame" x="5" y="13" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="D3Y-6V-3Ei"/>
+                                    <constraint firstAttribute="height" constant="24" id="DTR-MG-fPc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tether | ERC20" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WNR-mK-orP">
+                                <rect key="frame" x="37" y="16.333333333333329" width="95" height="17.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" name="EerieBlack"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="J3e-E0-kcq" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                <rect key="frame" x="295" y="15" width="20" height="20"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_next" translatesAutoresizingMaskIntoConstraints="NO" id="Nv9-7n-gsB">
+                                        <rect key="frame" x="2" y="2" width="16" height="16"/>
+                                        <color key="tintColor" name="SonicSilver"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="GhostWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Nv9-7n-gsB" firstAttribute="top" secondItem="J3e-E0-kcq" secondAttribute="top" constant="2" id="0i4-MJ-LWA"/>
+                                    <constraint firstAttribute="trailing" secondItem="Nv9-7n-gsB" secondAttribute="trailing" constant="2" id="6HN-5E-2v5"/>
+                                    <constraint firstAttribute="height" constant="20" id="AdU-Ss-wY8"/>
+                                    <constraint firstItem="Nv9-7n-gsB" firstAttribute="leading" secondItem="J3e-E0-kcq" secondAttribute="leading" constant="2" id="Na6-DB-hdx"/>
+                                    <constraint firstAttribute="width" constant="20" id="hTW-OX-4Dt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Nv9-7n-gsB" secondAttribute="bottom" constant="2" id="ype-KD-1sZ"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUL-to-1Sk">
+                                <rect key="frame" x="0.0" y="49" width="320" height="1"/>
+                                <color key="backgroundColor" name="AliceBlue"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="II1-L3-MUK"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="dVL-cD-bvd" firstAttribute="leading" secondItem="2Sr-wG-H9x" secondAttribute="leading" constant="5" id="3gG-rU-DX9"/>
+                            <constraint firstItem="cUL-to-1Sk" firstAttribute="leading" secondItem="2Sr-wG-H9x" secondAttribute="leading" id="PSE-bT-emz"/>
+                            <constraint firstItem="WNR-mK-orP" firstAttribute="leading" secondItem="dVL-cD-bvd" secondAttribute="trailing" constant="8" id="c7E-dP-Lln"/>
+                            <constraint firstItem="dVL-cD-bvd" firstAttribute="centerY" secondItem="2Sr-wG-H9x" secondAttribute="centerY" id="eNS-lU-cY2"/>
+                            <constraint firstAttribute="trailing" secondItem="cUL-to-1Sk" secondAttribute="trailing" id="fK2-cv-s5x"/>
+                            <constraint firstAttribute="trailing" secondItem="J3e-E0-kcq" secondAttribute="trailing" constant="5" id="kWO-Ch-XLk"/>
+                            <constraint firstAttribute="bottom" secondItem="cUL-to-1Sk" secondAttribute="bottom" id="q47-Ym-bhb"/>
+                            <constraint firstAttribute="height" constant="50" id="so2-bx-Qu7"/>
+                            <constraint firstItem="WNR-mK-orP" firstAttribute="centerY" secondItem="dVL-cD-bvd" secondAttribute="centerY" id="tzY-D2-rf9"/>
+                            <constraint firstItem="J3e-E0-kcq" firstAttribute="centerY" secondItem="2Sr-wG-H9x" secondAttribute="centerY" id="vEL-jm-7qX"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="2Sr-wG-H9x" secondAttribute="trailing" id="7vL-Le-uaN"/>
+                    <constraint firstAttribute="bottom" secondItem="2Sr-wG-H9x" secondAttribute="bottom" id="Mdo-6H-mxt"/>
+                    <constraint firstItem="2Sr-wG-H9x" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="ZCe-Js-9Fv"/>
+                    <constraint firstItem="2Sr-wG-H9x" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zPw-vV-SdC"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bankIcon" destination="dVL-cD-bvd" id="Jk1-XB-IyG"/>
+                <outlet property="bankName" destination="WNR-mK-orP" id="wvs-b9-DGq"/>
+                <outlet property="nextIcon" destination="Nv9-7n-gsB" id="v2N-7Q-icK"/>
+                <outlet property="nextView" destination="J3e-E0-kcq" id="ipz-4q-cRU"/>
+            </connections>
+            <point key="canvasLocation" x="-6.1068702290076331" y="25.704225352112676"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_bankname" width="24" height="24"/>
+        <image name="ic_next" width="20" height="20"/>
+        <namedColor name="AliceBlue">
+            <color red="0.9137254901960784" green="0.94117647058823528" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="EerieBlack">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GhostWhite">
+            <color red="0.97254901960784312" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SonicSilver">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

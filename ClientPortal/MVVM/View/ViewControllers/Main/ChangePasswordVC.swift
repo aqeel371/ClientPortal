@@ -58,6 +58,12 @@ class ChangePasswordVC: UIViewController {
         }
     }
     
+    @IBAction func profileAction(_ sender: Any) {
+//        let vc = ViewControllers.ProfileVC.getViewController() as ProfileVC
+//        self.navigationController?.pushViewController(vc, animated: true)
+        self.navigationController?.popViewController(animated: true)
+    }
+    
     
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)

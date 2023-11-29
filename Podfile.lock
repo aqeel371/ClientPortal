@@ -1,18 +1,21 @@
 PODS:
   - Alamofire (5.8.0)
   - CBTabBarController (0.9.5)
+  - FloatingPanel (2.8.1)
   - IQKeyboardManager (6.5.13)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - CBTabBarController (from `https://github.com/aqeel371/cb-tabbar.git`)
+  - FloatingPanel
   - IQKeyboardManager
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - FloatingPanel
     - IQKeyboardManager
     - SwiftyJSON
 
@@ -28,9 +31,10 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   Alamofire: 0e92e751b3e9e66d7982db43919d01f313b8eb91
   CBTabBarController: 42e08d70eae311f839817c860b0ec80e9647f8d3
+  FloatingPanel: 0c32d8c97e52cf6913833af573506f5d86451465
   IQKeyboardManager: a932e53c5175755c60a3e2ad31a9f3aa5e33dd89
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: 12fb6ebbc0b45d3218ab306aee60bdf120bbd765
+PODFILE CHECKSUM: ce0c8633a4c563183c6dc799fec4c2264d21e888
 
 COCOAPODS: 1.11.3

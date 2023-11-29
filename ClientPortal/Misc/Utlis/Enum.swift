@@ -10,6 +10,7 @@ import UIKit
 
 enum Storybords:String {
     case Main = "Main"
+    case Deposit = "Deposit"
 }
 
 enum ViewControllers:String{
@@ -19,6 +20,15 @@ enum ViewControllers:String{
     case AccountsVC = "AccountsVC"
     case ChangePasswordVC = "ChangePasswordVC"
     case InternalTabsVC = "InternalTabsVC"
+    case ProfileVC = "ProfileVC"
+    case ForgetPassVC = "ForgetPassVC"
+    case DepositVC = "DepositVC"
+    case CryptoWireVC = "CryptoWireVC"
+    case CryptoDetailsVC = "CryptoDetailsVC"
+    case WireTransferDetailsVC = "WireTransferDetailsVC"
+    case InstantTransferVC = "InstantTransferVC"
+    case PerfectMoneyVC = "PerfectMoneyVC"
+    case StickSkrillVC = "StickSkrillVC"
     
     public func getViewController<T:UIViewController>() -> T {
         var storyBoard: Storybords = .Main
@@ -33,6 +43,24 @@ enum ViewControllers:String{
             storyBoard = .Main
         case .InternalTabsVC:
             storyBoard = .Main
+        case .ProfileVC:
+            storyBoard = .Main
+        case .ForgetPassVC:
+            storyBoard = .Main
+        case .DepositVC:
+            storyBoard = .Deposit
+        case .CryptoWireVC:
+            storyBoard = .Deposit
+        case .CryptoDetailsVC:
+            storyBoard = .Deposit
+        case .WireTransferDetailsVC:
+            storyBoard = .Deposit
+        case .InstantTransferVC:
+            storyBoard = .Deposit
+        case .PerfectMoneyVC:
+            storyBoard = .Deposit
+        case .StickSkrillVC:
+            storyBoard = .Deposit
         }
         
         
@@ -47,4 +75,13 @@ enum TabType{
     case deposit
     case withdraw
     case transfer
+}
+
+enum TransferType{
+    case Instant
+    case Wire
+    case Crypto
+    case PerfectMoney
+    case Stick
+    case Skrill
 }

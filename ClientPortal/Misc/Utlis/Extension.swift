@@ -53,6 +53,14 @@ extension UIViewController{
         
         return vc
     }
+    
+    func embed(_ viewController:UIViewController, inView view:UIView){
+        viewController.willMove(toParent: self)
+        viewController.view.frame = view.bounds
+        view.addSubview(viewController.view)
+        self.addChild(viewController)
+        viewController.didMove(toParent: self)
+    }
 }
 
 // MARK: - UIColor
@@ -71,6 +79,9 @@ extension UIColor {
     }
     @objc class var Silver: UIColor {
         return UIColor(named: "Silver") ?? .blue
+    }
+    @objc class var DarkSilver: UIColor {
+        return UIColor(named: "DarkSilver") ?? .blue
     }
     @objc class var VividCerulean: UIColor {
         return UIColor(named: "VividCerulean") ?? .blue
