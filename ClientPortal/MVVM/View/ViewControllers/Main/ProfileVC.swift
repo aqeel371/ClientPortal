@@ -43,5 +43,7 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func supportAction(_ sender: Any) {
+        let vc = ViewControllers.SupportVC.getViewController() as SupportVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

@@ -25,16 +25,28 @@ class MenuTrainingVC: UIViewController {
     }
     
     @IBAction func webinarAction(_ sender: Any) {
+        let vc = ViewControllers.TrainingDetailsVC.getViewController() as TrainingDetailsVC
+        vc.type = .webinar
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func technicalAction(_ sender: Any) {
+        let vc = ViewControllers.TrainingDetailsVC.getViewController() as TrainingDetailsVC
+        vc.type = .technical
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func marketAction(_ sender: Any) {
+        let vc = ViewControllers.TrainingDetailsVC.getViewController() as TrainingDetailsVC
+        vc.type = .market
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
     @IBAction func blogsAction(_ sender: Any) {
+        let vc = ViewControllers.TrainingDetailsVC.getViewController() as TrainingDetailsVC
+        vc.type = .blogs
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

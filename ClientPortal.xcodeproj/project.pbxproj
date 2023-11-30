@@ -23,6 +23,18 @@
 		C55F0E492B1885BC004EE83E /* ReportsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E472B1885BC004EE83E /* ReportsCVC.swift */; };
 		C55F0E4A2B1885BC004EE83E /* ReportsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E482B1885BC004EE83E /* ReportsCVC.xib */; };
 		C55F0E4E2B18B291004EE83E /* TradeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */; };
+		C55F0E502B18B6C5004EE83E /* UserLogsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E4F2B18B6C5004EE83E /* UserLogsVC.swift */; };
+		C55F0E532B18B774004EE83E /* LogsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E512B18B774004EE83E /* LogsCVC.swift */; };
+		C55F0E542B18B774004EE83E /* LogsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E522B18B774004EE83E /* LogsCVC.xib */; };
+		C55F0E562B18C021004EE83E /* UserDocsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E552B18C021004EE83E /* UserDocsVC.swift */; };
+		C55F0E582B18C394004EE83E /* TrainingDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E572B18C394004EE83E /* TrainingDetailsVC.swift */; };
+		C55F0E5B2B18C4AA004EE83E /* TrainingCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E592B18C4AA004EE83E /* TrainingCVC.swift */; };
+		C55F0E5C2B18C4AA004EE83E /* TrainingCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E5A2B18C4AA004EE83E /* TrainingCVC.xib */; };
+		C55F0E5E2B18CEEE004EE83E /* SupportVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E5D2B18CEEE004EE83E /* SupportVC.swift */; };
+		C55F0E622B18D276004EE83E /* MyChatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E602B18D276004EE83E /* MyChatTVC.swift */; };
+		C55F0E632B18D276004EE83E /* MyChatTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E612B18D276004EE83E /* MyChatTVC.xib */; };
+		C55F0E662B18D287004EE83E /* OtherChatTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E642B18D287004EE83E /* OtherChatTVC.swift */; };
+		C55F0E672B18D287004EE83E /* OtherChatTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E652B18D287004EE83E /* OtherChatTVC.xib */; };
 		C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305D32B17194A0084AD07 /* ProfileVC.swift */; };
 		C58305D62B1726EB0084AD07 /* ForgetPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */; };
 		C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58305D82B1729A20084AD07 /* Deposit.storyboard */; };
@@ -101,6 +113,18 @@
 		C55F0E472B1885BC004EE83E /* ReportsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportsCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Menu/ReportsCVC.swift; sourceTree = SOURCE_ROOT; };
 		C55F0E482B1885BC004EE83E /* ReportsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ReportsCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Menu/ReportsCVC.xib; sourceTree = SOURCE_ROOT; };
 		C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeDetailsVC.swift; sourceTree = "<group>"; };
+		C55F0E4F2B18B6C5004EE83E /* UserLogsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserLogsVC.swift; sourceTree = "<group>"; };
+		C55F0E512B18B774004EE83E /* LogsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogsCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Menu/LogsCVC.swift; sourceTree = SOURCE_ROOT; };
+		C55F0E522B18B774004EE83E /* LogsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = LogsCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Menu/LogsCVC.xib; sourceTree = SOURCE_ROOT; };
+		C55F0E552B18C021004EE83E /* UserDocsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDocsVC.swift; sourceTree = "<group>"; };
+		C55F0E572B18C394004EE83E /* TrainingDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingDetailsVC.swift; sourceTree = "<group>"; };
+		C55F0E592B18C4AA004EE83E /* TrainingCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrainingCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Menu/TrainingCVC.swift; sourceTree = SOURCE_ROOT; };
+		C55F0E5A2B18C4AA004EE83E /* TrainingCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TrainingCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Menu/TrainingCVC.xib; sourceTree = SOURCE_ROOT; };
+		C55F0E5D2B18CEEE004EE83E /* SupportVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupportVC.swift; sourceTree = "<group>"; };
+		C55F0E602B18D276004EE83E /* MyChatTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyChatTVC.swift; sourceTree = "<group>"; };
+		C55F0E612B18D276004EE83E /* MyChatTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyChatTVC.xib; sourceTree = "<group>"; };
+		C55F0E642B18D287004EE83E /* OtherChatTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OtherChatTVC.swift; sourceTree = "<group>"; };
+		C55F0E652B18D287004EE83E /* OtherChatTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OtherChatTVC.xib; sourceTree = "<group>"; };
 		C58305D32B17194A0084AD07 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassVC.swift; sourceTree = "<group>"; };
 		C58305D82B1729A20084AD07 /* Deposit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deposit.storyboard; sourceTree = "<group>"; };
@@ -198,6 +222,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		C55F0E5F2B18D24F004EE83E /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				C55F0E602B18D276004EE83E /* MyChatTVC.swift */,
+				C55F0E612B18D276004EE83E /* MyChatTVC.xib */,
+				C55F0E642B18D287004EE83E /* OtherChatTVC.swift */,
+				C55F0E652B18D287004EE83E /* OtherChatTVC.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 		C58305D72B1729870084AD07 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -210,6 +245,7 @@
 				C58305D32B17194A0084AD07 /* ProfileVC.swift */,
 				C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */,
 				C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */,
+				C55F0E5D2B18CEEE004EE83E /* SupportVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -241,6 +277,9 @@
 				C55F0E432B187EF7004EE83E /* WalletsVC.swift */,
 				C55F0E452B188403004EE83E /* ReportsVC.swift */,
 				C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */,
+				C55F0E4F2B18B6C5004EE83E /* UserLogsVC.swift */,
+				C55F0E552B18C021004EE83E /* UserDocsVC.swift */,
+				C55F0E572B18C394004EE83E /* TrainingDetailsVC.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -343,6 +382,7 @@
 		F2657FC22B14948300CDEEF3 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				C55F0E5F2B18D24F004EE83E /* Chat */,
 				C5FF1CB42B15DDC6000CFA0F /* OfferCVC.swift */,
 				C5FF1CB52B15DDC6000CFA0F /* OfferCVC.xib */,
 				C5FF1CBC2B15FFA3000CFA0F /* DashboardTVC.swift */,
@@ -361,6 +401,10 @@
 				C55F0E402B18785A004EE83E /* BanksCVC.xib */,
 				C55F0E472B1885BC004EE83E /* ReportsCVC.swift */,
 				C55F0E482B1885BC004EE83E /* ReportsCVC.xib */,
+				C55F0E512B18B774004EE83E /* LogsCVC.swift */,
+				C55F0E522B18B774004EE83E /* LogsCVC.xib */,
+				C55F0E592B18C4AA004EE83E /* TrainingCVC.swift */,
+				C55F0E5A2B18C4AA004EE83E /* TrainingCVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -497,14 +541,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C58305E02B1735680084AD07 /* TransferTVC.xib in Resources */,
+				C55F0E672B18D287004EE83E /* OtherChatTVC.xib in Resources */,
 				C5FF1CB72B15DDC6000CFA0F /* OfferCVC.xib in Resources */,
 				F2657FB42B1491EC00CDEEF3 /* LaunchScreen.storyboard in Resources */,
 				C58E8B1C2B1775A000E7F3D3 /* Menu.storyboard in Resources */,
 				F2B384142B14973E00F4FB60 /* LoadingViewNib.xib in Resources */,
+				C55F0E632B18D276004EE83E /* MyChatTVC.xib in Resources */,
 				C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */,
 				F2657FB12B1491EC00CDEEF3 /* Assets.xcassets in Resources */,
 				C5FF1CC52B160EFC000CFA0F /* AccountsCVC.xib in Resources */,
 				C55F0E422B18785A004EE83E /* BanksCVC.xib in Resources */,
+				C55F0E542B18B774004EE83E /* LogsCVC.xib in Resources */,
+				C55F0E5C2B18C4AA004EE83E /* TrainingCVC.xib in Resources */,
 				F2657FAF2B1491EB00CDEEF3 /* Main.storyboard in Resources */,
 				C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */,
 				C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */,
@@ -590,22 +638,29 @@
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
+				C55F0E532B18B774004EE83E /* LogsCVC.swift in Sources */,
+				C55F0E662B18D287004EE83E /* OtherChatTVC.swift in Sources */,
 				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
 				C55F0E462B188403004EE83E /* ReportsVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
 				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
 				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
 				C58305DF2B1735680084AD07 /* TransferTVC.swift in Sources */,
+				C55F0E5E2B18CEEE004EE83E /* SupportVC.swift in Sources */,
 				C58E8B252B1779E300E7F3D3 /* MenuTrainingVC.swift in Sources */,
 				F2B384092B1495FF00F4FB60 /* API.swift in Sources */,
 				C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */,
 				C58E8B232B17793400E7F3D3 /* MenuTransactionVC.swift in Sources */,
 				C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */,
+				C55F0E582B18C394004EE83E /* TrainingDetailsVC.swift in Sources */,
+				C55F0E622B18D276004EE83E /* MyChatTVC.swift in Sources */,
 				C55F0E4E2B18B291004EE83E /* TradeDetailsVC.swift in Sources */,
 				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
 				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */,
+				C55F0E502B18B6C5004EE83E /* UserLogsVC.swift in Sources */,
 				C55F0E3E2B187756004EE83E /* BankAccountsVC.swift in Sources */,
+				C55F0E5B2B18C4AA004EE83E /* TrainingCVC.swift in Sources */,
 				C58E8B272B177A2700E7F3D3 /* MenuProfileVC.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
@@ -614,6 +669,7 @@
 				C5FF1CB62B15DDC6000CFA0F /* OfferCVC.swift in Sources */,
 				C55F0E492B1885BC004EE83E /* ReportsCVC.swift in Sources */,
 				C55F0E382B186800004EE83E /* MenuPlateformVC.swift in Sources */,
+				C55F0E562B18C021004EE83E /* UserDocsVC.swift in Sources */,
 				C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */,
 				C58E8B2B2B177D7300E7F3D3 /* TradeMTView.swift in Sources */,
 				C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */,

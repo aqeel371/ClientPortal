@@ -89,6 +89,8 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
             cell.cellView.backgroundColor = UIColor.GhostWhite
         }
         
+        cell.selectionStyle = .none
+        
         return cell
     }
     

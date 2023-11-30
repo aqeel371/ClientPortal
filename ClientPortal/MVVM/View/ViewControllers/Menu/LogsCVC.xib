@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="QuicksandMedium.ttf">
+            <string>Quicksand-Medium</string>
+        </array>
+        <array key="QuicksandRegular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="QuicksandSemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="LogsCVC" customModule="ClientPortal" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="339" height="140"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="339" height="140"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rHO-cb-11G" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="339" height="140"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="cfR-XE-CoJ">
+                                <rect key="frame" x="24" y="24" width="291" height="40"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Y8d-Jc-Ia8">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qup-v7-sTb">
+                                                <rect key="frame" x="0.0" y="0.0" width="142" height="17.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                <color key="textColor" name="SonicSilver"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0912890239823" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j41-8e-pIz">
+                                                <rect key="frame" x="0.0" y="21.666666666666664" width="142" height="18.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                                <color key="textColor" name="EerieBlack"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Lm1-JP-eDV">
+                                        <rect key="frame" x="142" y="0.0" width="149" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="esF-er-lDy">
+                                                <rect key="frame" x="0.0" y="0.0" width="149" height="17.666666666666668"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                <color key="textColor" name="SonicSilver"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Login Customer" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NaR-ue-oFr">
+                                                <rect key="frame" x="0.0" y="21.666666666666664" width="149" height="18.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                                <color key="textColor" name="EerieBlack"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Blf-Rf-qoi"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Details" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g84-es-ncF">
+                                <rect key="frame" x="24.000000000000004" y="76" width="44.333333333333343" height="17.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                <color key="textColor" name="SonicSilver"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Mng-S9-MjY">
+                                <rect key="frame" x="234.66666666666666" y="76" width="80.333333333333343" height="43.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="25 Nov 2023" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYg-xc-y1e">
+                                        <rect key="frame" x="0.0" y="0.0" width="80.333333333333329" height="17.666666666666668"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                        <color key="textColor" name="SonicSilver"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="16:08 PM" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4I-Un-ocN">
+                                        <rect key="frame" x="0.0" y="21.666666666666671" width="80.333333333333329" height="22"/>
+                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                        <color key="textColor" name="SonicSilver"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnT-GI-bCb" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
+                                <rect key="frame" x="24" y="97.666666666666671" width="66" height="22"/>
+                                <color key="backgroundColor" name="VividCerulean"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="3Rp-pg-7Pe"/>
+                                    <constraint firstAttribute="width" secondItem="gnT-GI-bCb" secondAttribute="height" multiplier="3:1" id="poB-7d-68S"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="11"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="View">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="11"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" name="GhostWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfR-XE-CoJ" firstAttribute="leading" secondItem="rHO-cb-11G" secondAttribute="leading" constant="24" id="0nN-Rh-eN7"/>
+                            <constraint firstItem="g84-es-ncF" firstAttribute="top" secondItem="cfR-XE-CoJ" secondAttribute="bottom" constant="12" id="533-J2-vwj"/>
+                            <constraint firstItem="gnT-GI-bCb" firstAttribute="top" secondItem="g84-es-ncF" secondAttribute="bottom" constant="4" id="BAt-Wc-r3H"/>
+                            <constraint firstItem="Mng-S9-MjY" firstAttribute="top" secondItem="g84-es-ncF" secondAttribute="top" id="G7M-ms-GPd"/>
+                            <constraint firstItem="gnT-GI-bCb" firstAttribute="leading" secondItem="g84-es-ncF" secondAttribute="leading" id="QQp-Oy-hak"/>
+                            <constraint firstAttribute="trailing" secondItem="cfR-XE-CoJ" secondAttribute="trailing" constant="24" id="RQx-tj-Dgn"/>
+                            <constraint firstItem="Mng-S9-MjY" firstAttribute="bottom" secondItem="gnT-GI-bCb" secondAttribute="bottom" id="YDx-FB-paU"/>
+                            <constraint firstItem="Mng-S9-MjY" firstAttribute="trailing" secondItem="cfR-XE-CoJ" secondAttribute="trailing" id="mZy-e5-9Y6"/>
+                            <constraint firstItem="g84-es-ncF" firstAttribute="leading" secondItem="cfR-XE-CoJ" secondAttribute="leading" id="rbQ-1Y-K8Z"/>
+                            <constraint firstItem="cfR-XE-CoJ" firstAttribute="top" secondItem="rHO-cb-11G" secondAttribute="top" constant="24" id="wMo-iK-P7O"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rHO-cb-11G" secondAttribute="bottom" id="Bnq-7N-tnN"/>
+                <constraint firstItem="rHO-cb-11G" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="QDb-qS-sbj"/>
+                <constraint firstItem="rHO-cb-11G" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="b98-8S-Whe"/>
+                <constraint firstAttribute="trailing" secondItem="rHO-cb-11G" secondAttribute="trailing" id="uBw-eg-9gu"/>
+            </constraints>
+            <size key="customSize" width="339" height="45"/>
+            <point key="canvasLocation" x="214.50381679389312" y="17.605633802816904"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="EerieBlack">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="GhostWhite">
+            <color red="0.97254901960784312" green="0.98431372549019602" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SonicSilver">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="VividCerulean">
+            <color red="0.0" green="0.68235294117647061" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

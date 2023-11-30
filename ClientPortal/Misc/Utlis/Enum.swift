@@ -41,6 +41,10 @@ enum ViewControllers:String{
     case BankAccountsVC = "BankAccountsVC"
     case WalletsVC = "WalletsVC"
     case ReportsVC = "ReportsVC"
+    case UserLogsVC = "UserLogsVC"
+    case UserDocsVC = "UserDocsVC"
+    case TrainingDetailsVC = "TrainingDetailsVC"
+    case SupportVC = "SupportVC"
     
     
     public func getViewController<T:UIViewController>() -> T {
@@ -94,6 +98,14 @@ enum ViewControllers:String{
             storyBoard = .Menu
         case .ReportsVC:
             storyBoard = .Menu
+        case .UserLogsVC:
+            storyBoard = .Menu
+        case .UserDocsVC:
+            storyBoard = .Menu
+        case .TrainingDetailsVC:
+            storyBoard = .Menu
+        case .SupportVC:
+            storyBoard = .Main
         }
         
         
@@ -117,4 +129,11 @@ enum TransferType{
     case PerfectMoney
     case Stick
     case Skrill
+}
+
+enum TrainingType{
+    case webinar
+    case technical
+    case market
+    case blogs
 }

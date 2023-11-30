@@ -27,8 +27,12 @@ class MenuProfileVC: UIViewController {
     
     
     @IBAction func documentsAction(_ sender: Any) {
+        let vc = ViewControllers.UserDocsVC.getViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func logsAction(_ sender: Any) {
+        let vc = ViewControllers.UserLogsVC.getViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }

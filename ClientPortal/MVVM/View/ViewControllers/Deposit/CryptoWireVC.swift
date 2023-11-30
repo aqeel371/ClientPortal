@@ -57,6 +57,7 @@ extension CryptoWireVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransferTVC", for: indexPath) as! TransferTVC
+        cell.selectionStyle = .none
         return cell
     }
     
