@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// MARK: - Navigation
 enum Storybords:String {
     case Main = "Main"
     case Deposit = "Deposit"
@@ -35,6 +36,11 @@ enum ViewControllers:String{
     case MenuTrainingVC = "MenuTrainingVC"
     case MenuProfileVC = "MenuProfileVC"
     case MenuTardesVC = "MenuTardesVC"
+    case TradeDetailsVC = "TradeDetailsVC"
+    case MenuPlateformVC = "MenuPlateformVC"
+    case BankAccountsVC = "BankAccountsVC"
+    case WalletsVC = "WalletsVC"
+    case ReportsVC = "ReportsVC"
     
     
     public func getViewController<T:UIViewController>() -> T {
@@ -78,6 +84,16 @@ enum ViewControllers:String{
             storyBoard = .Menu
         case .MenuTardesVC:
             storyBoard = .Menu
+        case .TradeDetailsVC:
+            storyBoard = .Menu
+        case .MenuPlateformVC:
+            storyBoard = .Menu
+        case .BankAccountsVC:
+            storyBoard = .Menu
+        case .WalletsVC:
+            storyBoard = .Menu
+        case .ReportsVC:
+            storyBoard = .Menu
         }
         
         
@@ -87,7 +103,7 @@ enum ViewControllers:String{
     }
 }
 
-
+// MARK: - Other
 enum TabType{
     case deposit
     case withdraw

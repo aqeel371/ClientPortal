@@ -12,6 +12,17 @@
 		C54402252B175A3D008209DD /* InstantTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402242B175A3D008209DD /* InstantTransferVC.swift */; };
 		C54402272B175C03008209DD /* PerfectMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402262B175C03008209DD /* PerfectMoneyVC.swift */; };
 		C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402282B175C2A008209DD /* StickSkrillVC.swift */; };
+		C55F0E382B186800004EE83E /* MenuPlateformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E372B186800004EE83E /* MenuPlateformVC.swift */; };
+		C55F0E3B2B18687D004EE83E /* PlateformCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E392B18687D004EE83E /* PlateformCVC.swift */; };
+		C55F0E3C2B18687D004EE83E /* PlateformCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E3A2B18687D004EE83E /* PlateformCVC.xib */; };
+		C55F0E3E2B187756004EE83E /* BankAccountsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E3D2B187756004EE83E /* BankAccountsVC.swift */; };
+		C55F0E412B18785A004EE83E /* BanksCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E3F2B18785A004EE83E /* BanksCVC.swift */; };
+		C55F0E422B18785A004EE83E /* BanksCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E402B18785A004EE83E /* BanksCVC.xib */; };
+		C55F0E442B187EF7004EE83E /* WalletsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E432B187EF7004EE83E /* WalletsVC.swift */; };
+		C55F0E462B188403004EE83E /* ReportsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E452B188403004EE83E /* ReportsVC.swift */; };
+		C55F0E492B1885BC004EE83E /* ReportsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E472B1885BC004EE83E /* ReportsCVC.swift */; };
+		C55F0E4A2B1885BC004EE83E /* ReportsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E482B1885BC004EE83E /* ReportsCVC.xib */; };
+		C55F0E4E2B18B291004EE83E /* TradeDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */; };
 		C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305D32B17194A0084AD07 /* ProfileVC.swift */; };
 		C58305D62B1726EB0084AD07 /* ForgetPassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */; };
 		C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C58305D82B1729A20084AD07 /* Deposit.storyboard */; };
@@ -79,6 +90,17 @@
 		C54402242B175A3D008209DD /* InstantTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantTransferVC.swift; sourceTree = "<group>"; };
 		C54402262B175C03008209DD /* PerfectMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectMoneyVC.swift; sourceTree = "<group>"; };
 		C54402282B175C2A008209DD /* StickSkrillVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickSkrillVC.swift; sourceTree = "<group>"; };
+		C55F0E372B186800004EE83E /* MenuPlateformVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPlateformVC.swift; sourceTree = "<group>"; };
+		C55F0E392B18687D004EE83E /* PlateformCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlateformCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Menu/PlateformCVC.swift; sourceTree = SOURCE_ROOT; };
+		C55F0E3A2B18687D004EE83E /* PlateformCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = PlateformCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Menu/PlateformCVC.xib; sourceTree = SOURCE_ROOT; };
+		C55F0E3D2B187756004EE83E /* BankAccountsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankAccountsVC.swift; sourceTree = "<group>"; };
+		C55F0E3F2B18785A004EE83E /* BanksCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BanksCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Menu/BanksCVC.swift; sourceTree = SOURCE_ROOT; };
+		C55F0E402B18785A004EE83E /* BanksCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = BanksCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Menu/BanksCVC.xib; sourceTree = SOURCE_ROOT; };
+		C55F0E432B187EF7004EE83E /* WalletsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletsVC.swift; sourceTree = "<group>"; };
+		C55F0E452B188403004EE83E /* ReportsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportsVC.swift; sourceTree = "<group>"; };
+		C55F0E472B1885BC004EE83E /* ReportsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ReportsCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Menu/ReportsCVC.swift; sourceTree = SOURCE_ROOT; };
+		C55F0E482B1885BC004EE83E /* ReportsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ReportsCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Menu/ReportsCVC.xib; sourceTree = SOURCE_ROOT; };
+		C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TradeDetailsVC.swift; sourceTree = "<group>"; };
 		C58305D32B17194A0084AD07 /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgetPassVC.swift; sourceTree = "<group>"; };
 		C58305D82B1729A20084AD07 /* Deposit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deposit.storyboard; sourceTree = "<group>"; };
@@ -214,6 +236,11 @@
 				C58E8B242B1779E300E7F3D3 /* MenuTrainingVC.swift */,
 				C58E8B262B177A2700E7F3D3 /* MenuProfileVC.swift */,
 				C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */,
+				C55F0E372B186800004EE83E /* MenuPlateformVC.swift */,
+				C55F0E3D2B187756004EE83E /* BankAccountsVC.swift */,
+				C55F0E432B187EF7004EE83E /* WalletsVC.swift */,
+				C55F0E452B188403004EE83E /* ReportsVC.swift */,
+				C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -328,6 +355,12 @@
 				C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */,
 				C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */,
 				C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */,
+				C55F0E392B18687D004EE83E /* PlateformCVC.swift */,
+				C55F0E3A2B18687D004EE83E /* PlateformCVC.xib */,
+				C55F0E3F2B18785A004EE83E /* BanksCVC.swift */,
+				C55F0E402B18785A004EE83E /* BanksCVC.xib */,
+				C55F0E472B1885BC004EE83E /* ReportsCVC.swift */,
+				C55F0E482B1885BC004EE83E /* ReportsCVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -471,10 +504,13 @@
 				C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */,
 				F2657FB12B1491EC00CDEEF3 /* Assets.xcassets in Resources */,
 				C5FF1CC52B160EFC000CFA0F /* AccountsCVC.xib in Resources */,
+				C55F0E422B18785A004EE83E /* BanksCVC.xib in Resources */,
 				F2657FAF2B1491EB00CDEEF3 /* Main.storyboard in Resources */,
 				C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */,
 				C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */,
 				C5FF1CBB2B15FB3F000CFA0F /* DashboradTVHeader.xib in Resources */,
+				C55F0E3C2B18687D004EE83E /* PlateformCVC.xib in Resources */,
+				C55F0E4A2B1885BC004EE83E /* ReportsCVC.xib in Resources */,
 				C5FF1CBF2B15FFA3000CFA0F /* DashboardTVC.xib in Resources */,
 				C58E8B292B177D6A00E7F3D3 /* TradeMTView.xib in Resources */,
 			);
@@ -537,10 +573,12 @@
 				F2B384032B1495BC00F4FB60 /* ApiManager.swift in Sources */,
 				C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */,
 				F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */,
+				C55F0E442B187EF7004EE83E /* WalletsVC.swift in Sources */,
 				F2B384072B1495E600F4FB60 /* NetworkClient.swift in Sources */,
 				C54402272B175C03008209DD /* PerfectMoneyVC.swift in Sources */,
 				F253EE582B14BF95006E72B7 /* TranscationViewController.swift in Sources */,
 				F253EE542B14B035006E72B7 /* SampleTabItem.swift in Sources */,
+				C55F0E412B18785A004EE83E /* BanksCVC.swift in Sources */,
 				C5FF1CBE2B15FFA3000CFA0F /* DashboardTVC.swift in Sources */,
 				C5FF1CAD2B15C7B0000CFA0F /* UIButtonX.swift in Sources */,
 				F2B3840F2B14968400F4FB60 /* Extension.swift in Sources */,
@@ -548,10 +586,12 @@
 				C54402252B175A3D008209DD /* InstantTransferVC.swift in Sources */,
 				C54402232B175367008209DD /* WireTransferDetailsVC.swift in Sources */,
 				C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */,
+				C55F0E3B2B18687D004EE83E /* PlateformCVC.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
 				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
+				C55F0E462B188403004EE83E /* ReportsVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
 				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
 				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
@@ -561,15 +601,19 @@
 				C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */,
 				C58E8B232B17793400E7F3D3 /* MenuTransactionVC.swift in Sources */,
 				C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */,
+				C55F0E4E2B18B291004EE83E /* TradeDetailsVC.swift in Sources */,
 				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
 				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */,
+				C55F0E3E2B187756004EE83E /* BankAccountsVC.swift in Sources */,
 				C58E8B272B177A2700E7F3D3 /* MenuProfileVC.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
 				C58305D62B1726EB0084AD07 /* ForgetPassVC.swift in Sources */,
 				C5FF1CB62B15DDC6000CFA0F /* OfferCVC.swift in Sources */,
+				C55F0E492B1885BC004EE83E /* ReportsCVC.swift in Sources */,
+				C55F0E382B186800004EE83E /* MenuPlateformVC.swift in Sources */,
 				C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */,
 				C58E8B2B2B177D7300E7F3D3 /* TradeMTView.swift in Sources */,
 				C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */,

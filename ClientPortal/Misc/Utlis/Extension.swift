@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 
+// MARK: - UIViewController
 extension UIViewController{
     func showAlert(title:String?,message:String?,actions:[UIAlertAction]?){
         let alert = UIAlertController(title: (title ?? ""), message: (message ?? ""), preferredStyle: .alert)
@@ -91,5 +92,17 @@ extension UIColor {
     }
     @objc class var GhostWhite: UIColor {
         return UIColor(named: "GhostWhite") ?? .blue
+    }
+    @objc class var Green200: UIColor {
+        return UIColor(named: "Green200") ?? .blue
+    }
+    @objc class var Green700: UIColor {
+        return UIColor(named: "Green700") ?? .blue
+    }
+    @objc class var Red200: UIColor {
+        return UIColor(named: "Red200") ?? .blue
+    }
+    @objc class var Red700: UIColor {
+        return UIColor(named: "Red700") ?? .blue
     }
 }

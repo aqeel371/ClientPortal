@@ -16,6 +16,8 @@ class MenuVC: UIViewController {
     }
     
     
+    //MARK: - IBActions
+    
     @IBAction func backAction(_ sender: Any) {
         self.tabBarController?.selectedIndex = 1
     }
@@ -48,6 +50,8 @@ class MenuVC: UIViewController {
     }
     
     @IBAction func plateformAction(_ sender: Any) {
+        let vc = ViewControllers.MenuPlateformVC.getViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func userProfileAction(_ sender: Any) {

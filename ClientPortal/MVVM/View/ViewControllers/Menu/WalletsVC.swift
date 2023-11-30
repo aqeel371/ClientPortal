@@ -1,15 +1,16 @@
 //
-//  MenuTardesVC.swift
+//  WalletsVC.swift
 //  ClientPortal
 //
-//  Created by Mudassar Sultan on 29/11/2023.
+//  Created by Mudassar Sultan on 30/11/2023.
 //
 
 import UIKit
 
-class MenuTardesVC: UIViewController {
+class WalletsVC: UIViewController {
 
-    @IBOutlet weak var tradesCV: UICollectionView!
+    //MARK: - IBOutlets
+    @IBOutlet weak var walletCV: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,7 +18,8 @@ class MenuTardesVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func backAction(_ sender: Any) {
+    //MARK: - IBActions
+    @IBAction func backActio(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
     }
     
@@ -28,32 +30,25 @@ class MenuTardesVC: UIViewController {
     
 }
 
-
-//MARK: - UIcollection Methods
-extension MenuTardesVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
+extension WalletsVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func setupCV(){
-        tradesCV.register(UINib(nibName: "TradesCVC", bundle: nil), forCellWithReuseIdentifier: "TradesCVC")
+        walletCV.register(UINib(nibName: "WalletCVC", bundle: nil), forCellWithReuseIdentifier: "WalletCVC")
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return 10
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TradesCVC", for: indexPath) as! TradesCVC
-        cell.viewCallBack = {
-            let vc = ViewControllers.TradeDetailsVC.getViewController()
-            self.navigationController?.pushViewController(vc, animated: true)
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "WalletCVC", for: indexPath) as! WalletCVC
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.frame.width
-        let height = 180.0
+        let width = collectionView.bounds.width
+        let height = 165.0
         return CGSize(width: width, height: height)
     }
-    
     
 }
