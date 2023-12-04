@@ -8,7 +8,7 @@
 import UIKit
 
 class InternalTabsVC: UIViewController {
-
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var lblTitle: UILabel!
@@ -32,6 +32,10 @@ class InternalTabsVC: UIViewController {
     
     //MARK: - Variables
     var typeVc:TabType?
+    var activeTF:UITextField?
+    var accountPicker = UIPickerView()
+    var accounts = ["A","B","C","D","E"]
+    var withdraw = ["1","2","3","4","5"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -86,13 +90,29 @@ class InternalTabsVC: UIViewController {
     
 }
 
-//MARK: - UItextView Methods
-extension InternalTabsVC:UITextViewDelegate{
+//MARK: - UItextView & UITextFields Methods
+extension InternalTabsVC:UITextViewDelegate,UITextFieldDelegate{
     
     func setupTF(){
+        
+        tfDepositAccount.delegate = self
+        tfWithdrawMethod.delegate = self
+        tfWithdrawAcount.delegate = self
+        
         tvDepositNotes.delegate = self
         tvTransferNotes.delegate = self
         tvWithdrawNotes.delegate = self
+        
+        tfDepositAccount.inputView = accountPicker
+        tfWithdrawAcount.inputView = accountPicker
+        tfWithdrawMethod.inputView = accountPicker
+        
+        accountPicker.delegate = self
+        accountPicker.dataSource = self
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        activeTF = textField
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -110,4 +130,36 @@ extension InternalTabsVC:UITextViewDelegate{
     }
     
     
+}
+
+//MARK: - Picker
+extension InternalTabsVC: UIPickerViewDelegate, UIPickerViewDataSource{
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        if activeTF == tfWithdrawMethod{
+            return withdraw.count
+        }else{
+            return accounts.count
+        }
+    }
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        if activeTF == tfWithdrawMethod{
+            return withdraw[row]
+        }else{
+            return accounts[row]
+        }
+        
+    }
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        if activeTF == tfWithdrawMethod{
+            tfWithdrawMethod.text = withdraw[row]
+        }else if activeTF == tfWithdrawAcount{
+            tfWithdrawAcount.text = accounts[row]
+        }else{
+            tfDepositAccount.text = accounts[row]
+        }
+    }
 }
