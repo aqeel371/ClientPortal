@@ -127,6 +127,9 @@
                                         <real key="value" value="18"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="actionFund:" destination="gTV-IL-0wX" eventType="touchUpInside" id="XNj-kR-Lqe"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -183,9 +186,23 @@
                 <constraint firstItem="a1K-Tq-HNq" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="sqv-Aw-55i"/>
             </constraints>
             <size key="customSize" width="218" height="195"/>
+            <connections>
+                <outlet property="lblAccNum" destination="Zy9-f5-bWN" id="J1d-Ga-AiJ"/>
+                <outlet property="lblAccount" destination="FEF-RL-nTG" id="73h-fF-vEY"/>
+                <outlet property="lblAccountType" destination="LlE-Ca-f7R" id="YqI-AG-t2P"/>
+                <outlet property="lblBalance" destination="kyq-dW-Bt2" id="kbx-31-O8O"/>
+                <outlet property="lblCurrency" destination="rvr-Xc-q8q" id="iEz-ZC-Vuh"/>
+                <outlet property="lblLevrage" destination="23d-fW-Jps" id="v25-Rk-niz"/>
+                <outlet property="lblType" destination="W2N-ai-Shp" id="ash-pj-Cgf"/>
+            </connections>
             <point key="canvasLocation" x="79.389312977099237" y="28.52112676056338"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="5kr-nT-ICV">
+            <size key="intrinsicContentSize" width="67" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="ic_settings" width="24" height="24"/>
         <namedColor name="EerieBlack">

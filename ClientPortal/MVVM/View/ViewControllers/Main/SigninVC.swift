@@ -19,6 +19,7 @@ class SigninVC: UIViewController {
     
     //MARK: - Variables
     var eyeClick: Bool = true
+    var spinner:LoadingViewNib?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,7 +57,9 @@ class SigninVC: UIViewController {
                 self.showAlert(title: "Error", message: "Enter a Valid Password...", actions: nil)
                 passwordTF.becomeFirstResponder()
             }else{
-                setupTabBar()
+                let user = LoginModel(email: user,password: pass)
+                self.login(user: user)
+                
             }
         }
     }
@@ -158,6 +161,39 @@ extension SigninVC{
         (tabBarController.tabBar as? CBTabBar)?.tabbarBackground = .ColorPrimary
         tabBarController.tabBar.tintColor = .white
         return tabBarController
+    }
+    
+}
+
+//MARK: -  API
+extension SigninVC{
+    
+    func login(user:LoginModel){
+        
+        spinner = self.showSpinner()
+        
+        ApiManager.shared.request(with: .Login(params: user.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                if let loginResp:LoginResponse = self.handleResponse(data: data as! Data){
+                    self.spinner?.removeFromSuperview()
+                    if loginResp.status ?? false {
+                        Global.shared.tokken = loginResp.result?.token ?? ""
+                        self.setupTabBar()
+                    }else{
+                        self.showAlert(title: "Error", message: loginResp.message, actions: nil)
+                    }
+                    
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+        
     }
     
 }

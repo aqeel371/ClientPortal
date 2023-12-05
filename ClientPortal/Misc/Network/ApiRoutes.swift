@@ -20,6 +20,12 @@ extension API:Router{
         switch self {
         case .Login:
             return ApiPaths.login
+        case .Profile:
+            return ApiPaths.profile
+        case .Banners:
+            return ApiPaths.banner
+        case .Accounts:
+            return ApiPaths.accounts
         }
     }
     
@@ -59,6 +65,8 @@ extension API:Router{
     
     var header: HTTPHeaders {
         switch self {
+        case .Login:
+            return []
         default:
             if let tokken = Global.shared.tokken{
                 return ["Authorization":"Bearer \(tokken)"]

@@ -22,7 +22,7 @@ class ChangePasswordVC: UIViewController {
     var eyecnpass = true
     var passPicker = UIPickerView()
     var accountTypes = ["A","1","B","2","C","3"]
-    var passTypes = ["X","1","Y","2","Z","3"]
+    var passTypes = ["Main","Investor"]
     var plateformTypes = ["MT4","MT5"]
     var activeTF:UITextField?
     

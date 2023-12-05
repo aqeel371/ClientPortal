@@ -111,6 +111,13 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="cellView" destination="jnp-4b-cbS" id="Q67-Mz-iF2"/>
+                <outlet property="lblAccNum" destination="Zde-nG-ToO" id="MK9-j9-CDw"/>
+                <outlet property="lblBalance" destination="gUB-5p-DB5" id="F36-bI-tBF"/>
+                <outlet property="lblDeposit" destination="hij-tH-N0C" id="2e8-PA-VK5"/>
+                <outlet property="lblEquity" destination="awd-K8-USJ" id="q8V-IY-6Ql"/>
+                <outlet property="lblLevrage" destination="U1G-DZ-LL5" id="atQ-wU-ICX"/>
+                <outlet property="lblPlateform" destination="3uG-fb-7jP" id="war-lg-kLc"/>
+                <outlet property="lblType" destination="Vdl-sk-al5" id="93V-S3-egw"/>
             </connections>
             <point key="canvasLocation" x="73.282442748091597" y="19.718309859154932"/>
         </tableViewCell>

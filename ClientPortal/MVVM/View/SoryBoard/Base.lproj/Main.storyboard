@@ -60,7 +60,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWT-5N-Qyq" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="74.333333333333314" width="313" height="40"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-RZ-3Ns">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="500652" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-RZ-3Ns">
                                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
@@ -106,7 +106,7 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-JR-pfV" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                                                 <rect key="frame" x="40" y="158.66666666666669" width="313" height="40"/>
                                                 <subviews>
-                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXz-te-C8S">
+                                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test@2022" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXz-te-C8S">
                                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
@@ -332,13 +332,13 @@
                                 <rect key="frame" x="0.0" y="60" width="393" height="792"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X6y-A9-udz">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="900"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="960"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arc" translatesAutoresizingMaskIntoConstraints="NO" id="MJ2-nP-Xl2">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="268"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bKl-Bw-w3b">
-                                                <rect key="frame" x="0.0" y="15" width="393" height="885"/>
+                                                <rect key="frame" x="0.0" y="15" width="393" height="945"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TBA-3B-t6D" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="0.0" width="24" height="24"/>
@@ -722,12 +722,9 @@
                                                         </subviews>
                                                     </stackView>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="JEY-Aa-vn2">
-                                                        <rect key="frame" x="0.0" y="414" width="393" height="140"/>
+                                                        <rect key="frame" x="0.0" y="399" width="393" height="161"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                        <constraints>
-                                                            <constraint firstAttribute="height" constant="140" id="1jX-Kp-g2n"/>
-                                                        </constraints>
-                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2N6-RP-XhC">
+                                                        <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2N6-RP-XhC">
                                                             <size key="itemSize" width="128" height="128"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -739,9 +736,12 @@
                                                             <outlet property="delegate" destination="6p6-as-yfj" id="swI-fi-Ids"/>
                                                         </connections>
                                                     </collectionView>
-                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fO5-zB-GaG">
-                                                        <rect key="frame" x="20" y="584" width="353" height="281"/>
+                                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fO5-zB-GaG">
+                                                        <rect key="frame" x="20" y="575" width="353" height="350"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="350" id="R6J-5y-LWt"/>
+                                                        </constraints>
                                                         <connections>
                                                             <outlet property="dataSource" destination="6p6-as-yfj" id="hwR-hg-R6W"/>
                                                             <outlet property="delegate" destination="6p6-as-yfj" id="lSU-Ia-e7h"/>
@@ -764,8 +764,8 @@
                                                     <constraint firstItem="RcZ-Xm-rmj" firstAttribute="top" secondItem="TBA-3B-t6D" secondAttribute="top" id="Vsf-cq-k81"/>
                                                     <constraint firstItem="lAw-25-WIx" firstAttribute="top" secondItem="98N-Pm-2dU" secondAttribute="bottom" constant="30" id="d2q-4W-jXX"/>
                                                     <constraint firstItem="fO5-zB-GaG" firstAttribute="leading" secondItem="bKl-Bw-w3b" secondAttribute="leading" constant="20" id="eCe-CC-KU2"/>
-                                                    <constraint firstItem="fO5-zB-GaG" firstAttribute="top" secondItem="JEY-Aa-vn2" secondAttribute="bottom" constant="30" id="g6O-ej-OeO"/>
-                                                    <constraint firstItem="JEY-Aa-vn2" firstAttribute="top" secondItem="Bvi-sM-sQd" secondAttribute="bottom" constant="30" id="hR0-x7-Wpm"/>
+                                                    <constraint firstItem="fO5-zB-GaG" firstAttribute="top" secondItem="JEY-Aa-vn2" secondAttribute="bottom" constant="15" id="g6O-ej-OeO"/>
+                                                    <constraint firstItem="JEY-Aa-vn2" firstAttribute="top" secondItem="Bvi-sM-sQd" secondAttribute="bottom" constant="15" id="hR0-x7-Wpm"/>
                                                     <constraint firstItem="TBA-3B-t6D" firstAttribute="top" secondItem="bKl-Bw-w3b" secondAttribute="top" id="nA6-gY-EuF"/>
                                                     <constraint firstAttribute="trailing" secondItem="RcZ-Xm-rmj" secondAttribute="trailing" constant="30" id="tpO-CK-8cw"/>
                                                     <constraint firstAttribute="trailing" secondItem="fO5-zB-GaG" secondAttribute="trailing" constant="20" id="uev-Te-r8O"/>
@@ -780,7 +780,7 @@
                                             <constraint firstAttribute="trailing" secondItem="MJ2-nP-Xl2" secondAttribute="trailing" id="7xt-43-vUR"/>
                                             <constraint firstAttribute="trailing" secondItem="bKl-Bw-w3b" secondAttribute="trailing" id="8SC-rC-o4g"/>
                                             <constraint firstAttribute="trailing" secondItem="bKl-Bw-w3b" secondAttribute="trailing" id="IgV-oL-83b"/>
-                                            <constraint firstAttribute="height" constant="900" id="NeD-D0-BRe"/>
+                                            <constraint firstAttribute="height" constant="960" id="NeD-D0-BRe"/>
                                             <constraint firstItem="MJ2-nP-Xl2" firstAttribute="top" secondItem="X6y-A9-udz" secondAttribute="top" id="Pul-Zd-nrE"/>
                                             <constraint firstItem="bKl-Bw-w3b" firstAttribute="leading" secondItem="X6y-A9-udz" secondAttribute="leading" id="fkS-Ih-Jv6"/>
                                             <constraint firstItem="bKl-Bw-w3b" firstAttribute="top" secondItem="X6y-A9-udz" secondAttribute="top" constant="15" id="jUm-Ih-l9C"/>
@@ -818,7 +818,12 @@
                     <navigationItem key="navigationItem" id="WD8-ZN-f4Y"/>
                     <connections>
                         <outlet property="dashboardTV" destination="fO5-zB-GaG" id="vKk-tD-upi"/>
+                        <outlet property="lblBalance" destination="24i-ZU-3qP" id="dd7-tz-wYx"/>
+                        <outlet property="lblDeposit" destination="1wM-pJ-hwy" id="D8e-IR-ENK"/>
+                        <outlet property="lblEquity" destination="PU4-na-s6F" id="Vxa-ih-kTp"/>
+                        <outlet property="lblWithdaw" destination="WcS-Lp-gnc" id="zgb-GF-2OS"/>
                         <outlet property="offerCV" destination="JEY-Aa-vn2" id="ieq-Ad-D1H"/>
+                        <outlet property="tfSelectAccount" destination="LOe-ab-HHX" id="rzN-XP-RlV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1of-7H-6Hb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

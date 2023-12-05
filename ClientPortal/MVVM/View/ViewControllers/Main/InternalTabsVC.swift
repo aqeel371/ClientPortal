@@ -35,7 +35,7 @@ class InternalTabsVC: UIViewController {
     var activeTF:UITextField?
     var accountPicker = UIPickerView()
     var accounts = ["A","B","C","D","E"]
-    var withdraw = ["1","2","3","4","5"]
+    var withdraw = ["Bank-Transfer","Crypto"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -11,9 +11,13 @@ class MenuAccountsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        getAccounts()
         // Do any additional setup after loading the view.
     }
+    
+    var spinner:LoadingViewNib?
+    var liveAccounts = [AccountsDatum]()
+    var demoAccounts = [AccountsDatum]()
     
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -28,6 +32,7 @@ class MenuAccountsVC: UIViewController {
     @IBAction func liveActiom(_ sender: Any) {
         let vc = ViewControllers.AccountsVC.getViewController() as AccountsVC
         vc.titleVC = "Live"
+        vc.accounts = liveAccounts
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -35,7 +40,45 @@ class MenuAccountsVC: UIViewController {
     @IBAction func demoAction(_ sender: Any) {
         let vc = ViewControllers.AccountsVC.getViewController() as AccountsVC
         vc.titleVC = "Demo"
+        vc.accounts = demoAccounts
         self.navigationController?.pushViewController(vc, animated: true)
     }
+    
+}
+
+
+extension MenuAccountsVC{
+    
+    func getAccounts(){
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .Accounts, completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let accResp:AccountsResponse = self.handleResponse(data: data as! Data){
+                    if accResp.status ?? false {
+                        if let accounts = accResp.result?.data{
+                            for acc in accounts{
+                                if acc.type == "LIVE"{
+                                    self.liveAccounts.append(acc)
+                                }else{
+                                    self.demoAccounts.append(acc)
+                                }
+                            }
+                        }
+                    }else{
+                        self.showAlert(title: "Error", message: accResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
     
 }

@@ -8,6 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */; };
+		C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9AF2B1F10C200BD405A /* LoginModel.swift */; };
+		C514D9B22B1F150800BD405A /* ProfileRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B12B1F150800BD405A /* ProfileRespose.swift */; };
+		C514D9B42B1F19A300BD405A /* BannerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B32B1F19A300BD405A /* BannerResponse.swift */; };
+		C514D9B62B1F1C6500BD405A /* ImageUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B52B1F1C6500BD405A /* ImageUtils.swift */; };
+		C514D9B92B1F1DD500BD405A /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C514D9B82B1F1DD500BD405A /* Kingfisher */; };
+		C514D9BB2B1F2F2F00BD405A /* AccountsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9BA2B1F2F2F00BD405A /* AccountsResponse.swift */; };
 		C54402232B175367008209DD /* WireTransferDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402222B175367008209DD /* WireTransferDetailsVC.swift */; };
 		C54402252B175A3D008209DD /* InstantTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402242B175A3D008209DD /* InstantTransferVC.swift */; };
 		C54402272B175C03008209DD /* PerfectMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402262B175C03008209DD /* PerfectMoneyVC.swift */; };
@@ -98,6 +104,11 @@
 		8719C42E7F2DE68B6C643F8B /* Pods-ClientPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.release.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.release.xcconfig"; sourceTree = "<group>"; };
 		A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.debug.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C514D9AF2B1F10C200BD405A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = ClientPortal/MVVM/View/Cells/Chat/LoginModel.swift; sourceTree = SOURCE_ROOT; };
+		C514D9B12B1F150800BD405A /* ProfileRespose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileRespose.swift; path = ClientPortal/MVVM/View/Cells/Chat/ProfileRespose.swift; sourceTree = SOURCE_ROOT; };
+		C514D9B32B1F19A300BD405A /* BannerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerResponse.swift; path = ClientPortal/MVVM/View/Cells/Chat/BannerResponse.swift; sourceTree = SOURCE_ROOT; };
+		C514D9B52B1F1C6500BD405A /* ImageUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUtils.swift; sourceTree = "<group>"; };
+		C514D9BA2B1F2F2F00BD405A /* AccountsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountsResponse.swift; path = ClientPortal/Misc/Utlis/AccountsResponse.swift; sourceTree = SOURCE_ROOT; };
 		C54402222B175367008209DD /* WireTransferDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WireTransferDetailsVC.swift; sourceTree = "<group>"; };
 		C54402242B175A3D008209DD /* InstantTransferVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantTransferVC.swift; sourceTree = "<group>"; };
 		C54402262B175C03008209DD /* PerfectMoneyVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerfectMoneyVC.swift; sourceTree = "<group>"; };
@@ -196,6 +207,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C514D9B92B1F1DD500BD405A /* Kingfisher in Frameworks */,
 				12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -335,6 +347,10 @@
 		F2657FBC2B14944800CDEEF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C514D9AF2B1F10C200BD405A /* LoginModel.swift */,
+				C514D9B12B1F150800BD405A /* ProfileRespose.swift */,
+				C514D9B32B1F19A300BD405A /* BannerResponse.swift */,
+				C514D9BA2B1F2F2F00BD405A /* AccountsResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -454,6 +470,7 @@
 				F2B3840C2B14966B00F4FB60 /* Global.swift */,
 				F2B3840E2B14968400F4FB60 /* Extension.swift */,
 				C5FF1CA72B15C5A7000CFA0F /* Enum.swift */,
+				C514D9B52B1F1C6500BD405A /* ImageUtils.swift */,
 			);
 			path = Utlis;
 			sourceTree = "<group>";
@@ -498,6 +515,9 @@
 			dependencies = (
 			);
 			name = ClientPortal;
+			packageProductDependencies = (
+				C514D9B82B1F1DD500BD405A /* Kingfisher */,
+			);
 			productName = ClientPortal;
 			productReference = F2657FA42B1491EB00CDEEF3 /* ClientPortal.app */;
 			productType = "com.apple.product-type.application";
@@ -526,6 +546,9 @@
 				Base,
 			);
 			mainGroup = F2657F9B2B1491EB00CDEEF3;
+			packageReferences = (
+				C514D9B72B1F1DD500BD405A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = F2657FA52B1491EB00CDEEF3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -635,6 +658,7 @@
 				C54402232B175367008209DD /* WireTransferDetailsVC.swift in Sources */,
 				C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */,
 				C55F0E3B2B18687D004EE83E /* PlateformCVC.swift in Sources */,
+				C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
@@ -645,6 +669,7 @@
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
 				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
 				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
+				C514D9B22B1F150800BD405A /* ProfileRespose.swift in Sources */,
 				C58305DF2B1735680084AD07 /* TransferTVC.swift in Sources */,
 				C55F0E5E2B18CEEE004EE83E /* SupportVC.swift in Sources */,
 				C58E8B252B1779E300E7F3D3 /* MenuTrainingVC.swift in Sources */,
@@ -658,6 +683,7 @@
 				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
 				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */,
+				C514D9B42B1F19A300BD405A /* BannerResponse.swift in Sources */,
 				C55F0E502B18B6C5004EE83E /* UserLogsVC.swift in Sources */,
 				C55F0E3E2B187756004EE83E /* BankAccountsVC.swift in Sources */,
 				C55F0E5B2B18C4AA004EE83E /* TrainingCVC.swift in Sources */,
@@ -672,9 +698,11 @@
 				C55F0E562B18C021004EE83E /* UserDocsVC.swift in Sources */,
 				C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */,
 				C58E8B2B2B177D7300E7F3D3 /* TradeMTView.swift in Sources */,
+				C514D9BB2B1F2F2F00BD405A /* AccountsResponse.swift in Sources */,
 				C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */,
 				C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */,
 				C58305DC2B172F9B0084AD07 /* DepositVC.swift in Sources */,
+				C514D9B62B1F1C6500BD405A /* ImageUtils.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -903,6 +931,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C514D9B72B1F1DD500BD405A /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C514D9B82B1F1DD500BD405A /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C514D9B72B1F1DD500BD405A /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F2657F9C2B1491EB00CDEEF3 /* Project object */;
 }

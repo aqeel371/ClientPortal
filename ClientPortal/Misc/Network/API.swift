@@ -46,6 +46,9 @@ prefix func -(value : String) -> String{
 //MARK: - API_BASE
 enum API{
     case Login(params:OptionalDictionary)
+    case Profile
+    case Banners
+    case Accounts
     
     static func mapKeysAndValues(keys : [String]?, values : [AnyObject]?) -> [String : AnyObject]? {
         guard let tempValues = values,let tempKeys = keys else { return nil}

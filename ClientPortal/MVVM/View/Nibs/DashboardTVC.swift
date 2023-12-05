@@ -10,7 +10,13 @@ import UIKit
 class DashboardTVC: UITableViewCell {
 
     @IBOutlet weak var cellView: UIViewX!
-    
+    @IBOutlet weak var lblAccNum: UILabel!
+    @IBOutlet weak var lblPlateform: UILabel!
+    @IBOutlet weak var lblType: UILabel!
+    @IBOutlet weak var lblBalance: UILabel!
+    @IBOutlet weak var lblEquity: UILabel!
+    @IBOutlet weak var lblLevrage: UILabel!
+    @IBOutlet weak var lblDeposit: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,6 +27,16 @@ class DashboardTVC: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         // Configure the view for the selected state
+    }
+    
+    func populate(data:AccountsDatum){
+        lblAccNum.text = "\(data.login ?? 0)"
+        lblPlateform.text = data.platform ?? ""
+        lblType.text = data.type ?? ""
+        lblBalance.text = "$\(data.state?.margin?.balance ?? 0)"
+        lblEquity.text = "$\(data.state?.margin?.equity ?? 0)"
+        lblLevrage.text = "$\(data.state?.margin?.leverage ?? 0)"
+        lblDeposit.text = "Deposit"
     }
     
 }

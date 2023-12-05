@@ -67,7 +67,10 @@ class NetworkClient{
                 (Response:AFDataResponse<Any>) in
                 switch(Response.result){
                 case .success(let data):
-                    _ = self.jsonToString(json: data as AnyObject,api: api)
+                    let res = self.jsonToString(json: data as AnyObject,api: api)
+                    print("------Response------")
+                    print(res!)
+                    print("------End Response------")
                     success(Response.data as AnyObject)
                 case .failure(let error):
                     failure(error as NSError)
@@ -82,7 +85,7 @@ class NetworkClient{
             let request = AF.request(url, method: method, parameters: params, encoding: encoding, headers: header).responseString(completionHandler: {res in
                 switch (res.result){
                 case .success(let data):
-//                    _ = self.jsonToString(json: data as AnyObject,api: api)
+                    _ = self.jsonToString(json: data as AnyObject,api: api)
                     if res.response?.statusCode == 200{
                         success(data as AnyObject)
                     } else {

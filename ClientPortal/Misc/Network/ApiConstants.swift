@@ -7,12 +7,16 @@
 
 import Foundation
 internal struct ApiConstants{
-    static let base_url = ""
+    static let base_url = "https://dev-staging.godofx.com/api/v1/cp/"
+    static let imageURL = "https://dev-staging.godofx.com/"
 }
 internal struct ApiPaths {
     
     //MARK: - Aries Map
-    static let login = ""
+    static let login = "auth/login"
+    static let profile = "auth/profile"
+    static let banner = "banners"
+    static let accounts = "accounts"
 }
 
 extension Encodable {

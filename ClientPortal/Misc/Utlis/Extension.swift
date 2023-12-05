@@ -106,3 +106,10 @@ extension UIColor {
         return UIColor(named: "Red700") ?? .blue
     }
 }
+
+extension UIImageView{
+    var load: ImageUtil {
+        get { return ImageUtil(image: self) }
+        set { }
+    }
+}
