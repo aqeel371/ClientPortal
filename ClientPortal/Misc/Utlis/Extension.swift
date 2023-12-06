@@ -24,7 +24,7 @@ extension UIViewController{
     
     func showSpinner() -> LoadingViewNib{
         let view = LoadingViewNib.instanceFromNib()
-
+        
         view.showSpinner()
         if let window = UIApplication.shared.windows.first(where: { $0.isKeyWindow }) {
             window.addSubview(view)
@@ -107,9 +107,28 @@ extension UIColor {
     }
 }
 
+//MARK: - UIImageView
 extension UIImageView{
     var load: ImageUtil {
         get { return ImageUtil(image: self) }
         set { }
     }
+}
+
+//MARK: - String
+extension String{
+    
+    func convertToFormattedDateString() -> String {
+        guard let timestamp = TimeInterval(self) else {
+            return ""
+        }
+        
+        let date = Date(timeIntervalSince1970: timestamp)
+        
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "dd/MM/yyyy HH:mm"
+        
+        return dateFormatter.string(from: date)
+    }
+    
 }

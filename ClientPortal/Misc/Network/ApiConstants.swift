@@ -17,6 +17,10 @@ internal struct ApiPaths {
     static let profile = "auth/profile"
     static let banner = "banners"
     static let accounts = "accounts"
+    static let changePass = "/change-password"
+    static let close = "/close-positions"
+    static let open = "/open-positions"
+    
 }
 
 extension Encodable {

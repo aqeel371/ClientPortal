@@ -49,6 +49,9 @@ enum API{
     case Profile
     case Banners
     case Accounts
+    case AccountChnagePass(id:Int,parmas:OptionalDictionary)
+    case AccountOpenPosition(id:Int)
+    case AccountClosePosition(id:Int)
     
     static func mapKeysAndValues(keys : [String]?, values : [AnyObject]?) -> [String : AnyObject]? {
         guard let tempValues = values,let tempKeys = keys else { return nil}

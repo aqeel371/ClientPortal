@@ -15,9 +15,12 @@ class MenuAccountsVC: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    //MARK: - Variables
     var spinner:LoadingViewNib?
     var liveAccounts = [AccountsDatum]()
     var demoAccounts = [AccountsDatum]()
+    
+    //MARK: - IBACtions
     
     @IBAction func backAction(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
@@ -44,9 +47,17 @@ class MenuAccountsVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    @IBAction func actionChangePass(_ sender: Any) {
+        let vc = ViewControllers.ChangePasswordVC.getViewController() as ChangePasswordVC
+        vc.accountTypes = self.liveAccounts
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    
 }
 
-
+//MARK: - API
 extension MenuAccountsVC{
     
     func getAccounts(){

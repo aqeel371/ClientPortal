@@ -21,10 +21,12 @@ class ChangePasswordVC: UIViewController {
     var eyePass = true
     var eyecnpass = true
     var passPicker = UIPickerView()
-    var accountTypes = ["A","1","B","2","C","3"]
-    var passTypes = ["Main","Investor"]
+    var accountTypes = [AccountsDatum]()
+    var passTypes = ["main","investor"]
     var plateformTypes = ["MT4","MT5"]
     var activeTF:UITextField?
+    var accID:Int?
+    var spinner:LoadingViewNib?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +37,10 @@ class ChangePasswordVC: UIViewController {
         // Enable swipe to back
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.isHidden = true
+        
+        tfAccounttype.text = "\(accountTypes[0].login ?? 0)"
+        self.accID = accountTypes[0].id ?? 0
+        
     }
     
     //MARK: - IBActions
@@ -64,9 +70,8 @@ class ChangePasswordVC: UIViewController {
     }
     
     @IBAction func profileAction(_ sender: Any) {
-//        let vc = ViewControllers.ProfileVC.getViewController() as ProfileVC
-//        self.navigationController?.pushViewController(vc, animated: true)
-        self.navigationController?.popViewController(animated: true)
+        let vc = ViewControllers.ProfileVC.getViewController() as ProfileVC
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     
@@ -75,10 +80,25 @@ class ChangePasswordVC: UIViewController {
     }
     
     @IBAction func changePassAction(_ sender: Any) {
-        
-        
-        
-        self.navigationController?.popViewController(animated: true)
+        if let accType = tfAccounttype.text, let passType = tfPassType.text, let newPass = tfPassword.text , let cnPass = tfConfirmPass.text, let plateform = tfPlateformType.text{
+            
+            if accType.isEmpty{
+                self.showAlert(title: "Error", message: "Select Your Account..!", actions: nil)
+            }else if passType.isEmpty{
+                self.showAlert(title: "Error", message: "Select Password Type..!", actions: nil)
+            }else if newPass.isEmpty || newPass.count < 8{
+                self.showAlert(title: "Error", message: "Enter a Valid Pass..!", actions: nil)
+            }else if cnPass.isEmpty || newPass != cnPass{
+                self.showAlert(title: "Error", message: "Password Missmatch..!", actions: nil)
+            }else if plateform.isEmpty{
+                self.showAlert(title: "Error", message: "Select Your PLateform..!", actions: nil)
+            }else{
+                let acc = AccChangePassModel(newPassword: newPass,confirmNewPassword: cnPass,type: passType)
+                
+                changePass(data: acc)
+                
+            }
+        }
     }
 }
 
@@ -119,7 +139,7 @@ extension ChangePasswordVC: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if activeTF == tfAccounttype{
-            return accountTypes[row]
+            return "\(accountTypes[row].login ?? 1)"
         }else if activeTF == tfPassType{
             return passTypes[row]
         }else{
@@ -128,7 +148,8 @@ extension ChangePasswordVC: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if activeTF == tfAccounttype{
-            tfAccounttype.text = accountTypes[row]
+            tfAccounttype.text = "\(accountTypes[row].login ?? 1)"
+            self.accID = accountTypes[row].id ?? 0
         }else if activeTF == tfPassType{
             tfPassType.text = passTypes[row]
         }else{
@@ -137,3 +158,35 @@ extension ChangePasswordVC: UIPickerViewDelegate, UIPickerViewDataSource{
     }
 }
 
+//MARK: - API
+
+extension ChangePasswordVC{
+    
+    func changePass(data:AccChangePassModel){
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .AccountChnagePass(id: self.accID ?? 0, parmas: data.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let accResp:ChangePassResponse = self.handleResponse(data: data as! Data){
+                    if accResp.status ?? false {
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        self.showAlert(title: "Success", message: "Password Change Succesfully...!", actions: [okAction])
+                    }else{
+                        self.showAlert(title: "Error", message: accResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+            
+        })
+        
+    }
+    
+}

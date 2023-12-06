@@ -191,6 +191,14 @@
                 <constraint firstAttribute="trailing" secondItem="ppD-OQ-Nkl" secondAttribute="trailing" id="meb-XN-PiE"/>
             </constraints>
             <size key="customSize" width="295" height="223"/>
+            <connections>
+                <outlet property="balanceLbl" destination="2YC-Ih-ID6" id="mSY-uF-DD9"/>
+                <outlet property="lblAccType" destination="aSl-bq-sxt" id="7KP-tp-Y0b"/>
+                <outlet property="lblCurrency" destination="E5N-c4-KMz" id="U3L-rJ-kRB"/>
+                <outlet property="lblNumber" destination="fu1-sN-5vG" id="FmD-bQ-A7m"/>
+                <outlet property="lblType" destination="zGC-0d-Vvl" id="mx7-lC-VLc"/>
+                <outlet property="plateFormImage" destination="Unp-v5-0FC" id="kZv-Cg-ZDz"/>
+            </connections>
             <point key="canvasLocation" x="271.75572519083971" y="36.267605633802816"/>
         </collectionViewCell>
     </objects>

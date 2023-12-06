@@ -41,8 +41,8 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func changePassAction(_ sender: Any) {
-        let vc = ViewControllers.ChangePasswordVC.getViewController()
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = ViewControllers.ChangePasswordVC.getViewController()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func supportAction(_ sender: Any) {

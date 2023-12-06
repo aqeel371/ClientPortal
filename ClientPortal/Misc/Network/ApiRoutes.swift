@@ -26,6 +26,12 @@ extension API:Router{
             return ApiPaths.banner
         case .Accounts:
             return ApiPaths.accounts
+        case .AccountChnagePass(let id, _):
+            return ApiPaths.accounts + "/\(id)" + ApiPaths.changePass
+        case .AccountOpenPosition(let id):
+            return ApiPaths.accounts + "/\(id)" + ApiPaths.open
+        case .AccountClosePosition(let id):
+            return ApiPaths.accounts + "/\(id)" + ApiPaths.close
         }
     }
     
@@ -40,6 +46,8 @@ extension API:Router{
         switch self {
         case .Login:
             return .post
+        case .AccountChnagePass:
+            return .post
         default:
             return .get
         }
@@ -49,6 +57,8 @@ extension API:Router{
         switch self{
         case .Login:
             return JSONEncoding.default
+        case .AccountChnagePass:
+            return JSONEncoding.default
         default:
             return URLEncoding.default
         }
@@ -57,6 +67,8 @@ extension API:Router{
     func jsonParams() -> OptionalDictionary{
         switch self{
         case .Login(let params):
+            return params
+        case .AccountChnagePass(_ ,let params):
             return params
         default:
             return nil
@@ -78,6 +90,8 @@ extension API:Router{
     var parameters: OptionalDictionary{
         switch self{
         case .Login:
+            return jsonParams()
+        case .AccountChnagePass:
             return jsonParams()
         default:
             return formateParams()
