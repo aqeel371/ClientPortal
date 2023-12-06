@@ -131,4 +131,42 @@ extension String{
         return dateFormatter.string(from: date)
     }
     
+    func formattedDate() -> String {
+        let inputDateFormatter = DateFormatter()
+        inputDateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        inputDateFormatter.timeZone = TimeZone(identifier: "UTC")
+        
+        if let inputDate = inputDateFormatter.date(from: self) {
+            let outputDateFormatter = DateFormatter()
+            outputDateFormatter.dateFormat = "EEE, d MMM yyyy"
+            outputDateFormatter.locale = Locale(identifier: "en_US")
+            return outputDateFormatter.string(from: inputDate)
+        } else {
+            return ""
+        }
+    }
+    
+    func formattedTime() -> String {
+        let inputDateFormatter = DateFormatter()
+        inputDateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+        inputDateFormatter.timeZone = TimeZone(identifier: "UTC")
+        
+        if let inputDate = inputDateFormatter.date(from: self) {
+            let outputTimeFormatter = DateFormatter()
+            outputTimeFormatter.dateFormat = "h:mm a"
+            outputTimeFormatter.locale = Locale(identifier: "en_US")
+            return outputTimeFormatter.string(from: inputDate)
+        } else {
+            return ""
+        }
+    }
+    
+    
+}
+
+
+extension Date {
+    func oneMonthAgo() -> Date {
+        return Calendar.current.date(byAdding: .month, value: -1, to: self) ?? self
+    }
 }

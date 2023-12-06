@@ -52,6 +52,10 @@ enum API{
     case AccountChnagePass(id:Int,parmas:OptionalDictionary)
     case AccountOpenPosition(id:Int)
     case AccountClosePosition(id:Int)
+    case GetBanks
+    case GetWallets
+    case GetDocs
+    case Transaction(type:String,start:String,end:String)
     
     static func mapKeysAndValues(keys : [String]?, values : [AnyObject]?) -> [String : AnyObject]? {
         guard let tempValues = values,let tempKeys = keys else { return nil}
@@ -66,13 +70,23 @@ enum API{
 extension API{
     func formateParams() -> OptionalDictionary{
         switch self {
+        case .Transaction(let type,let start,let end):
+            return API.mapKeysAndValues(keys: ApiParameters.Transaction.GetTransaction, values: [¿type,¿start,¿end])
         default:
             return nil
         }
     }
 }
+
+
 internal struct ApiParameters{
-    
+    struct Transaction {
+        static let GetTransaction = [
+            GetTransactionKey.type,
+            GetTransactionKey.start,
+            GetTransactionKey.end
+        ]
+    }
 }
 
 //MARK: - Network

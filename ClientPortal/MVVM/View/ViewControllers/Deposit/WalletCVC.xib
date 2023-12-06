@@ -151,6 +151,12 @@
                 <constraint firstAttribute="trailing" secondItem="6Cc-E2-1hT" secondAttribute="trailing" id="zmg-Zi-9IN"/>
             </constraints>
             <size key="customSize" width="318" height="161"/>
+            <connections>
+                <outlet property="lblAddress" destination="hxI-G1-9Qv" id="nCa-8N-4vz"/>
+                <outlet property="lblCurrency" destination="vNh-xj-g1f" id="NEQ-oT-DY7"/>
+                <outlet property="lblID" destination="Ckx-VT-ToC" id="TYj-HG-t3T"/>
+                <outlet property="lblNetwork" destination="21o-gY-IDX" id="0xj-0U-c1a"/>
+            </connections>
             <point key="canvasLocation" x="198.47328244274809" y="58.802816901408455"/>
         </collectionViewCell>
     </objects>

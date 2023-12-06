@@ -224,6 +224,16 @@
                 <constraint firstItem="hcC-Fj-KmK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="kg3-zr-77S"/>
             </constraints>
             <size key="customSize" width="370" height="286"/>
+            <connections>
+                <outlet property="lblAccNum" destination="eao-FN-SVm" id="Ucb-bK-2d7"/>
+                <outlet property="lblAddress" destination="MWj-nv-kCZ" id="p2m-0m-FhV"/>
+                <outlet property="lblBenfAddress" destination="Ae1-Du-gdE" id="owy-gZ-Qud"/>
+                <outlet property="lblBenfName" destination="AwZ-kj-sa4" id="5t2-XL-d7M"/>
+                <outlet property="lblID" destination="ZMI-JJ-V2z" id="VQc-Jg-CT6"/>
+                <outlet property="lblIban" destination="f2r-F2-xmm" id="2ZU-8I-miz"/>
+                <outlet property="lblName" destination="aVf-UX-1Zm" id="Hbj-NM-Se0"/>
+                <outlet property="lblSwiftCode" destination="oWz-mH-Ydv" id="Xtw-58-FDS"/>
+            </connections>
             <point key="canvasLocation" x="-6.1068702290076331" y="18.30985915492958"/>
         </collectionViewCell>
     </objects>

@@ -32,6 +32,14 @@ extension API:Router{
             return ApiPaths.accounts + "/\(id)" + ApiPaths.open
         case .AccountClosePosition(let id):
             return ApiPaths.accounts + "/\(id)" + ApiPaths.close
+        case .GetBanks:
+            return ApiPaths.banks
+        case .GetWallets:
+            return ApiPaths.wallets
+        case .GetDocs:
+            return ApiPaths.docs
+        case .Transaction:
+            return ApiPaths.transaction
         }
     }
     

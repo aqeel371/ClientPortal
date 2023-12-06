@@ -193,6 +193,13 @@
             </constraints>
             <size key="customSize" width="370" height="183"/>
             <connections>
+                <outlet property="lblAccount" destination="QE5-TJ-zst" id="eWw-Js-XAM"/>
+                <outlet property="lblAmount" destination="o1f-jW-Rcg" id="zZe-HA-lCX"/>
+                <outlet property="lblDate" destination="STg-3C-tRi" id="3tc-Aj-9fD"/>
+                <outlet property="lblGateway" destination="LPC-eV-vfv" id="azp-50-uRg"/>
+                <outlet property="lblID" destination="uvv-cX-lqR" id="Nxh-Cf-Dte"/>
+                <outlet property="lblTime" destination="tMc-nG-6a6" id="8mc-4p-7fa"/>
+                <outlet property="lblType" destination="fwW-nW-tsS" id="f0R-0L-UXM"/>
                 <outlet property="statusLabel" destination="aBw-QL-WBS" id="aGb-bU-a7R"/>
                 <outlet property="statusView" destination="rQq-OF-HFJ" id="L2D-vj-GL2"/>
             </connections>

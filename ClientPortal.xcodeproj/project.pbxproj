@@ -62,6 +62,7 @@
 		C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */; };
 		C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */; };
 		C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */; };
+		C5A2C1D42B20C83800154DCE /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2C1D32B20C83800154DCE /* TransactionModel.swift */; };
 		C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207262B1621B300AF337A /* ChangePasswordVC.swift */; };
 		C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207282B162DF100AF337A /* InternalTabsVC.swift */; };
 		C5D435D82B20563D003C90B8 /* AccChangePassModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435D72B20563D003C90B8 /* AccChangePassModel.swift */; };
@@ -70,6 +71,11 @@
 		C5D435E32B206D33003C90B8 /* PositionHeaderCRV.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435E12B206D33003C90B8 /* PositionHeaderCRV.swift */; };
 		C5D435E42B206D33003C90B8 /* PositionHeaderCRV.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D435E22B206D33003C90B8 /* PositionHeaderCRV.xib */; };
 		C5D435E62B207368003C90B8 /* PositionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435E52B207368003C90B8 /* PositionResponse.swift */; };
+		C5D435E82B208C86003C90B8 /* BanksResonse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435E72B208C86003C90B8 /* BanksResonse.swift */; };
+		C5D435EA2B208F86003C90B8 /* WalletsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435E92B208F86003C90B8 /* WalletsResponse.swift */; };
+		C5D435ED2B20B4ED003C90B8 /* DocumentsCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435EB2B20B4ED003C90B8 /* DocumentsCVC.swift */; };
+		C5D435EE2B20B4ED003C90B8 /* DocumentsCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5D435EC2B20B4ED003C90B8 /* DocumentsCVC.xib */; };
+		C5D435F02B20B86F003C90B8 /* DocumentsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5D435EF2B20B86F003C90B8 /* DocumentsResponse.swift */; };
 		C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA52B15C574000CFA0F /* SigninVC.swift */; };
 		C5FF1CA82B15C5A7000CFA0F /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA72B15C5A7000CFA0F /* Enum.swift */; };
 		C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */; };
@@ -163,6 +169,7 @@
 		C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTardesVC.swift; sourceTree = "<group>"; };
 		C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradesCVC.swift; path = ClientPortal/MVVM/View/TradesCVC.swift; sourceTree = SOURCE_ROOT; };
 		C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TradesCVC.xib; path = ClientPortal/MVVM/View/TradesCVC.xib; sourceTree = SOURCE_ROOT; };
+		C5A2C1D32B20C83800154DCE /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionModel.swift; path = ClientPortal/MVVM/View/Cells/TransactionModel.swift; sourceTree = SOURCE_ROOT; };
 		C5C207262B1621B300AF337A /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		C5C207282B162DF100AF337A /* InternalTabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTabsVC.swift; sourceTree = "<group>"; };
 		C5D435D72B20563D003C90B8 /* AccChangePassModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccChangePassModel.swift; path = ClientPortal/Misc/Utlis/AccChangePassModel.swift; sourceTree = SOURCE_ROOT; };
@@ -171,6 +178,11 @@
 		C5D435E12B206D33003C90B8 /* PositionHeaderCRV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionHeaderCRV.swift; sourceTree = "<group>"; };
 		C5D435E22B206D33003C90B8 /* PositionHeaderCRV.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PositionHeaderCRV.xib; sourceTree = "<group>"; };
 		C5D435E52B207368003C90B8 /* PositionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PositionResponse.swift; path = ClientPortal/MVVM/View/Nibs/PositionResponse.swift; sourceTree = SOURCE_ROOT; };
+		C5D435E72B208C86003C90B8 /* BanksResonse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BanksResonse.swift; path = ClientPortal/MVVM/View/Nibs/BanksResonse.swift; sourceTree = SOURCE_ROOT; };
+		C5D435E92B208F86003C90B8 /* WalletsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletsResponse.swift; path = ClientPortal/MVVM/View/Nibs/WalletsResponse.swift; sourceTree = SOURCE_ROOT; };
+		C5D435EB2B20B4ED003C90B8 /* DocumentsCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsCVC.swift; sourceTree = "<group>"; };
+		C5D435EC2B20B4ED003C90B8 /* DocumentsCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DocumentsCVC.xib; sourceTree = "<group>"; };
+		C5D435EF2B20B86F003C90B8 /* DocumentsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DocumentsResponse.swift; path = ClientPortal/MVVM/View/Cells/DocumentsResponse.swift; sourceTree = SOURCE_ROOT; };
 		C5FF1CA52B15C574000CFA0F /* SigninVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninVC.swift; sourceTree = "<group>"; };
 		C5FF1CA72B15C5A7000CFA0F /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 		C5FF1CA92B15C7AF000CFA0F /* UITextFieldX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldX.swift; sourceTree = "<group>"; };
@@ -365,6 +377,10 @@
 				C514D9BA2B1F2F2F00BD405A /* AccountsResponse.swift */,
 				C5D435D72B20563D003C90B8 /* AccChangePassModel.swift */,
 				C5D435E52B207368003C90B8 /* PositionResponse.swift */,
+				C5D435E72B208C86003C90B8 /* BanksResonse.swift */,
+				C5D435E92B208F86003C90B8 /* WalletsResponse.swift */,
+				C5D435EF2B20B86F003C90B8 /* DocumentsResponse.swift */,
+				C5A2C1D32B20C83800154DCE /* TransactionModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -437,6 +453,8 @@
 				C55F0E5A2B18C4AA004EE83E /* TrainingCVC.xib */,
 				C5D435D92B206902003C90B8 /* TradesDetailCVC.swift */,
 				C5D435DA2B206902003C90B8 /* TradesDetailCVC.xib */,
+				C5D435EB2B20B4ED003C90B8 /* DocumentsCVC.swift */,
+				C5D435EC2B20B4ED003C90B8 /* DocumentsCVC.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -596,6 +614,7 @@
 				C55F0E542B18B774004EE83E /* LogsCVC.xib in Resources */,
 				C55F0E5C2B18C4AA004EE83E /* TrainingCVC.xib in Resources */,
 				F2657FAF2B1491EB00CDEEF3 /* Main.storyboard in Resources */,
+				C5D435EE2B20B4ED003C90B8 /* DocumentsCVC.xib in Resources */,
 				C5D435DC2B206902003C90B8 /* TradesDetailCVC.xib in Resources */,
 				C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */,
 				C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */,
@@ -659,6 +678,7 @@
 				F2B384012B14959500F4FB60 /* ApiConstants.swift in Sources */,
 				F253EE562B14BF71006E72B7 /* DashboardViewController.swift in Sources */,
 				C5FF1CC42B160EFC000CFA0F /* AccountsCVC.swift in Sources */,
+				C5D435F02B20B86F003C90B8 /* DocumentsResponse.swift in Sources */,
 				C58305E42B174E1A0084AD07 /* CryptoDetailsVC.swift in Sources */,
 				F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */,
 				F2B384032B1495BC00F4FB60 /* ApiManager.swift in Sources */,
@@ -683,6 +703,8 @@
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
 				C55F0E532B18B774004EE83E /* LogsCVC.swift in Sources */,
+				C5D435ED2B20B4ED003C90B8 /* DocumentsCVC.swift in Sources */,
+				C5D435E82B208C86003C90B8 /* BanksResonse.swift in Sources */,
 				C55F0E662B18D287004EE83E /* OtherChatTVC.swift in Sources */,
 				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
 				C55F0E462B188403004EE83E /* ReportsVC.swift in Sources */,
@@ -701,6 +723,7 @@
 				C58E8B232B17793400E7F3D3 /* MenuTransactionVC.swift in Sources */,
 				C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */,
 				C55F0E582B18C394004EE83E /* TrainingDetailsVC.swift in Sources */,
+				C5A2C1D42B20C83800154DCE /* TransactionModel.swift in Sources */,
 				C55F0E622B18D276004EE83E /* MyChatTVC.swift in Sources */,
 				C55F0E4E2B18B291004EE83E /* TradeDetailsVC.swift in Sources */,
 				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
@@ -711,6 +734,7 @@
 				C55F0E3E2B187756004EE83E /* BankAccountsVC.swift in Sources */,
 				C55F0E5B2B18C4AA004EE83E /* TrainingCVC.swift in Sources */,
 				C58E8B272B177A2700E7F3D3 /* MenuProfileVC.swift in Sources */,
+				C5D435EA2B208F86003C90B8 /* WalletsResponse.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,

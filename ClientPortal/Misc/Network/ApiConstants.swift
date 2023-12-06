@@ -20,7 +20,17 @@ internal struct ApiPaths {
     static let changePass = "/change-password"
     static let close = "/close-positions"
     static let open = "/open-positions"
+    static let banks = "bank-accounts"
+    static let wallets = "wallets"
+    static let docs = "documents"
+    static let transaction = "transactions"
     
+}
+
+internal struct GetTransactionKey{
+    static let type = "type"
+    static let start = "dateFrom"
+    static let end = "dateTo"
 }
 
 extension Encodable {
