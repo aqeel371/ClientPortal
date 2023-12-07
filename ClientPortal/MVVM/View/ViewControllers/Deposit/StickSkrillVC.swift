@@ -15,9 +15,13 @@ class StickSkrillVC: UIViewController {
     @IBOutlet weak var tvNotes: UITextView!
     
     //MARK: - Variables
+    var spinner :LoadingViewNib?
     var accountPicker = UIPickerView()
-    var accountTypes = ["A","1","B","2","C","3"]
+    var accountTypes = [AccountsDatum]()
+    var accID = 0
     var type:TransferType?
+    var gateway = ""
+    var currency = "AED"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +31,7 @@ class StickSkrillVC: UIViewController {
     
 
     @IBAction func depositAction(_ sender: Any) {
-        if let account = tfTradingAccount.text, let amount = tfAmount.text{
+        if let account = tfTradingAccount.text, let amount = tfAmount.text, let notes = tvNotes.text{
             
             if account.isEmpty{
                 self.showAlert(title: "Error", message: "Select account..!", actions: nil)
@@ -35,7 +39,8 @@ class StickSkrillVC: UIViewController {
                 self.showAlert(title: "Error", message: "Enter Amount..!", actions: nil)
             }else{
                 
-                self.navigationController?.popViewController(animated: true)
+                let interPay = PayModel(accountId: accID,gateway: gateway,note: notes,amount: Int(amount), currency: currency)
+                stickSkrillPay(pay: interPay)
                 
             }
             
@@ -86,13 +91,49 @@ extension StickSkrillVC: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return accountTypes[row]
+        return (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
     }
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        tfTradingAccount.text = accountTypes[row]
+        tfTradingAccount.text = (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
+        accID = accountTypes[row].id ?? 0
     }
     
     
+    
+}
+
+
+//MARK: - API
+
+extension StickSkrillVC{
+    
+    func stickSkrillPay(pay:PayModel){
+        spinner = self.showSpinner()
+        
+        ApiManager.shared.request(with: .Pay(params: pay.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let payResp:PayResponse = self.handleResponse(data: data as! Data){
+                    if payResp.status ?? false {
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+                    }else{
+                        self.showAlert(title: "Error", message: payResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+        
+    }
     
 }

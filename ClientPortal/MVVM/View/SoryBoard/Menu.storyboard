@@ -1635,9 +1635,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iEZ-g4-wRG">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                 <color key="backgroundColor" name="ColorPrimary"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="cKk-QZ-Raw"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="92J-jP-CMv">
                                 <rect key="frame" x="0.0" y="60" width="393" height="758"/>
@@ -1762,6 +1759,7 @@
                             <constraint firstItem="92J-jP-CMv" firstAttribute="leading" secondItem="dJx-y4-wwf" secondAttribute="leading" id="91z-8u-r3i"/>
                             <constraint firstItem="92J-jP-CMv" firstAttribute="top" secondItem="iEZ-g4-wRG" secondAttribute="bottom" id="DjW-On-qas"/>
                             <constraint firstItem="dJx-y4-wwf" firstAttribute="bottom" secondItem="92J-jP-CMv" secondAttribute="bottom" id="Fob-y1-o8m"/>
+                            <constraint firstItem="iEZ-g4-wRG" firstAttribute="height" secondItem="ADy-HL-8t1" secondAttribute="height" multiplier="0.0704225" id="MtV-fu-Thf"/>
                             <constraint firstItem="iEZ-g4-wRG" firstAttribute="trailing" secondItem="dJx-y4-wwf" secondAttribute="trailing" id="RET-nz-bop"/>
                             <constraint firstItem="iEZ-g4-wRG" firstAttribute="leading" secondItem="dJx-y4-wwf" secondAttribute="leading" id="VLL-xc-hgJ"/>
                             <constraint firstItem="iEZ-g4-wRG" firstAttribute="top" secondItem="ADy-HL-8t1" secondAttribute="top" id="YQm-e7-al5"/>
@@ -1906,6 +1904,7 @@
         <!--WalletsVC-->
         <scene sceneID="3mt-ud-FfT">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jFM-qf-dBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="WalletsVC" id="HpS-3N-N9V" customClass="WalletsVC" customModule="ClientPortal" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gdQ-X2-PlA">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -1914,9 +1913,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DAK-da-Mdj">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                 <color key="backgroundColor" name="ColorPrimary"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="3hT-y0-T6Q"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Ei-YS-O7z">
                                 <rect key="frame" x="0.0" y="60" width="393" height="758"/>
@@ -2040,6 +2036,7 @@
                         <constraints>
                             <constraint firstItem="1eO-tD-mXE" firstAttribute="bottom" secondItem="7Ei-YS-O7z" secondAttribute="bottom" id="2f2-LW-QaY"/>
                             <constraint firstItem="7Ei-YS-O7z" firstAttribute="top" secondItem="DAK-da-Mdj" secondAttribute="bottom" id="5WU-tO-DUu"/>
+                            <constraint firstItem="DAK-da-Mdj" firstAttribute="height" secondItem="gdQ-X2-PlA" secondAttribute="height" multiplier="0.0704225" id="9RO-kH-Qmc"/>
                             <constraint firstItem="7Ei-YS-O7z" firstAttribute="leading" secondItem="1eO-tD-mXE" secondAttribute="leading" id="QvB-5M-o0I"/>
                             <constraint firstItem="7Ei-YS-O7z" firstAttribute="trailing" secondItem="1eO-tD-mXE" secondAttribute="trailing" id="Sen-qb-R2m"/>
                             <constraint firstItem="DAK-da-Mdj" firstAttribute="trailing" secondItem="1eO-tD-mXE" secondAttribute="trailing" id="WBT-Xi-Cfe"/>
@@ -2051,7 +2048,6 @@
                         <outlet property="walletCV" destination="NW4-i3-Qau" id="q86-Jv-lvo"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jFM-qf-dBD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3553" y="729"/>
         </scene>
@@ -2697,9 +2693,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="geQ-0J-S28">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                 <color key="backgroundColor" name="ColorPrimary"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="VTd-5Q-Lz2"/>
-                                </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gkz-kE-oHH">
                                 <rect key="frame" x="0.0" y="60" width="393" height="792"/>
@@ -3120,6 +3113,7 @@
                         <constraints>
                             <constraint firstItem="geQ-0J-S28" firstAttribute="leading" secondItem="iTi-fv-VwT" secondAttribute="leading" id="3Pm-Cg-G7C"/>
                             <constraint firstAttribute="bottom" secondItem="gkz-kE-oHH" secondAttribute="bottom" id="Alv-Kg-W4W"/>
+                            <constraint firstItem="geQ-0J-S28" firstAttribute="height" secondItem="IYh-Xu-zc0" secondAttribute="height" multiplier="0.0704225" id="BbA-Rl-mgx"/>
                             <constraint firstItem="gkz-kE-oHH" firstAttribute="top" secondItem="geQ-0J-S28" secondAttribute="bottom" id="JVg-0c-ClW"/>
                             <constraint firstItem="gkz-kE-oHH" firstAttribute="leading" secondItem="iTi-fv-VwT" secondAttribute="leading" id="Quy-91-JHJ"/>
                             <constraint firstItem="gkz-kE-oHH" firstAttribute="trailing" secondItem="iTi-fv-VwT" secondAttribute="trailing" id="c0g-bf-MRA"/>
@@ -3151,9 +3145,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2rz-YD-iKK">
                                 <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
                                 <color key="backgroundColor" name="ColorPrimary"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="G7E-fC-oNg"/>
-                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ybA-Fa-uwO">
                                 <rect key="frame" x="0.0" y="60" width="393" height="758"/>
@@ -3197,7 +3188,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-L5-FPK" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxz-L5-FPK" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                                                 <rect key="frame" x="30" y="59" width="333" height="35"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select your account" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cFI-oJ-UOF">
@@ -3258,7 +3249,7 @@
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
                                             </view>
-                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-yC-ZQV">
+                                            <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-yC-ZQV">
                                                 <rect key="frame" x="30" y="124" width="333" height="599"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Jwu-aX-F2Q">
@@ -3273,24 +3264,36 @@
                                                     <outlet property="delegate" destination="CkN-cl-MZm" id="giY-C2-h42"/>
                                                 </connections>
                                             </collectionView>
+                                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FNR-Un-an9">
+                                                <rect key="frame" x="30" y="54" width="333" height="669"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <wkWebViewConfiguration key="configuration">
+                                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                                    <wkPreferences key="preferences"/>
+                                                </wkWebViewConfiguration>
+                                            </wkWebView>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstItem="cxz-L5-FPK" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="2lg-ri-2KK"/>
                                             <constraint firstItem="yMC-gF-J9U" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="B6h-bh-1hb"/>
+                                            <constraint firstItem="FNR-Un-an9" firstAttribute="top" secondItem="yMC-gF-J9U" secondAttribute="bottom" constant="30" id="L07-BJ-Nwo"/>
                                             <constraint firstItem="cvJ-yC-ZQV" firstAttribute="top" secondItem="cxz-L5-FPK" secondAttribute="bottom" constant="30" id="NEf-2F-CMM"/>
                                             <constraint firstItem="cvJ-yC-ZQV" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="PB8-UF-Bij"/>
                                             <constraint firstAttribute="trailing" secondItem="cxz-L5-FPK" secondAttribute="trailing" constant="30" id="Q2d-lq-nCR"/>
                                             <constraint firstAttribute="trailing" secondItem="T2n-L1-eT7" secondAttribute="trailing" constant="30" id="QBb-sN-Mz1"/>
                                             <constraint firstItem="yMC-gF-J9U" firstAttribute="top" secondItem="bjq-7l-dnx" secondAttribute="top" id="TXf-Nk-aOA"/>
                                             <constraint firstItem="T2n-L1-eT7" firstAttribute="top" secondItem="yMC-gF-J9U" secondAttribute="top" id="WKA-Kn-RvA"/>
+                                            <constraint firstAttribute="trailing" secondItem="FNR-Un-an9" secondAttribute="trailing" constant="30" id="bMK-7V-1V0"/>
                                             <constraint firstItem="f6h-OY-0Wk" firstAttribute="centerX" secondItem="bjq-7l-dnx" secondAttribute="centerX" id="biR-rJ-xr3"/>
+                                            <constraint firstItem="FNR-Un-an9" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="cgn-qB-5P5"/>
                                             <constraint firstItem="cxz-L5-FPK" firstAttribute="top" secondItem="yMC-gF-J9U" secondAttribute="bottom" constant="35" id="j8R-ek-Ij0"/>
                                             <constraint firstAttribute="bottom" secondItem="cvJ-yC-ZQV" secondAttribute="bottom" constant="20" id="n67-gA-dh5"/>
                                             <constraint firstAttribute="trailing" secondItem="cvJ-yC-ZQV" secondAttribute="trailing" constant="30" id="nRI-fd-LMy"/>
                                             <constraint firstItem="T2n-L1-eT7" firstAttribute="bottom" secondItem="yMC-gF-J9U" secondAttribute="bottom" id="nxj-OR-bhg"/>
                                             <constraint firstItem="f6h-OY-0Wk" firstAttribute="top" secondItem="yMC-gF-J9U" secondAttribute="top" id="o9p-QD-Kjj"/>
                                             <constraint firstItem="f6h-OY-0Wk" firstAttribute="bottom" secondItem="yMC-gF-J9U" secondAttribute="bottom" id="xbq-Rb-Aza"/>
+                                            <constraint firstAttribute="bottom" secondItem="FNR-Un-an9" secondAttribute="bottom" constant="20" id="yT9-7r-myg"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -3312,6 +3315,7 @@
                         <color key="backgroundColor" name="Platinum"/>
                         <constraints>
                             <constraint firstItem="2rz-YD-iKK" firstAttribute="leading" secondItem="d5X-kV-hzQ" secondAttribute="leading" id="0pE-OC-Ra9"/>
+                            <constraint firstItem="2rz-YD-iKK" firstAttribute="height" secondItem="SYe-ua-0Ee" secondAttribute="height" multiplier="0.0704225" id="17i-O4-bqA"/>
                             <constraint firstItem="d5X-kV-hzQ" firstAttribute="bottom" secondItem="ybA-Fa-uwO" secondAttribute="bottom" id="52N-Ds-LDQ"/>
                             <constraint firstItem="ybA-Fa-uwO" firstAttribute="top" secondItem="2rz-YD-iKK" secondAttribute="bottom" id="GBA-LK-jfd"/>
                             <constraint firstItem="2rz-YD-iKK" firstAttribute="top" secondItem="SYe-ua-0Ee" secondAttribute="top" id="Y1a-Oi-7h5"/>
@@ -3324,6 +3328,7 @@
                         <outlet property="tfSearch" destination="cFI-oJ-UOF" id="q31-iC-rou"/>
                         <outlet property="titleLbl" destination="f6h-OY-0Wk" id="LmQ-7V-vH7"/>
                         <outlet property="trainingCV" destination="cvJ-yC-ZQV" id="tlk-f4-44w"/>
+                        <outlet property="webView" destination="FNR-Un-an9" id="ZTb-bo-Lx5"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9rZ-b5-Yd5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

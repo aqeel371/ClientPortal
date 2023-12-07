@@ -51,6 +51,9 @@
                                         <real key="value" value="16"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="downloadAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="zvn-Ab-yz4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -83,9 +86,19 @@
                 <constraint firstAttribute="bottom" secondItem="3Ae-hq-iQR" secondAttribute="bottom" id="zNc-Ep-1oY"/>
             </constraints>
             <size key="customSize" width="159" height="196"/>
+            <connections>
+                <outlet property="btn" destination="puG-6S-TbN" id="eLw-E6-BIh"/>
+                <outlet property="icon" destination="dvF-KE-Kqv" id="8gO-To-bl6"/>
+                <outlet property="title" destination="jOJ-oB-RWb" id="ajH-AH-VGc"/>
+            </connections>
             <point key="canvasLocation" x="-107.63358778625954" y="19.014084507042256"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="puG-6S-TbN">
+            <size key="intrinsicContentSize" width="68" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="ic_mt5" width="27" height="27"/>
         <namedColor name="EerieBlack">

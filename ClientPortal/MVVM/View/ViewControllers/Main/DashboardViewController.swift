@@ -156,11 +156,11 @@ extension DashboardViewController: UIPickerViewDelegate, UIPickerViewDataSource{
             return accountTypes.count
     }
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-        return "\(accountTypes[row].login ?? 0)"
+        return (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
         
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-        tfSelectAccount.text = "\(accountTypes[row].login ?? 0)"
+        tfSelectAccount.text = (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
         self.populateData(data: accountTypes[row])
     }
 }
@@ -223,7 +223,7 @@ extension DashboardViewController{
     }
     
     func populateData(data:AccountsDatum){
-        tfSelectAccount.text = "\(data.login ?? 0)"
+        tfSelectAccount.text = (data.platform ?? "") + " - " + "\(data.login ?? 0)"
         lblBalance.text = "$\(data.state?.margin?.balance ?? 0)"
         lblEquity.text = "$\(data.state?.margin?.equity ?? 0)"
         lblWithdaw.text = "$\(data.transactions?.totalWithdrawals?.unEscapedDouble ?? 0.0)"

@@ -9,6 +9,8 @@ import UIKit
 
 class MenuTrainingVC: UIViewController {
 
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,9 +46,13 @@ class MenuTrainingVC: UIViewController {
     
     
     @IBAction func blogsAction(_ sender: Any) {
-        let vc = ViewControllers.TrainingDetailsVC.getViewController() as TrainingDetailsVC
-        vc.type = .blogs
-        self.navigationController?.pushViewController(vc, animated: true)
+        
+        var stringUrl = "https://www.godofx.com/blog"
+        let webVC = WebViewController.loadFromNib()
+        webVC.url = stringUrl
+        webVC.modalPresentationStyle = .fullScreen
+        self.present(webVC, animated: true)
+        
     }
     
 }

@@ -15,10 +15,14 @@ class InstantTransferVC: UIViewController {
     @IBOutlet weak var tfAmount: UITextField!
     
     //MARK: - Variables
+    var spinner :LoadingViewNib?
     var instantPicker = UIPickerView()
-    var accountTypes = ["A","1","B","2","C","3"]
-    var currencyTypes = ["X","1","Y","2","Z","3"]
+    var accountTypes = [AccountsDatum]()
+    var accID = 0
+    var currencyTypes = ["AED","SAR","QAR","OMR"]
+    var currency = ""
     var activeTF:UITextField?
+    var gateway = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -42,8 +46,8 @@ class InstantTransferVC: UIViewController {
                 self.showAlert(title: "Error", message: "Enter Amount..!", actions: nil)
             }else{
                 
-                self.navigationController?.popViewController(animated: true)
-                
+                let interPay = PayModel(accountId: accID,gateway: gateway,amount: Int(amount), currency: currency)
+                instatPay(pay: interPay)
             }
             
         }
@@ -86,7 +90,7 @@ extension InstantTransferVC: UIPickerViewDelegate, UIPickerViewDataSource{
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         if activeTF == tfTradingAccount{
-            return accountTypes[row]
+            return (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
         }else{
             return currencyTypes[row]
         }
@@ -94,10 +98,46 @@ extension InstantTransferVC: UIPickerViewDelegate, UIPickerViewDataSource{
     
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if activeTF == tfTradingAccount{
-            tfTradingAccount.text = accountTypes[row]
+            tfTradingAccount.text = (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
+            self.accID = accountTypes[row].id ?? 0
         }else{
             tfCurrency.text = currencyTypes[row]
+            self.currency = currencyTypes[row]
         }
+    }
+    
+}
+
+//MARK: - API
+
+extension InstantTransferVC{
+    
+    func instatPay(pay:PayModel){
+        spinner = self.showSpinner()
+        
+        ApiManager.shared.request(with: .Pay(params: pay.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let payResp:PayResponse = self.handleResponse(data: data as! Data){
+                    if payResp.status ?? false {
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+                    }else{
+                        self.showAlert(title: "Error", message: payResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+        
     }
     
 }

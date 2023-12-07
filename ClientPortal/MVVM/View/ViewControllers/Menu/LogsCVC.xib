@@ -114,6 +114,9 @@
                                         <real key="value" value="11"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="viewAction:" destination="gTV-IL-0wX" eventType="touchUpInside" id="xxa-Rh-Lze"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" name="GhostWhite"/>
@@ -145,9 +148,20 @@
                 <constraint firstAttribute="trailing" secondItem="rHO-cb-11G" secondAttribute="trailing" id="uBw-eg-9gu"/>
             </constraints>
             <size key="customSize" width="339" height="45"/>
+            <connections>
+                <outlet property="lblLogDate" destination="wYg-xc-y1e" id="PJB-Ms-fSj"/>
+                <outlet property="lblLogId" destination="j41-8e-pIz" id="gJZ-ua-MPT"/>
+                <outlet property="lblLogTime" destination="x4I-Un-ocN" id="Zkv-ew-gE2"/>
+                <outlet property="lblLogtype" destination="NaR-ue-oFr" id="qoT-Xh-Kxm"/>
+            </connections>
             <point key="canvasLocation" x="214.50381679389312" y="17.605633802816904"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="gnT-GI-bCb">
+            <size key="intrinsicContentSize" width="30" height="26"/>
+        </designable>
+    </designables>
     <resources>
         <namedColor name="EerieBlack">
             <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

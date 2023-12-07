@@ -12,6 +12,9 @@ class UserLogsVC: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var logsCV: UICollectionView!
     
+    var spinner :LoadingViewNib?
+    var logs = [LogsDatum]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCV()
@@ -35,14 +38,20 @@ extension UserLogsVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
     
     func setupCV(){
         logsCV.register(UINib(nibName: "LogsCVC", bundle: nil), forCellWithReuseIdentifier: "LogsCVC")
+        getLogs()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return logs.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "LogsCVC", for: indexPath) as! LogsCVC
+        cell.populate(log: logs[indexPath.row])
+        
+        cell.viewCallBack = {
+            
+        }
         return cell
     }
     
@@ -50,6 +59,39 @@ extension UserLogsVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         let width = collectionView.bounds.width
         let height = 145.0
         return CGSize(width: width, height: height)
+    }
+    
+}
+
+
+//MARK: - API
+extension UserLogsVC{
+    
+    func getLogs(){
+        spinner = self.showSpinner()
+        
+        ApiManager.shared.request(with: .GetLogs, completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let logResp:LogsResponse = self.handleResponse(data: data as! Data){
+                    if logResp.status ?? false {
+                        if let logs = logResp.result?.data{
+                            self.logs = logs
+                            self.logsCV.reloadData()
+                        }
+                    }else{
+                        self.showAlert(title: "Error", message: logResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
     }
     
 }

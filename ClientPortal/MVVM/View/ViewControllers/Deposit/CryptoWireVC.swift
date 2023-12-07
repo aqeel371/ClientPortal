@@ -16,6 +16,8 @@ class CryptoWireVC: UIViewController {
     
     //MARK: - Variables
     var vcType:TransferType?
+    var liveAccount = [AccountsDatum]()
+    var gateway = ""
     
     
     override func viewDidLoad() {
@@ -80,34 +82,41 @@ extension CryptoWireVC{
         switch vcType{
         case .Wire:
             lblTitleVC.text = "Wire Transfer"
+            gateway = "wireTransfer"
             innerView.isHidden = true
             banksTV.isHidden = false
         case .Crypto:
             lblTitleVC.text = "Crypto"
+            gateway = "crypto"
             innerView.isHidden = true
             banksTV.isHidden = false
         case .Instant:
             lblTitleVC.text = "Instant Transfer"
+            gateway = "stripe"
             innerView.isHidden = false
             banksTV.isHidden = true
             self.embedInstant()
         case .PerfectMoney:
             lblTitleVC.text = "Perfect Money"
+            gateway = "perfectmoney"
             innerView.isHidden = false
             banksTV.isHidden = true
             self.embedPerfectMoney()
         case .Stick:
             lblTitleVC.text = "Stick"
+            gateway = "stickpay"
             innerView.isHidden = false
             banksTV.isHidden = true
             self.embedStick()
         case .Skrill:
             lblTitleVC.text = "Skrill"
+            gateway = "skrill"
             innerView.isHidden = false
             banksTV.isHidden = true
             self.embedSkrill()
         default:
             lblTitleVC.text = "Crypto"
+            gateway = "crypto"
             innerView.isHidden = false
             banksTV.isHidden = true
         }
@@ -115,20 +124,28 @@ extension CryptoWireVC{
     
     func embedInstant(){
         let vc = ViewControllers.InstantTransferVC.getViewController() as InstantTransferVC
+        vc.accountTypes = self.liveAccount
+        vc.gateway = self.gateway
         self.embed(vc, inView: innerView)
     }
     func embedPerfectMoney(){
         let vc = ViewControllers.PerfectMoneyVC.getViewController() as PerfectMoneyVC
+        vc.accountTypes = self.liveAccount
+        vc.gateway = self.gateway
         self.embed(vc, inView: innerView)
     }
     func embedStick(){
         let vc = ViewControllers.StickSkrillVC.getViewController() as StickSkrillVC
+        vc.accountTypes = self.liveAccount
+        vc.gateway = self.gateway
         vc.type = .Stick
         self.embed(vc, inView: innerView)
     }
     func embedSkrill(){
         let vc = ViewControllers.StickSkrillVC.getViewController() as StickSkrillVC
         vc.type = .Skrill
+        vc.gateway = self.gateway
+        vc.accountTypes = self.liveAccount
         self.embed(vc, inView: innerView)
     }
     

@@ -46,8 +46,18 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func supportAction(_ sender: Any) {
-        let vc = ViewControllers.SupportVC.getViewController() as SupportVC
-        self.navigationController?.pushViewController(vc, animated: true)
+//        let vc = ViewControllers.SupportVC.getViewController() as SupportVC
+//        self.navigationController?.pushViewController(vc, animated: true)
+        let appURL = URL(string: "https://wa.me/+971545299299?text=Hello%20there,%20I%20have%20a%20query.")!
+        if UIApplication.shared.canOpenURL(appURL) {
+            if #available(iOS 10.0, *) {
+                UIApplication.shared.open(appURL, options: [:], completionHandler: nil)
+            }
+            else {
+                UIApplication.shared.openURL(appURL)
+            }
+        }
+        
     }
 }
 

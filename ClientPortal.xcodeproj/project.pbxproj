@@ -50,7 +50,11 @@
 		C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E12B17396B0084AD07 /* CryptoWireVC.swift */; };
 		C58305E42B174E1A0084AD07 /* CryptoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */; };
 		C585F6EC2B21B44A00CF8E5F /* InternalTransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */; };
-		C585F6EE2B21B98100CF8E5F /* WithdrawalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6ED2B21B98100CF8E5F /* WithdrawalModel.swift */; };
+		C585F6F02B21E2F900CF8E5F /* PayTrnasctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */; };
+		C585F6F22B21EDAC00CF8E5F /* PlateformsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */; };
+		C585F6F62B21F29900CF8E5F /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C585F6F42B21F29800CF8E5F /* WebViewController.xib */; };
+		C585F6F72B21F29900CF8E5F /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6F52B21F29900CF8E5F /* WebViewController.swift */; };
+		C585F6F92B21F53F00CF8E5F /* LogsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6F82B21F53F00CF8E5F /* LogsModel.swift */; };
 		C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */; };
 		C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */; };
 		C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */; };
@@ -159,7 +163,11 @@
 		C58305E12B17396B0084AD07 /* CryptoWireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWireVC.swift; sourceTree = "<group>"; };
 		C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsVC.swift; sourceTree = "<group>"; };
 		C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalTransferModel.swift; path = ClientPortal/MVVM/View/Cells/InternalTransferModel.swift; sourceTree = SOURCE_ROOT; };
-		C585F6ED2B21B98100CF8E5F /* WithdrawalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WithdrawalModel.swift; path = ClientPortal/MVVM/View/Cells/WithdrawalModel.swift; sourceTree = SOURCE_ROOT; };
+		C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PayTrnasctionModel.swift; path = ClientPortal/MVVM/View/Cells/PayTrnasctionModel.swift; sourceTree = SOURCE_ROOT; };
+		C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlateformsModel.swift; path = ClientPortal/MVVM/View/Cells/PlateformsModel.swift; sourceTree = SOURCE_ROOT; };
+		C585F6F42B21F29800CF8E5F /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		C585F6F52B21F29900CF8E5F /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		C585F6F82B21F53F00CF8E5F /* LogsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LogsModel.swift; path = ClientPortal/MVVM/View/Cells/LogsModel.swift; sourceTree = SOURCE_ROOT; };
 		C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Deposit/WalletCVC.swift; sourceTree = SOURCE_ROOT; };
 		C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WalletCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Deposit/WalletCVC.xib; sourceTree = SOURCE_ROOT; };
 		C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -304,6 +312,15 @@
 			path = Deposit;
 			sourceTree = "<group>";
 		};
+		C585F6F32B21F28C00CF8E5F /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				C585F6F52B21F29900CF8E5F /* WebViewController.swift */,
+				C585F6F42B21F29800CF8E5F /* WebViewController.xib */,
+			);
+			path = Others;
+			sourceTree = "<group>";
+		};
 		C58E8B1D2B1777BA00E7F3D3 /* Menu */ = {
 			isa = PBXGroup;
 			children = (
@@ -386,7 +403,9 @@
 				C5D435EF2B20B86F003C90B8 /* DocumentsResponse.swift */,
 				C5A2C1D32B20C83800154DCE /* TransactionModel.swift */,
 				C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */,
-				C585F6ED2B21B98100CF8E5F /* WithdrawalModel.swift */,
+				C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */,
+				C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */,
+				C585F6F82B21F53F00CF8E5F /* LogsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -483,6 +502,7 @@
 		F2657FC42B14949700CDEEF3 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C585F6F32B21F28C00CF8E5F /* Others */,
 				C58E8B1D2B1777BA00E7F3D3 /* Menu */,
 				F2657FAB2B1491EB00CDEEF3 /* ViewController.swift */,
 				F253EE502B14AFA2006E72B7 /* UITabbarController */,
@@ -628,6 +648,7 @@
 				C55F0E3C2B18687D004EE83E /* PlateformCVC.xib in Resources */,
 				C55F0E4A2B1885BC004EE83E /* ReportsCVC.xib in Resources */,
 				C5FF1CBF2B15FFA3000CFA0F /* DashboardTVC.xib in Resources */,
+				C585F6F62B21F29900CF8E5F /* WebViewController.xib in Resources */,
 				C58E8B292B177D6A00E7F3D3 /* TradeMTView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -685,6 +706,7 @@
 				F253EE562B14BF71006E72B7 /* DashboardViewController.swift in Sources */,
 				C5FF1CC42B160EFC000CFA0F /* AccountsCVC.swift in Sources */,
 				C5D435F02B20B86F003C90B8 /* DocumentsResponse.swift in Sources */,
+				C585F6F22B21EDAC00CF8E5F /* PlateformsModel.swift in Sources */,
 				C58305E42B174E1A0084AD07 /* CryptoDetailsVC.swift in Sources */,
 				F2657FAC2B1491EB00CDEEF3 /* ViewController.swift in Sources */,
 				F2B384032B1495BC00F4FB60 /* ApiManager.swift in Sources */,
@@ -707,7 +729,6 @@
 				C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
-				C585F6EE2B21B98100CF8E5F /* WithdrawalModel.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
 				C55F0E532B18B774004EE83E /* LogsCVC.swift in Sources */,
 				C5D435ED2B20B4ED003C90B8 /* DocumentsCVC.swift in Sources */,
@@ -717,10 +738,12 @@
 				C55F0E462B188403004EE83E /* ReportsVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
 				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
+				C585F6F02B21E2F900CF8E5F /* PayTrnasctionModel.swift in Sources */,
 				C5D435DB2B206902003C90B8 /* TradesDetailCVC.swift in Sources */,
 				C5D435D82B20563D003C90B8 /* AccChangePassModel.swift in Sources */,
 				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
 				C514D9B22B1F150800BD405A /* ProfileRespose.swift in Sources */,
+				C585F6F92B21F53F00CF8E5F /* LogsModel.swift in Sources */,
 				C58305DF2B1735680084AD07 /* TransferTVC.swift in Sources */,
 				C55F0E5E2B18CEEE004EE83E /* SupportVC.swift in Sources */,
 				C58E8B252B1779E300E7F3D3 /* MenuTrainingVC.swift in Sources */,
@@ -743,6 +766,7 @@
 				C55F0E5B2B18C4AA004EE83E /* TrainingCVC.swift in Sources */,
 				C58E8B272B177A2700E7F3D3 /* MenuProfileVC.swift in Sources */,
 				C5D435EA2B208F86003C90B8 /* WalletsResponse.swift in Sources */,
+				C585F6F72B21F29900CF8E5F /* WebViewController.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
