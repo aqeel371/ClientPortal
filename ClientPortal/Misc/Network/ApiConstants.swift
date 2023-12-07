@@ -24,6 +24,9 @@ internal struct ApiPaths {
     static let wallets = "wallets"
     static let docs = "documents"
     static let transaction = "transactions"
+    static let internalTransfer = "transactions/internal-transfer"
+    static let withdraw = "transactions/withdrawal"
+    static let deposit = "transactions/deposit"
     
 }
 

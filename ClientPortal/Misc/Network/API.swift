@@ -56,6 +56,9 @@ enum API{
     case GetWallets
     case GetDocs
     case Transaction(type:String,start:String,end:String)
+    case InternalTransfer(params:OptionalDictionary)
+    case WithrawTransfer(params:OptionalDictionary)
+    case Deposit(params:OptionalDictionary)
     
     static func mapKeysAndValues(keys : [String]?, values : [AnyObject]?) -> [String : AnyObject]? {
         guard let tempValues = values,let tempKeys = keys else { return nil}

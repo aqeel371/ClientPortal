@@ -49,6 +49,8 @@
 		C58305E02B1735680084AD07 /* TransferTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58305DE2B1735680084AD07 /* TransferTVC.xib */; };
 		C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E12B17396B0084AD07 /* CryptoWireVC.swift */; };
 		C58305E42B174E1A0084AD07 /* CryptoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */; };
+		C585F6EC2B21B44A00CF8E5F /* InternalTransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */; };
+		C585F6EE2B21B98100CF8E5F /* WithdrawalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6ED2B21B98100CF8E5F /* WithdrawalModel.swift */; };
 		C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */; };
 		C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */; };
 		C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */; };
@@ -156,6 +158,8 @@
 		C58305DE2B1735680084AD07 /* TransferTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TransferTVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Deposit/TransferTVC.xib; sourceTree = SOURCE_ROOT; };
 		C58305E12B17396B0084AD07 /* CryptoWireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWireVC.swift; sourceTree = "<group>"; };
 		C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsVC.swift; sourceTree = "<group>"; };
+		C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalTransferModel.swift; path = ClientPortal/MVVM/View/Cells/InternalTransferModel.swift; sourceTree = SOURCE_ROOT; };
+		C585F6ED2B21B98100CF8E5F /* WithdrawalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WithdrawalModel.swift; path = ClientPortal/MVVM/View/Cells/WithdrawalModel.swift; sourceTree = SOURCE_ROOT; };
 		C58E8B152B1764E100E7F3D3 /* WalletCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WalletCVC.swift; path = ClientPortal/MVVM/View/ViewControllers/Deposit/WalletCVC.swift; sourceTree = SOURCE_ROOT; };
 		C58E8B162B1764E100E7F3D3 /* WalletCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = WalletCVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Deposit/WalletCVC.xib; sourceTree = SOURCE_ROOT; };
 		C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuVC.swift; sourceTree = "<group>"; };
@@ -381,6 +385,8 @@
 				C5D435E92B208F86003C90B8 /* WalletsResponse.swift */,
 				C5D435EF2B20B86F003C90B8 /* DocumentsResponse.swift */,
 				C5A2C1D32B20C83800154DCE /* TransactionModel.swift */,
+				C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */,
+				C585F6ED2B21B98100CF8E5F /* WithdrawalModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -701,6 +707,7 @@
 				C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
+				C585F6EE2B21B98100CF8E5F /* WithdrawalModel.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
 				C55F0E532B18B774004EE83E /* LogsCVC.swift in Sources */,
 				C5D435ED2B20B4ED003C90B8 /* DocumentsCVC.swift in Sources */,
@@ -729,6 +736,7 @@
 				C5FF1CB92B15FB35000CFA0F /* DashboradTVHeader.swift in Sources */,
 				F253EE522B14AFB8006E72B7 /* CBSampleViewController.swift in Sources */,
 				C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */,
+				C585F6EC2B21B44A00CF8E5F /* InternalTransferModel.swift in Sources */,
 				C514D9B42B1F19A300BD405A /* BannerResponse.swift in Sources */,
 				C55F0E502B18B6C5004EE83E /* UserLogsVC.swift in Sources */,
 				C55F0E3E2B187756004EE83E /* BankAccountsVC.swift in Sources */,

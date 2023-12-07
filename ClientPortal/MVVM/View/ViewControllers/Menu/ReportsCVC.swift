@@ -50,6 +50,10 @@ class ReportsCVC: UICollectionViewCell {
         if data.status == .approved{
             config(status: true)
             statusLabel.text = data.status?.rawValue
+        }else if data.status == .pending{
+            statusView.backgroundColor = UIColor.VividCerulean
+            statusLabel.textColor = UIColor.ColorPrimary
+            statusLabel.text = data.status?.rawValue
         }else{
             config(status: false)
             statusLabel.text = data.status?.rawValue

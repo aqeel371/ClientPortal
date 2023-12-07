@@ -17,44 +17,47 @@ struct TransactionResponse: Codable {
 
 // MARK: - Result
 struct TransactionResult: Codable {
-    var page, limit, totalDocs, totalPages: Int?
-    var hasNextPage, hasPrevPage: Bool?
-    var nextPage, pagingCounter, prevPage: Int?
+    var prevPage: String?
     var data: [TransactionDatum]?
+    var totalPages, limit, totalDocs: Int?
+    var hasNextPage, hasPrevPage: Bool?
+    var page: Int?
+    var nextPage: Int?
+    var pagingCounter: Int?
 }
 
 // MARK: - Datum
 struct TransactionDatum: Codable {
-    var id: Int?
-    var type: String?
-    var gateway: String?
+    var accountFrom, accountTo: Int?
+    var isDeleted: Int?
+    var accountToLogin, accountFromLogin: Int?
     var status: TransactionStatus?
-    var reason: String?
-    var note: String?
-    var amount, paid, fee: Int?
+    var amount: Int?
     var currency: String?
-    var isActive, isDeleted: Int?
-    var createdAt, updatedAt: String?
-    var accountID: Int?
-    var accountFrom, createdBy, updatedBy: String?
-    var customerID: Int?
-    var accountTo, accountFromLogin: String?
-    var accountLogin: Int?
-    var accountToLogin: String?
-
+    var isActive, customerID: Int?
+    var createdAt, gateway, type, updatedAt: String?
+    var paid, id: Int?
+    var createdBy, updatedBy: String?
+    var note: String?
+    var fee: Int?
+    var reason: String?
+    var accountLogin, accountID: Int?
+    
     enum CodingKeys: String, CodingKey {
-        case id, type, gateway, status, reason, note, amount, paid, fee, currency, isActive, isDeleted, createdAt, updatedAt
-        case accountID = "accountId"
-        case accountFrom, createdBy, updatedBy
-        case customerID = "customerId"
-        case accountTo
-        case accountFromLogin = "AccountFrom.login"
-        case accountLogin = "Account.login"
+        case accountFrom, isDeleted
         case accountToLogin = "AccountTo.login"
+        case status, amount, currency, isActive
+        case customerID = "customerId"
+        case createdAt, gateway, type, updatedAt, paid, id, createdBy, accountTo
+        case accountFromLogin = "AccountFrom.login"
+        case updatedBy, note, fee, reason
+        case accountLogin = "Account.login"
+        case accountID = "accountId"
     }
 }
 
 enum TransactionStatus: String, Codable {
     case approved = "APPROVED"
     case rejected = "REJECTED"
+    case pending = "PENDING"
 }

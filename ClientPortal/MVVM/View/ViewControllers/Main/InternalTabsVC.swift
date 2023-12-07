@@ -34,12 +34,20 @@ class InternalTabsVC: UIViewController {
     var typeVc:TabType?
     var activeTF:UITextField?
     var accountPicker = UIPickerView()
-    var accounts = ["A","B","C","D","E"]
+    var accounts = [AccountsDatum]()
+    var spinner :LoadingViewNib?
     var withdraw = ["Bank-Transfer","Crypto"]
+    var gateway = ""
+    var withdrawAccID = 0
+    var transferfromID = 0
+    var transferToID = 0
+    var depositAccID = 0
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         setupTF()
+        getAccounts()
         // Do any additional setup after loading the view.
     }
     
@@ -80,12 +88,46 @@ class InternalTabsVC: UIViewController {
     
     
     @IBAction func depositAction(_ sender: Any) {
+        if let acc = tfDepositAccount.text , let amount = tfDepositAmount.text, let notes = tvDepositNotes.text{
+            if acc.isEmpty{
+                self.showAlert(title: "Error", message: "Select Account..!", actions: nil)
+            }else if amount.isEmpty{
+                self.showAlert(title: "Erro", message: "Please Enter Amount..!", actions: nil)
+            }else{
+                
+                let deposit = DepositModel(accountId: depositAccID,gateway: "DEPOSIT",note: notes,amount: Int(amount),fee: 0)
+                self.depositTransaction(deposit: deposit)
+            }
+            
+        }
+        
+        
     }
     
     @IBAction func withdrawAction(_ sender: Any) {
+        if let method = tfWithdrawMethod.text , let acc = tfWithdrawAcount.text , let amount = tfWithdrawAmount.text, let notes = tvWithdrawNotes.text{
+            if method.isEmpty || acc.isEmpty{
+                self.showAlert(title: "Error", message: "Select Method and Account..!", actions: nil)
+            }else if amount.isEmpty{
+                self.showAlert(title: "Erro", message: "Please Enter Amount..!", actions: nil)
+            }else{
+                let withdraw = WithdrawModel(accountId: withdrawAccID,gateway: gateway,note: notes, amount: Int(amount))
+                self.withdarwTransaction(withdraw: withdraw)
+            }
+        }
     }
     
     @IBAction func transferAction(_ sender: Any) {
+        if let from = tfTransferAccount.text, let to = tfTransferToAccount.text, let amount = tfTransferAmount.text,let notes = tvTransferNotes.text{
+            if from.isEmpty || to.isEmpty{
+                self.showAlert(title: "Error", message: "Select Account..!", actions: nil)
+            }else if amount.isEmpty{
+                self.showAlert(title: "Error", message: "Enter Amount...!", actions: nil)
+            }else{
+                let data = TransferModel(accountFrom: transferfromID ,accountTo: transferToID,note: notes,amount: Int(amount))
+                self.internalTransfer(transfer: data)
+            }
+        }
     }
     
 }
@@ -103,9 +145,15 @@ extension InternalTabsVC:UITextViewDelegate,UITextFieldDelegate{
         tvTransferNotes.delegate = self
         tvWithdrawNotes.delegate = self
         
+        tfTransferAccount.delegate = self
+        tfTransferToAccount.delegate = self
+        
         tfDepositAccount.inputView = accountPicker
         tfWithdrawAcount.inputView = accountPicker
         tfWithdrawMethod.inputView = accountPicker
+        
+        tfTransferAccount.inputView = accountPicker
+        tfTransferToAccount.inputView = accountPicker
         
         accountPicker.delegate = self
         accountPicker.dataSource = self
@@ -149,17 +197,143 @@ extension InternalTabsVC: UIPickerViewDelegate, UIPickerViewDataSource{
         if activeTF == tfWithdrawMethod{
             return withdraw[row]
         }else{
-            return accounts[row]
+            return (accounts[row].platform ?? "") + " - " + "\(accounts[row].login ?? 0)"
         }
         
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if activeTF == tfWithdrawMethod{
             tfWithdrawMethod.text = withdraw[row]
+            self.gateway = withdraw[row]
         }else if activeTF == tfWithdrawAcount{
-            tfWithdrawAcount.text = accounts[row]
-        }else{
-            tfDepositAccount.text = accounts[row]
+            tfWithdrawAcount.text = (accounts[row].platform ?? "") + " - " + "\(accounts[row].login ?? 0)"
+            self.withdrawAccID = accounts[row].id ?? 0
+        }else if activeTF == tfDepositAccount{
+            self.depositAccID = accounts[row].id ?? 0
+            tfDepositAccount.text = (accounts[row].platform ?? "") + " - " + "\(accounts[row].login ?? 0)"
+        }else if activeTF == tfTransferAccount{
+            tfTransferAccount.text = (accounts[row].platform ?? "") + " - " + "\(accounts[row].login ?? 0)"
+            self.transferToID = accounts[row].id ?? 0
+        }else if activeTF == tfTransferToAccount{
+            tfTransferToAccount.text = (accounts[row].platform ?? "") + " - " + "\(accounts[row].login ?? 0)"
+            self.transferfromID = accounts[row].id ?? 0
         }
     }
 }
+
+//MARK: - API
+
+extension InternalTabsVC{
+    
+    func getAccounts(){
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .Accounts, completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let accResp:AccountsResponse = self.handleResponse(data: data as! Data){
+                    if accResp.status ?? false {
+                        if let accounts = accResp.result?.data{
+                            for acc in accounts{
+                                if acc.type == "LIVE"{
+                                    self.accounts.append(acc)
+                                }
+                            }
+                        }
+                    }else{
+                        self.showAlert(title: "Error", message: accResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
+    func internalTransfer(transfer:TransferModel){
+        
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .InternalTransfer(params: transfer.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let tranResp:TransferResponse = self.handleResponse(data: data as! Data){
+                    if tranResp.status ?? false {
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+                    }else{
+                        self.showAlert(title: "Error", message: tranResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
+    func withdarwTransaction(withdraw:WithdrawModel){
+        
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .WithrawTransfer(params: withdraw.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let tranResp:TransferResponse = self.handleResponse(data: data as! Data){
+                    if tranResp.status ?? false {
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+                    }else{
+                        self.showAlert(title: "Error", message: tranResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
+    func depositTransaction(deposit:DepositModel){
+        
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .Deposit(params: deposit.dictionary as [String:AnyObject]?), completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let tranResp:TransferResponse = self.handleResponse(data: data as! Data){
+                    if tranResp.status ?? false {
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.navigationController?.popViewController(animated: true)
+                        }
+                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+                    }else{
+                        self.showAlert(title: "Error", message: tranResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
+}
+

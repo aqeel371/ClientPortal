@@ -40,6 +40,12 @@ extension API:Router{
             return ApiPaths.docs
         case .Transaction:
             return ApiPaths.transaction
+        case .InternalTransfer:
+            return ApiPaths.internalTransfer
+        case .WithrawTransfer:
+            return ApiPaths.withdraw
+        case .Deposit:
+            return ApiPaths.deposit
         }
     }
     
@@ -56,6 +62,8 @@ extension API:Router{
             return .post
         case .AccountChnagePass:
             return .post
+        case .InternalTransfer, .WithrawTransfer, .Deposit:
+            return .post
         default:
             return .get
         }
@@ -67,6 +75,8 @@ extension API:Router{
             return JSONEncoding.default
         case .AccountChnagePass:
             return JSONEncoding.default
+        case .InternalTransfer, .WithrawTransfer, .Deposit:
+            return JSONEncoding.default
         default:
             return URLEncoding.default
         }
@@ -77,6 +87,12 @@ extension API:Router{
         case .Login(let params):
             return params
         case .AccountChnagePass(_ ,let params):
+            return params
+        case .InternalTransfer(let params):
+            return params
+        case .WithrawTransfer(let params):
+            return params
+        case .Deposit(let params):
             return params
         default:
             return nil
@@ -100,6 +116,8 @@ extension API:Router{
         case .Login:
             return jsonParams()
         case .AccountChnagePass:
+            return jsonParams()
+        case .InternalTransfer, .WithrawTransfer, .Deposit:
             return jsonParams()
         default:
             return formateParams()
