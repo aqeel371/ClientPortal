@@ -40,9 +40,14 @@ class ReportsCVC: UICollectionViewCell {
     func populate(data:TransactionDatum){
         lblType.text = data.type ?? ""
         lblAmount.text = "\(data.amount ?? 0)"
-        lblAccount.text = "\(data.accountLogin ?? 0)"
         lblID.text = "\(data.id ?? 0)"
         lblGateway.text = data.gateway ?? ""
+        
+        if data.type == "INTERNAL_TRANSFER"{
+            lblAccount.text = "\(data.accountFromLogin ?? 0)" + " -> " + "\(data.accountToLogin ?? 0)"
+        }else{
+            lblAccount.text = "\(data.accountLogin ?? 0)"
+        }
         
         lblDate.text = (data.createdAt ?? "").formattedDate()
         lblTime.text = (data.createdAt ?? "").formattedTime()

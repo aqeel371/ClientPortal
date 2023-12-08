@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */; };
+		C503F10E2B22F64C00FD2D56 /* AddBankVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F10D2B22F64C00FD2D56 /* AddBankVC.swift */; };
+		C503F1102B23132200FD2D56 /* AddWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F10F2B23132200FD2D56 /* AddWalletVC.swift */; };
+		C503F1122B23213300FD2D56 /* ProfileChangePassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1112B23213300FD2D56 /* ProfileChangePassVC.swift */; };
+		C503F1142B23525000FD2D56 /* DocsInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1132B23525000FD2D56 /* DocsInfoVC.swift */; };
 		C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9AF2B1F10C200BD405A /* LoginModel.swift */; };
 		C514D9B22B1F150800BD405A /* ProfileRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B12B1F150800BD405A /* ProfileRespose.swift */; };
 		C514D9B42B1F19A300BD405A /* BannerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B32B1F19A300BD405A /* BannerResponse.swift */; };
@@ -122,6 +126,10 @@
 		8719C42E7F2DE68B6C643F8B /* Pods-ClientPortal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClientPortal.release.xcconfig"; path = "Target Support Files/Pods-ClientPortal/Pods-ClientPortal.release.xcconfig"; sourceTree = "<group>"; };
 		A78F62084F2DD30094DFCADF /* Pods-GenralProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GenralProject.debug.xcconfig"; path = "Target Support Files/Pods-GenralProject/Pods-GenralProject.debug.xcconfig"; sourceTree = "<group>"; };
 		BF01AB1363AE23927A769A3A /* Pods_ClientPortal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClientPortal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C503F10D2B22F64C00FD2D56 /* AddBankVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBankVC.swift; sourceTree = "<group>"; };
+		C503F10F2B23132200FD2D56 /* AddWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletVC.swift; sourceTree = "<group>"; };
+		C503F1112B23213300FD2D56 /* ProfileChangePassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangePassVC.swift; sourceTree = "<group>"; };
+		C503F1132B23525000FD2D56 /* DocsInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsInfoVC.swift; sourceTree = "<group>"; };
 		C514D9AF2B1F10C200BD405A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = ClientPortal/MVVM/View/Cells/Chat/LoginModel.swift; sourceTree = SOURCE_ROOT; };
 		C514D9B12B1F150800BD405A /* ProfileRespose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileRespose.swift; path = ClientPortal/MVVM/View/Cells/Chat/ProfileRespose.swift; sourceTree = SOURCE_ROOT; };
 		C514D9B32B1F19A300BD405A /* BannerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerResponse.swift; path = ClientPortal/MVVM/View/Cells/Chat/BannerResponse.swift; sourceTree = SOURCE_ROOT; };
@@ -294,6 +302,8 @@
 				C58305D52B1726EB0084AD07 /* ForgetPassVC.swift */,
 				C58E8B192B1770FE00E7F3D3 /* MenuVC.swift */,
 				C55F0E5D2B18CEEE004EE83E /* SupportVC.swift */,
+				C503F1112B23213300FD2D56 /* ProfileChangePassVC.swift */,
+				C503F1132B23525000FD2D56 /* DocsInfoVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -331,7 +341,9 @@
 				C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */,
 				C55F0E372B186800004EE83E /* MenuPlateformVC.swift */,
 				C55F0E3D2B187756004EE83E /* BankAccountsVC.swift */,
+				C503F10D2B22F64C00FD2D56 /* AddBankVC.swift */,
 				C55F0E432B187EF7004EE83E /* WalletsVC.swift */,
+				C503F10F2B23132200FD2D56 /* AddWalletVC.swift */,
 				C55F0E452B188403004EE83E /* ReportsVC.swift */,
 				C55F0E4D2B18B291004EE83E /* TradeDetailsVC.swift */,
 				C55F0E4F2B18B6C5004EE83E /* UserLogsVC.swift */,
@@ -743,6 +755,7 @@
 				C5D435D82B20563D003C90B8 /* AccChangePassModel.swift in Sources */,
 				C5FF1CAC2B15C7B0000CFA0F /* UITextFieldX.swift in Sources */,
 				C514D9B22B1F150800BD405A /* ProfileRespose.swift in Sources */,
+				C503F1102B23132200FD2D56 /* AddWalletVC.swift in Sources */,
 				C585F6F92B21F53F00CF8E5F /* LogsModel.swift in Sources */,
 				C58305DF2B1735680084AD07 /* TransferTVC.swift in Sources */,
 				C55F0E5E2B18CEEE004EE83E /* SupportVC.swift in Sources */,
@@ -769,9 +782,11 @@
 				C585F6F72B21F29900CF8E5F /* WebViewController.swift in Sources */,
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
+				C503F1142B23525000FD2D56 /* DocsInfoVC.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
 				C5D435E32B206D33003C90B8 /* PositionHeaderCRV.swift in Sources */,
 				C58305D62B1726EB0084AD07 /* ForgetPassVC.swift in Sources */,
+				C503F10E2B22F64C00FD2D56 /* AddBankVC.swift in Sources */,
 				C5FF1CB62B15DDC6000CFA0F /* OfferCVC.swift in Sources */,
 				C55F0E492B1885BC004EE83E /* ReportsCVC.swift in Sources */,
 				C55F0E382B186800004EE83E /* MenuPlateformVC.swift in Sources */,
@@ -779,6 +794,7 @@
 				C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */,
 				C58E8B2B2B177D7300E7F3D3 /* TradeMTView.swift in Sources */,
 				C514D9BB2B1F2F2F00BD405A /* AccountsResponse.swift in Sources */,
+				C503F1122B23213300FD2D56 /* ProfileChangePassVC.swift in Sources */,
 				C58E8B172B1764E100E7F3D3 /* WalletCVC.swift in Sources */,
 				C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */,
 				C58305DC2B172F9B0084AD07 /* DepositVC.swift in Sources */,

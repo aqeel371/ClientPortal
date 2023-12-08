@@ -32,11 +32,11 @@ extension API:Router{
             return ApiPaths.accounts + "/\(id)" + ApiPaths.open
         case .AccountClosePosition(let id):
             return ApiPaths.accounts + "/\(id)" + ApiPaths.close
-        case .GetBanks:
+        case .GetBanks, .AddBank:
             return ApiPaths.banks
-        case .GetWallets:
+        case .GetWallets, .AddWallet:
             return ApiPaths.wallets
-        case .GetDocs:
+        case .GetDocs, .AddDocs:
             return ApiPaths.docs
         case .Transaction:
             return ApiPaths.transaction
@@ -50,6 +50,8 @@ extension API:Router{
             return ApiPaths.pay
         case .GetLogs:
             return ApiPaths.logs
+        case .ProfileChangePassword:
+            return ApiPaths.profileChangePass
         }
     }
     
@@ -68,6 +70,10 @@ extension API:Router{
             return .post
         case .InternalTransfer, .WithrawTransfer, .Deposit, .Pay:
             return .post
+        case .AddBank, .AddWallet, .AddDocs:
+            return .post
+        case .ProfileChangePassword:
+            return .post
         default:
             return .get
         }
@@ -80,6 +86,10 @@ extension API:Router{
         case .AccountChnagePass:
             return JSONEncoding.default
         case .InternalTransfer, .WithrawTransfer, .Deposit, .Pay:
+            return JSONEncoding.default
+        case .AddBank, .AddWallet:
+            return JSONEncoding.default
+        case .ProfileChangePassword:
             return JSONEncoding.default
         default:
             return URLEncoding.default
@@ -99,6 +109,12 @@ extension API:Router{
         case .Deposit(let params):
             return params
         case .Pay(let params):
+            return params
+        case .AddBank(let params):
+            return params
+        case .AddWallet(let params):
+            return params
+        case .ProfileChangePassword(let params):
             return params
         default:
             return nil
@@ -124,6 +140,10 @@ extension API:Router{
         case .AccountChnagePass:
             return jsonParams()
         case .InternalTransfer, .WithrawTransfer, .Deposit, .Pay:
+            return jsonParams()
+        case .AddBank, .AddWallet:
+            return jsonParams()
+        case .ProfileChangePassword:
             return jsonParams()
         default:
             return formateParams()

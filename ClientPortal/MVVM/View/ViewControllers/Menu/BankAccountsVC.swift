@@ -11,6 +11,8 @@ class BankAccountsVC: UIViewController {
 
     //MARK: - IBOutlets
     @IBOutlet weak var bankCV: UICollectionView!
+    @IBOutlet weak var btnHeight: NSLayoutConstraint!
+    @IBOutlet weak var addButton: UIButtonX!
     
     var spinner:LoadingViewNib?
     var banks = [BankDatum]()
@@ -19,6 +21,9 @@ class BankAccountsVC: UIViewController {
         super.viewDidLoad()
         setupCV()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        getBanks()
     }
     
     //MARK: - IBActions
@@ -31,6 +36,10 @@ class BankAccountsVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func addBankAction(_ sender: Any) {
+        let vc = ViewControllers.AddBankVC.getViewController() as AddBankVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
 //MARK: - UICollection VIew Methods
@@ -38,7 +47,6 @@ extension BankAccountsVC:UICollectionViewDelegate,UICollectionViewDataSource,UIC
     
     func setupCV(){
         bankCV.register(UINib(nibName: "BanksCVC", bundle: nil), forCellWithReuseIdentifier: "BanksCVC")
-        getBanks()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -75,8 +83,15 @@ extension BankAccountsVC{
                 if let bankResp:BanksResponse = self.handleResponse(data: data as! Data){
                     if bankResp.status ?? false {
                         if let banks = bankResp.result?.data{
-                            self.banks = banks
-                            self.bankCV.reloadData()
+                            if banks.isEmpty{
+                                self.btnHeight.constant = 40
+                                self.addButton.isHidden = false
+                            }else{
+                                self.btnHeight.constant = 0
+                                self.addButton.isHidden = true
+                                self.banks = banks
+                                self.bankCV.reloadData()
+                            }
                         }
                     }else{
                         self.showAlert(title: "Error", message: bankResp.message, actions: nil)

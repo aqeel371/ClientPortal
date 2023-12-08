@@ -7,6 +7,24 @@
 
 import Foundation
 
+//MARK: - Upload Docs
+struct UploadDocs:Codable{
+    var PROOF_OF_ID:Data?
+    var PROOF_OF_ADDRESS:Data?
+    var SOURCE_OF_INCOME:Data?
+    var ADDITIONAL:Data?
+}
+
+//MARK: - UploadDocs Response
+
+// MARK: - DocsResponse
+struct UploadDocsResponse: Codable {
+    var status: Bool?
+    var result: [DocsResult]?
+    var isSuccess: Bool?
+    var message:String?
+}
+
 // MARK: - DocumentsResponse
 struct DocumentsResponse: Codable {
     var status: Bool?
@@ -19,9 +37,7 @@ struct DocumentsResponse: Codable {
 struct DocsResult: Codable {
     var page, limit, totalDocs, totalPages: Int?
     var hasNextPage, hasPrevPage: Bool?
-    var nextPage: String?
-    var pagingCounter: Int?
-    var prevPage: String?
+    var nextPage, pagingCounter, prevPage: Int?
     var data: [DocsDatum]?
 }
 
@@ -37,7 +53,7 @@ struct DocsDatum: Codable {
     var createdAt, updatedAt: String?
     var customerID: Int?
     var createdBy, updatedBy: Int?
-
+    
     enum CodingKeys: String, CodingKey {
         case id, type, file1, file2, status, rejectionReason, note, isActive, isDeleted, createdAt, updatedAt
         case customerID = "customerId"

@@ -6,9 +6,10 @@
 //
 
 import UIKit
+import FloatingPanel
 
 class ProfileVC: UIViewController {
-
+    
     //MARK: - IBOutlets
     
     @IBOutlet weak var tfFName: UITextField!
@@ -41,13 +42,21 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func changePassAction(_ sender: Any) {
-//        let vc = ViewControllers.ChangePasswordVC.getViewController()
-//        self.navigationController?.pushViewController(vc, animated: true)
+        let appearance = SurfaceAppearance()
+        let fpc = FloatingPanelController()
+        let contectVC = ViewControllers.ProfileChangePassVC.getViewController() as ProfileChangePassVC
+        fpc.set(contentViewController: contectVC)
+        fpc.contentMode = .fitToBounds
+        fpc.layout = ChangePassPanelLayout()
+        fpc.isRemovalInteractionEnabled = true
+        appearance.cornerRadius = 20.0
+        fpc.surfaceView.appearance = appearance
+        fpc.addPanel(toParent: self,animated: true)
     }
     
     @IBAction func supportAction(_ sender: Any) {
-//        let vc = ViewControllers.SupportVC.getViewController() as SupportVC
-//        self.navigationController?.pushViewController(vc, animated: true)
+        //        let vc = ViewControllers.SupportVC.getViewController() as SupportVC
+        //        self.navigationController?.pushViewController(vc, animated: true)
         let appURL = URL(string: "https://wa.me/+971545299299?text=Hello%20there,%20I%20have%20a%20query.")!
         if UIApplication.shared.canOpenURL(appURL) {
             if #available(iOS 10.0, *) {
@@ -60,6 +69,19 @@ class ProfileVC: UIViewController {
         
     }
 }
+
+//MARK: FloatingPanelLayout
+
+class ChangePassPanelLayout: FloatingPanelLayout {
+    let position: FloatingPanelPosition = .bottom
+    let initialState: FloatingPanelState = .full
+    let anchors: [FloatingPanelState: FloatingPanelLayoutAnchoring] = [
+        .full: FloatingPanelLayoutAnchor(absoluteInset: 350.0, edge: .bottom, referenceGuide: .safeArea),
+        .half: FloatingPanelLayoutAnchor(absoluteInset: 350.0, edge: .bottom, referenceGuide: .safeArea),
+        .tip: FloatingPanelLayoutAnchor(fractionalInset: 0.2, edge: .bottom, referenceGuide: .safeArea),
+    ]
+}
+
 
 //MARK: - API
 extension ProfileVC{

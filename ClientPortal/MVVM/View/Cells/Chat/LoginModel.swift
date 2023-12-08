@@ -25,3 +25,23 @@ struct LoginResponse: Codable {
 struct LoginResult: Codable {
     var token: String?
 }
+
+
+//MARK: - Password Model
+struct PasswordModel:Codable{
+    var currentPassword:String?
+    var newPassword:String?
+    var confirmNewPassword:String?
+}
+
+// MARK: - LogsResponse
+struct PassChnageResponse: Codable {
+    var status: Bool?
+    var message: String?
+    var result: PassResult?
+    var isSuccess: Bool?
+}
+
+// MARK: - Result
+struct PassResult: Codable {
+}

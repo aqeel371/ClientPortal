@@ -15,6 +15,7 @@ internal struct ApiPaths {
     //MARK: - Aries Map
     static let login = "auth/login"
     static let profile = "auth/profile"
+    static let profileChangePass = "my/change-password"
     static let banner = "banners"
     static let accounts = "accounts"
     static let changePass = "/change-password"

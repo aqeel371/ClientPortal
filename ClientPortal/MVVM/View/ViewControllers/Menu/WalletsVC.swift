@@ -12,6 +12,10 @@ class WalletsVC: UIViewController {
     //MARK: - IBOutlets
     @IBOutlet weak var walletCV: UICollectionView!
     
+    @IBOutlet weak var addBtn: UIButtonX!
+    
+    @IBOutlet weak var btnHeight: NSLayoutConstraint!
+    
     var spinner:LoadingViewNib?
     var wallets = [WalletDatum]()
     
@@ -19,6 +23,9 @@ class WalletsVC: UIViewController {
         super.viewDidLoad()
         setupCV()
         // Do any additional setup after loading the view.
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        getWallets()
     }
     
     //MARK: - IBActions
@@ -31,13 +38,17 @@ class WalletsVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func addWalletAction(_ sender: Any) {
+        let vc = ViewControllers.AddWalletVC.getViewController()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
 }
 
 extension WalletsVC:UICollectionViewDelegate,UICollectionViewDataSource,UICollectionViewDelegateFlowLayout{
     
     func setupCV(){
         walletCV.register(UINib(nibName: "WalletCVC", bundle: nil), forCellWithReuseIdentifier: "WalletCVC")
-        getWallets()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -74,8 +85,15 @@ extension WalletsVC{
                 if let walletResp:WalletsResponse = self.handleResponse(data: data as! Data){
                     if walletResp.status ?? false {
                         if let wallets = walletResp.result?.data{
-                            self.wallets = wallets
-                            self.walletCV.reloadData()
+                            if wallets.isEmpty{
+                                self.btnHeight.constant = 40
+                                self.addBtn.isHidden = false
+                            }else{
+                                self.btnHeight.constant = 0
+                                self.addBtn.isHidden = true
+                                self.wallets = wallets
+                                self.walletCV.reloadData()
+                            }
                         }
                     }else{
                         self.showAlert(title: "Error", message: walletResp.message, actions: nil)

@@ -47,14 +47,18 @@ prefix func -(value : String) -> String{
 enum API{
     case Login(params:OptionalDictionary)
     case Profile
+    case ProfileChangePassword(params:OptionalDictionary)
     case Banners
     case Accounts
     case AccountChnagePass(id:Int,parmas:OptionalDictionary)
     case AccountOpenPosition(id:Int)
     case AccountClosePosition(id:Int)
     case GetBanks
+    case AddBank(params:OptionalDictionary)
     case GetWallets
+    case AddWallet(params:OptionalDictionary)
     case GetDocs
+    case AddDocs
     case Transaction(type:String,start:String,end:String)
     case InternalTransfer(params:OptionalDictionary)
     case WithrawTransfer(params:OptionalDictionary)
