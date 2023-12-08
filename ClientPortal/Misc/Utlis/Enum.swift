@@ -49,6 +49,7 @@ enum ViewControllers:String{
     case AddWalletVC = "AddWalletVC"
     case ProfileChangePassVC = "ProfileChangePassVC"
     case DocsInfoVC = "DocsInfoVC"
+    case AddAccountVC = "AddAccountVC"
     
     
     public func getViewController<T:UIViewController>() -> T {
@@ -118,6 +119,8 @@ enum ViewControllers:String{
             storyBoard = .Main
         case .DocsInfoVC:
             storyBoard = .Menu
+        case .AddAccountVC:
+            storyBoard = .Main
         }
         
         

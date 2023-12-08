@@ -50,6 +50,8 @@ enum API{
     case ProfileChangePassword(params:OptionalDictionary)
     case Banners
     case Accounts
+    case GetAccountType
+    case AddAccount(parmas:OptionalDictionary)
     case AccountChnagePass(id:Int,parmas:OptionalDictionary)
     case AccountOpenPosition(id:Int)
     case AccountClosePosition(id:Int)

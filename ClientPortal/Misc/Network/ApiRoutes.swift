@@ -24,7 +24,7 @@ extension API:Router{
             return ApiPaths.profile
         case .Banners:
             return ApiPaths.banner
-        case .Accounts:
+        case .Accounts, .AddAccount:
             return ApiPaths.accounts
         case .AccountChnagePass(let id, _):
             return ApiPaths.accounts + "/\(id)" + ApiPaths.changePass
@@ -52,6 +52,8 @@ extension API:Router{
             return ApiPaths.logs
         case .ProfileChangePassword:
             return ApiPaths.profileChangePass
+        case .GetAccountType:
+            return ApiPaths.accounttypes
         }
     }
     
@@ -70,7 +72,7 @@ extension API:Router{
             return .post
         case .InternalTransfer, .WithrawTransfer, .Deposit, .Pay:
             return .post
-        case .AddBank, .AddWallet, .AddDocs:
+        case .AddBank, .AddWallet, .AddDocs, .AddAccount:
             return .post
         case .ProfileChangePassword:
             return .post
@@ -87,7 +89,7 @@ extension API:Router{
             return JSONEncoding.default
         case .InternalTransfer, .WithrawTransfer, .Deposit, .Pay:
             return JSONEncoding.default
-        case .AddBank, .AddWallet:
+        case .AddBank, .AddWallet, .AddAccount:
             return JSONEncoding.default
         case .ProfileChangePassword:
             return JSONEncoding.default
@@ -116,6 +118,8 @@ extension API:Router{
             return params
         case .ProfileChangePassword(let params):
             return params
+        case .AddAccount(let params):
+            return params
         default:
             return nil
         }
@@ -141,7 +145,7 @@ extension API:Router{
             return jsonParams()
         case .InternalTransfer, .WithrawTransfer, .Deposit, .Pay:
             return jsonParams()
-        case .AddBank, .AddWallet:
+        case .AddBank, .AddWallet, .AddAccount:
             return jsonParams()
         case .ProfileChangePassword:
             return jsonParams()

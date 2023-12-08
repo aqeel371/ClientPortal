@@ -12,6 +12,9 @@
 		C503F1102B23132200FD2D56 /* AddWalletVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F10F2B23132200FD2D56 /* AddWalletVC.swift */; };
 		C503F1122B23213300FD2D56 /* ProfileChangePassVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1112B23213300FD2D56 /* ProfileChangePassVC.swift */; };
 		C503F1142B23525000FD2D56 /* DocsInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1132B23525000FD2D56 /* DocsInfoVC.swift */; };
+		C503F1162B235E7400FD2D56 /* AccountTypeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1152B235E7400FD2D56 /* AccountTypeModel.swift */; };
+		C503F1182B2362B100FD2D56 /* AddAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1172B2362B100FD2D56 /* AddAccountVC.swift */; };
+		C503F11A2B236CA000FD2D56 /* AddAccountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C503F1192B236CA000FD2D56 /* AddAccountModel.swift */; };
 		C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9AF2B1F10C200BD405A /* LoginModel.swift */; };
 		C514D9B22B1F150800BD405A /* ProfileRespose.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B12B1F150800BD405A /* ProfileRespose.swift */; };
 		C514D9B42B1F19A300BD405A /* BannerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C514D9B32B1F19A300BD405A /* BannerResponse.swift */; };
@@ -130,6 +133,9 @@
 		C503F10F2B23132200FD2D56 /* AddWalletVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWalletVC.swift; sourceTree = "<group>"; };
 		C503F1112B23213300FD2D56 /* ProfileChangePassVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileChangePassVC.swift; sourceTree = "<group>"; };
 		C503F1132B23525000FD2D56 /* DocsInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocsInfoVC.swift; sourceTree = "<group>"; };
+		C503F1152B235E7400FD2D56 /* AccountTypeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountTypeModel.swift; path = ClientPortal/MVVM/View/ViewControllers/Main/AccountTypeModel.swift; sourceTree = SOURCE_ROOT; };
+		C503F1172B2362B100FD2D56 /* AddAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAccountVC.swift; sourceTree = "<group>"; };
+		C503F1192B236CA000FD2D56 /* AddAccountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AddAccountModel.swift; path = ClientPortal/MVVM/View/ViewControllers/Main/AddAccountModel.swift; sourceTree = SOURCE_ROOT; };
 		C514D9AF2B1F10C200BD405A /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginModel.swift; path = ClientPortal/MVVM/View/Cells/Chat/LoginModel.swift; sourceTree = SOURCE_ROOT; };
 		C514D9B12B1F150800BD405A /* ProfileRespose.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileRespose.swift; path = ClientPortal/MVVM/View/Cells/Chat/ProfileRespose.swift; sourceTree = SOURCE_ROOT; };
 		C514D9B32B1F19A300BD405A /* BannerResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BannerResponse.swift; path = ClientPortal/MVVM/View/Cells/Chat/BannerResponse.swift; sourceTree = SOURCE_ROOT; };
@@ -304,6 +310,7 @@
 				C55F0E5D2B18CEEE004EE83E /* SupportVC.swift */,
 				C503F1112B23213300FD2D56 /* ProfileChangePassVC.swift */,
 				C503F1132B23525000FD2D56 /* DocsInfoVC.swift */,
+				C503F1172B2362B100FD2D56 /* AddAccountVC.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -418,6 +425,8 @@
 				C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */,
 				C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */,
 				C585F6F82B21F53F00CF8E5F /* LogsModel.swift */,
+				C503F1152B235E7400FD2D56 /* AccountTypeModel.swift */,
+				C503F1192B236CA000FD2D56 /* AddAccountModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -725,6 +734,8 @@
 				C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */,
 				F2657FA82B1491EB00CDEEF3 /* AppDelegate.swift in Sources */,
 				C55F0E442B187EF7004EE83E /* WalletsVC.swift in Sources */,
+				C503F1182B2362B100FD2D56 /* AddAccountVC.swift in Sources */,
+				C503F1162B235E7400FD2D56 /* AccountTypeModel.swift in Sources */,
 				F2B384072B1495E600F4FB60 /* NetworkClient.swift in Sources */,
 				C54402272B175C03008209DD /* PerfectMoneyVC.swift in Sources */,
 				F253EE582B14BF95006E72B7 /* TranscationViewController.swift in Sources */,
@@ -783,6 +794,7 @@
 				F2657FAA2B1491EB00CDEEF3 /* SceneDelegate.swift in Sources */,
 				C58E8B1A2B1770FE00E7F3D3 /* MenuVC.swift in Sources */,
 				C503F1142B23525000FD2D56 /* DocsInfoVC.swift in Sources */,
+				C503F11A2B236CA000FD2D56 /* AddAccountModel.swift in Sources */,
 				F2B3840D2B14966B00F4FB60 /* Global.swift in Sources */,
 				C5D435E32B206D33003C90B8 /* PositionHeaderCRV.swift in Sources */,
 				C58305D62B1726EB0084AD07 /* ForgetPassVC.swift in Sources */,

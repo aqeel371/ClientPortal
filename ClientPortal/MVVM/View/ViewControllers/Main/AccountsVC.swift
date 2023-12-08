@@ -15,6 +15,8 @@ class AccountsVC: UIViewController {
     //MARK: - Variables
     var titleVC = ""
     var accounts = [AccountsDatum]()
+    var accType = [AccTypeDatum]()
+    var spinner:LoadingViewNib?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,6 +29,7 @@ class AccountsVC: UIViewController {
         // Enable swipe to back
         self.navigationController?.isNavigationBarHidden = false
         self.navigationController?.navigationBar.isHidden = true
+//        getAccounts()
     }
     
     @IBAction func backAction(_ sender: Any) {
@@ -36,6 +39,13 @@ class AccountsVC: UIViewController {
     
     @IBAction func profileAction(_ sender: Any) {
         let vc = ViewControllers.ProfileVC.getViewController() as ProfileVC
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func createAction(_ sender: Any) {
+        let vc = ViewControllers.AddAccountVC.getViewController() as AddAccountVC
+        vc.accTypes = self.accType
+        vc.titleVC = self.titleVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -68,6 +78,43 @@ extension AccountsVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
         let height = 330.0
         
         return CGSize(width: width, height: height)
+    }
+    
+}
+
+
+//MARK: - API
+extension AccountsVC{
+    
+    func getAccounts(){
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .Accounts, completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let accResp:AccountsResponse = self.handleResponse(data: data as! Data){
+                    if accResp.status ?? false {
+                        if let accounts = accResp.result?.data{
+                            for acc in accounts{
+                                if acc.type == "LIVE" && self.titleVC == "Live"{
+                                    self.accounts.append(acc)
+                                }else{
+                                    self.accounts.append(acc)
+                                }
+                            }
+                        }
+                    }else{
+                        self.showAlert(title: "Error", message: accResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
     }
     
 }

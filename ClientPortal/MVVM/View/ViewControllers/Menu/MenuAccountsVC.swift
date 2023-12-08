@@ -20,6 +20,9 @@ class MenuAccountsVC: UIViewController {
     var liveAccounts = [AccountsDatum]()
     var demoAccounts = [AccountsDatum]()
     
+    var liveAccType = [AccTypeDatum]()
+    var demoAccType = [AccTypeDatum]()
+    
     //MARK: - IBACtions
     
     @IBAction func backAction(_ sender: Any) {
@@ -36,6 +39,7 @@ class MenuAccountsVC: UIViewController {
         let vc = ViewControllers.AccountsVC.getViewController() as AccountsVC
         vc.titleVC = "Live"
         vc.accounts = liveAccounts
+        vc.accType = liveAccType
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -44,6 +48,7 @@ class MenuAccountsVC: UIViewController {
         let vc = ViewControllers.AccountsVC.getViewController() as AccountsVC
         vc.titleVC = "Demo"
         vc.accounts = demoAccounts
+        vc.accType = demoAccType
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -75,6 +80,39 @@ extension MenuAccountsVC{
                                     self.liveAccounts.append(acc)
                                 }else{
                                     self.demoAccounts.append(acc)
+                                }
+                            }
+                            self.getAccountTypes()
+                        }
+                    }else{
+                        self.showAlert(title: "Error", message: accResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
+    func getAccountTypes(){
+        
+        spinner = self.showSpinner()
+        ApiManager.shared.request(with: .GetAccountType, completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let accResp:AccountTypesResponse = self.handleResponse(data: data as! Data){
+                    if accResp.status ?? false {
+                        if let accounts = accResp.result?.data{
+                            for acc in accounts{
+                                if acc.type == "LIVE"{
+                                    self.liveAccType.append(acc)
+                                }else{
+                                    self.demoAccType.append(acc)
                                 }
                             }
                         }

@@ -39,7 +39,7 @@
                                 <rect key="frame" x="0.0" y="266" width="393" height="552"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RLi-nl-hCe">
-                                        <rect key="frame" x="170.66666666666666" y="15" width="51.666666666666657" height="20"/>
+                                        <rect key="frame" x="171.66666666666666" y="15.000000000000002" width="49.666666666666657" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -48,13 +48,13 @@
                                         <rect key="frame" x="0.0" y="50" width="393" height="502"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zCj-cW-X7w">
-                                                <rect key="frame" x="50" y="50" width="293" height="17.666666666666671"/>
+                                                <rect key="frame" x="50" y="50" width="293" height="16.333333333333329"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                 <color key="textColor" name="EerieBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWT-5N-Qyq" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="75.666666666666686" width="313" height="40"/>
+                                                <rect key="frame" x="40" y="74.333333333333314" width="313" height="40"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="500652" placeholder="username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SWx-RZ-3Ns">
                                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -94,13 +94,13 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5l-M7-9Uv">
-                                                <rect key="frame" x="50" y="135.66666666666669" width="293" height="17.666666666666657"/>
+                                                <rect key="frame" x="50" y="134.33333333333331" width="293" height="16.333333333333343"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                 <color key="textColor" name="EerieBlack"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CwS-JR-pfV" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="161.33333333333331" width="313" height="40"/>
+                                                <rect key="frame" x="40" y="158.66666666666669" width="313" height="40"/>
                                                 <subviews>
                                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Test@2022" placeholder="password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dXz-te-C8S">
                                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -151,7 +151,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCa-BR-w0a">
-                                                <rect key="frame" x="220" y="217.33333333333337" width="117" height="20"/>
+                                                <rect key="frame" x="222" y="214.66666666666663" width="115" height="20"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="20" id="LkU-aP-YcC"/>
                                                 </constraints>
@@ -165,7 +165,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-pf-Hsv" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                                <rect key="frame" x="40" y="277.33333333333337" width="313" height="40"/>
+                                                <rect key="frame" x="40" y="274.66666666666663" width="313" height="40"/>
                                                 <color key="backgroundColor" name="VividCerulean"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="puJ-5g-utB"/>
@@ -184,7 +184,7 @@
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4b-Uj-76P">
-                                                <rect key="frame" x="93" y="341.33333333333337" width="207" height="30"/>
+                                                <rect key="frame" x="94.666666666666686" y="338.66666666666663" width="204" height="29"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="Don’t have an account? Sign Up">
@@ -501,16 +501,16 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="htZ-wo-hZC">
-                                                                                <rect key="frame" x="64" y="24.333333333333311" width="77.666666666666686" height="41.666666666666657"/>
+                                                                                <rect key="frame" x="64" y="25.666666666666686" width="77.666666666666686" height="39"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Balance" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bfO-WI-fBl">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="17.666666666666668"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="16.333333333333332"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                                                         <color key="textColor" name="SonicSilver"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$146709" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24i-ZU-3qP">
-                                                                                        <rect key="frame" x="0.0" y="21.666666666666686" width="77.666666666666671" height="20"/>
+                                                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="77.666666666666671" height="18.666666666666671"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                                                                         <color key="textColor" name="EerieBlack"/>
                                                                                         <nil key="highlightedColor"/>
@@ -559,16 +559,16 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="6B7-Wn-PfQ">
-                                                                                <rect key="frame" x="64.000000000000028" y="24.333333333333311" width="77.333333333333343" height="41.666666666666657"/>
+                                                                                <rect key="frame" x="64.000000000000028" y="25.666666666666686" width="77.333333333333343" height="39"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposits" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F3g-zL-zvH">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="17.666666666666668"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="16.333333333333332"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                                                         <color key="textColor" name="SonicSilver"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$236709" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1wM-pJ-hwy">
-                                                                                        <rect key="frame" x="0.0" y="21.666666666666686" width="77.333333333333329" height="20"/>
+                                                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="77.333333333333329" height="18.666666666666671"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                                                                         <color key="textColor" name="EerieBlack"/>
                                                                                         <nil key="highlightedColor"/>
@@ -622,16 +622,16 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="7dJ-hI-Tcv">
-                                                                                <rect key="frame" x="64" y="24.333333333333311" width="77.666666666666686" height="41.666666666666657"/>
+                                                                                <rect key="frame" x="64" y="25.666666666666686" width="77.666666666666686" height="39"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Equity" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zSK-jK-Uzi">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="17.666666666666668"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.666666666666671" height="16.333333333333332"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                                                         <color key="textColor" name="SonicSilver"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$316709" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PU4-na-s6F">
-                                                                                        <rect key="frame" x="0.0" y="21.666666666666686" width="77.666666666666671" height="20"/>
+                                                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="77.666666666666671" height="18.666666666666671"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                                                                         <color key="textColor" name="EerieBlack"/>
                                                                                         <nil key="highlightedColor"/>
@@ -680,16 +680,16 @@
                                                                                 </userDefinedRuntimeAttributes>
                                                                             </view>
                                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8yz-wr-6WY">
-                                                                                <rect key="frame" x="64.000000000000028" y="24.333333333333311" width="77.333333333333343" height="41.666666666666657"/>
+                                                                                <rect key="frame" x="64.000000000000028" y="25.666666666666686" width="77.333333333333343" height="39"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Withdrawal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDx-zA-iGh">
-                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="17.666666666666668"/>
+                                                                                        <rect key="frame" x="0.0" y="0.0" width="77.333333333333329" height="16.333333333333332"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                                                                                         <color key="textColor" name="SonicSilver"/>
                                                                                         <nil key="highlightedColor"/>
                                                                                     </label>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$456709" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WcS-Lp-gnc">
-                                                                                        <rect key="frame" x="0.0" y="21.666666666666686" width="77.333333333333329" height="20"/>
+                                                                                        <rect key="frame" x="0.0" y="20.333333333333314" width="77.333333333333329" height="18.666666666666671"/>
                                                                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                                                                         <color key="textColor" name="EerieBlack"/>
                                                                                         <nil key="highlightedColor"/>
@@ -878,7 +878,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fo4-3x-DWo">
-                                <rect key="frame" x="111" y="79" width="171" height="24"/>
+                                <rect key="frame" x="114.66666666666669" y="79" width="164" height="24"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -918,19 +918,19 @@
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gTs-j5-fp6">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="791.33333333333337"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="784.66666666666663"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_passReset" translatesAutoresizingMaskIntoConstraints="NO" id="b3x-eP-hCY">
                                                         <rect key="frame" x="108.66666666666669" y="52" width="176" height="176"/>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFz-yL-lin">
-                                                        <rect key="frame" x="50" y="273" width="293" height="17.666666666666686"/>
+                                                        <rect key="frame" x="50" y="273" width="293" height="16.333333333333314"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WCf-wk-Z2c" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="298.66666666666669" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="297.33333333333331" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hBM-gM-TRd">
                                                                 <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -970,13 +970,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SK3-6t-1EN">
-                                                        <rect key="frame" x="50" y="358.66666666666669" width="293" height="17.666666666666686"/>
+                                                        <rect key="frame" x="50" y="357.33333333333331" width="293" height="16.333333333333314"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZRQ-ld-F1M" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="384.33333333333337" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="381.66666666666663" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hrK-nN-ige">
                                                                 <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1016,13 +1016,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVZ-8l-itt">
-                                                        <rect key="frame" x="50" y="444.33333333333337" width="293" height="17.666666666666686"/>
+                                                        <rect key="frame" x="50" y="441.66666666666663" width="293" height="16.333333333333314"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3KH-Cm-PwH" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="470" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="466" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MB2-jG-HAF">
                                                                 <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1075,13 +1075,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Confirm Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xgC-PC-CcS">
-                                                        <rect key="frame" x="52" y="530" width="251" height="17.666666666666629"/>
+                                                        <rect key="frame" x="52" y="526" width="251" height="16.333333333333371"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8GV-Jd-fT6" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="555.66666666666663" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="550.33333333333337" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tLO-Nw-39t">
                                                                 <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1134,13 +1134,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plateform Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MjC-xq-DxO">
-                                                        <rect key="frame" x="52" y="615.66666666666663" width="251" height="17.666666666666629"/>
+                                                        <rect key="frame" x="52" y="610.33333333333337" width="251" height="16.333333333333371"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qf0-QQ-40N" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="641.33333333333337" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="634.66666666666663" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MT4 Platform" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Ad-hq-Ius">
                                                                 <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1180,7 +1180,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="irS-AS-UHI" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="721.33333333333337" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="714.66666666666663" width="313" height="40"/>
                                                         <color key="backgroundColor" name="VividCerulean"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="40" id="62N-FW-XJa"/>
@@ -1349,7 +1349,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Live Accounts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BCZ-TE-DBQ">
-                                                <rect key="frame" x="130.33333333333337" y="0.0" width="132.66666666666663" height="24"/>
+                                                <rect key="frame" x="133.33333333333334" y="0.0" width="126.33333333333334" height="24"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -1404,6 +1404,9 @@
                                                         <color key="value" name="VividCerulean"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="createAction:" destination="cAD-a4-CbH" eventType="touchUpInside" id="5Jq-rl-YaJ"/>
+                                                </connections>
                                             </button>
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="jcD-Cz-x76">
                                                 <rect key="frame" x="30" y="139" width="333" height="584"/>
@@ -1530,7 +1533,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aul-mn-kQq">
-                                <rect key="frame" x="159.66666666666666" y="79" width="74" height="24"/>
+                                <rect key="frame" x="162" y="79" width="69" height="24"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1963,13 +1966,13 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="517.66666666666663"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="From Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DQc-dk-cMd">
-                                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
+                                                        <rect key="frame" x="50" y="25" width="293" height="21.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MD5-EP-oTZ" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="50.666666666666657" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="54.666666666666657" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MX1-VZ-5Gx">
                                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1999,13 +2002,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b8r-yx-0fv">
-                                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
+                                                        <rect key="frame" x="50" y="114.66666666666666" width="293" height="16.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dA-6k-J5s" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="136.33333333333331" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="139" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Rsi-b7-Pef">
                                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -2035,13 +2038,13 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EwG-IT-lhg">
-                                                        <rect key="frame" x="50" y="196.33333333333331" width="293" height="17.666666666666657"/>
+                                                        <rect key="frame" x="50" y="199" width="293" height="16.333333333333343"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osd-Qr-8iv" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="40" y="222" width="313" height="40"/>
+                                                        <rect key="frame" x="40" y="223.33333333333331" width="313" height="40"/>
                                                         <subviews>
                                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="t6I-nx-FbT">
                                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -2071,7 +2074,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1E-pr-Du9">
-                                                        <rect key="frame" x="50" y="282" width="293" height="17.666666666666686"/>
+                                                        <rect key="frame" x="50" y="283.33333333333331" width="293" height="16.333333333333314"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                                         <color key="textColor" name="EerieBlack"/>
                                                         <nil key="highlightedColor"/>
@@ -2213,7 +2216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eWB-lM-qCS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3988.5496183206105" y="367.6056338028169"/>
+            <point key="canvasLocation" x="3898" y="-50"/>
         </scene>
         <!--Forget PassVC-->
         <scene sceneID="CLm-LE-5iB">
@@ -2224,13 +2227,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BWs-9X-yfj">
-                                <rect key="frame" x="50" y="109" width="293" height="17.666666666666671"/>
+                                <rect key="frame" x="50" y="109" width="293" height="16.333333333333329"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0u3-gm-Tce" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="134.66666666666666" width="313" height="40"/>
+                                <rect key="frame" x="40" y="133.33333333333334" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Your Email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-jZ-F6S">
                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -2270,7 +2273,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cf1-Vd-fBl" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="214.66666666666666" width="313" height="40"/>
+                                <rect key="frame" x="40" y="213.33333333333334" width="313" height="40"/>
                                 <color key="backgroundColor" name="VividCerulean"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="lpo-eT-wbj"/>
@@ -3758,37 +3761,361 @@
             </objects>
             <point key="canvasLocation" x="-1022" y="1101"/>
         </scene>
+        <!--Add AccountVC-->
+        <scene sceneID="RI4-Lv-T6t">
+            <objects>
+                <viewController storyboardIdentifier="AddAccountVC" id="wwu-td-JRb" customClass="AddAccountVC" customModule="ClientPortal" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vyd-YU-MQV">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qce-KU-gZb" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                <rect key="frame" x="30" y="79" width="24" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="54F-NT-YTC">
+                                        <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="ic_back"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="wwu-td-JRb" eventType="touchUpInside" id="dl2-VQ-KV5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="1Sx-Gz-gSp"/>
+                                    <constraint firstAttribute="bottom" secondItem="54F-NT-YTC" secondAttribute="bottom" id="CEt-l1-1vc"/>
+                                    <constraint firstAttribute="trailing" secondItem="54F-NT-YTC" secondAttribute="trailing" id="dDE-ca-c2G"/>
+                                    <constraint firstAttribute="height" constant="24" id="e3f-0Q-S1g"/>
+                                    <constraint firstItem="54F-NT-YTC" firstAttribute="leading" secondItem="qce-KU-gZb" secondAttribute="leading" id="jg4-Xj-4U5"/>
+                                    <constraint firstItem="54F-NT-YTC" firstAttribute="top" secondItem="qce-KU-gZb" secondAttribute="top" id="kYm-z2-8wA"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qcb-be-b6k">
+                                <rect key="frame" x="138" y="79" width="117" height="24"/>
+                                <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jLT-iY-PRH" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="138" width="393" height="714"/>
+                                <subviews>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="730-gt-eFS">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qXu-jC-LBL">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="407"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="3cA-Pl-KCK">
+                                                        <rect key="frame" x="0.0" y="30" width="393" height="277"/>
+                                                        <subviews>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W2s-ur-gYF">
+                                                                <rect key="frame" x="0.0" y="0.0" width="393" height="79"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Platform:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-KY-o0k">
+                                                                        <rect key="frame" x="30" y="0.0" width="333" height="31"/>
+                                                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                                                        <color key="textColor" name="EerieBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lYY-Qn-uSl" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                                                        <rect key="frame" x="20" y="39" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Plateform" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UCH-lz-tNP">
+                                                                                <rect key="frame" x="12" y="5" width="296" height="30"/>
+                                                                                <color key="textColor" name="EerieBlack"/>
+                                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                                            </textField>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_down" translatesAutoresizingMaskIntoConstraints="NO" id="Mgv-Jv-86Y">
+                                                                                <rect key="frame" x="318" y="10" width="20" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" secondItem="Mgv-Jv-86Y" secondAttribute="height" multiplier="1:1" id="nWV-RA-6a1"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="Mgv-Jv-86Y" secondAttribute="bottom" constant="10" id="1Pb-eE-LCL"/>
+                                                                            <constraint firstItem="Mgv-Jv-86Y" firstAttribute="leading" secondItem="UCH-lz-tNP" secondAttribute="trailing" constant="10" id="44j-7v-jUG"/>
+                                                                            <constraint firstItem="UCH-lz-tNP" firstAttribute="top" secondItem="lYY-Qn-uSl" secondAttribute="top" constant="5" id="Em2-or-BMI"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="UCH-lz-tNP" secondAttribute="bottom" constant="5" id="GKX-yZ-MQ7"/>
+                                                                            <constraint firstItem="Mgv-Jv-86Y" firstAttribute="top" secondItem="lYY-Qn-uSl" secondAttribute="top" constant="10" id="IBH-bB-7Rh"/>
+                                                                            <constraint firstItem="UCH-lz-tNP" firstAttribute="leading" secondItem="lYY-Qn-uSl" secondAttribute="leading" constant="12" id="JFi-gt-isz"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="RFZ-Jy-QpE"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="Mgv-Jv-86Y" secondAttribute="trailing" constant="15" id="gff-vw-UJA"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="Silver"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="bottom" secondItem="lYY-Qn-uSl" secondAttribute="bottom" id="WBD-Fi-VaD"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="4wX-KY-o0k" secondAttribute="trailing" constant="30" id="dAB-oL-PeV"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="lYY-Qn-uSl" secondAttribute="trailing" constant="20" id="oM7-rX-Vd4"/>
+                                                                    <constraint firstItem="lYY-Qn-uSl" firstAttribute="top" secondItem="4wX-KY-o0k" secondAttribute="bottom" constant="8" id="vQA-6R-mWK"/>
+                                                                    <constraint firstItem="lYY-Qn-uSl" firstAttribute="leading" secondItem="W2s-ur-gYF" secondAttribute="leading" constant="20" id="xm5-u2-DUo"/>
+                                                                    <constraint firstItem="4wX-KY-o0k" firstAttribute="top" secondItem="W2s-ur-gYF" secondAttribute="top" id="yUt-wM-5Oi"/>
+                                                                    <constraint firstItem="4wX-KY-o0k" firstAttribute="leading" secondItem="W2s-ur-gYF" secondAttribute="leading" constant="30" id="zru-oR-Gyo"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZiO-HI-7bh">
+                                                                <rect key="frame" x="0.0" y="99" width="393" height="79"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Account Type: " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qmi-Hh-eE7">
+                                                                        <rect key="frame" x="30" y="0.0" width="333" height="31"/>
+                                                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                                                        <color key="textColor" name="EerieBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ry7-Hj-4r6" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                                                        <rect key="frame" x="20" y="39" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Type" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p6U-eb-Wtf">
+                                                                                <rect key="frame" x="12" y="5" width="296" height="30"/>
+                                                                                <color key="textColor" name="EerieBlack"/>
+                                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                                            </textField>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_down" translatesAutoresizingMaskIntoConstraints="NO" id="toD-wl-GGV">
+                                                                                <rect key="frame" x="318" y="10" width="20" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" secondItem="toD-wl-GGV" secondAttribute="height" multiplier="1:1" id="bFg-xi-FIm"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="toD-wl-GGV" secondAttribute="bottom" constant="10" id="0GH-q3-cQX"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="3ff-xO-dJO"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="p6U-eb-Wtf" secondAttribute="bottom" constant="5" id="Qoq-g7-vtI"/>
+                                                                            <constraint firstItem="toD-wl-GGV" firstAttribute="leading" secondItem="p6U-eb-Wtf" secondAttribute="trailing" constant="10" id="XMK-1v-Lmf"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="toD-wl-GGV" secondAttribute="trailing" constant="15" id="kLa-vr-XZH"/>
+                                                                            <constraint firstItem="toD-wl-GGV" firstAttribute="top" secondItem="Ry7-Hj-4r6" secondAttribute="top" constant="10" id="ujT-6u-gmp"/>
+                                                                            <constraint firstItem="p6U-eb-Wtf" firstAttribute="leading" secondItem="Ry7-Hj-4r6" secondAttribute="leading" constant="12" id="vjk-9D-AcB"/>
+                                                                            <constraint firstItem="p6U-eb-Wtf" firstAttribute="top" secondItem="Ry7-Hj-4r6" secondAttribute="top" constant="5" id="zNV-vn-dgn"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="Silver"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="trailing" secondItem="Ry7-Hj-4r6" secondAttribute="trailing" constant="20" id="AVD-xY-bpj"/>
+                                                                    <constraint firstItem="qmi-Hh-eE7" firstAttribute="leading" secondItem="ZiO-HI-7bh" secondAttribute="leading" constant="30" id="KbV-GT-e7S"/>
+                                                                    <constraint firstItem="Ry7-Hj-4r6" firstAttribute="leading" secondItem="ZiO-HI-7bh" secondAttribute="leading" constant="20" id="QPE-PE-Cag"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="Ry7-Hj-4r6" secondAttribute="bottom" id="Tkj-Gr-Vgo"/>
+                                                                    <constraint firstItem="qmi-Hh-eE7" firstAttribute="top" secondItem="ZiO-HI-7bh" secondAttribute="top" id="YDj-EY-OLp"/>
+                                                                    <constraint firstItem="Ry7-Hj-4r6" firstAttribute="top" secondItem="qmi-Hh-eE7" secondAttribute="bottom" constant="8" id="fui-Ca-Sfp"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="qmi-Hh-eE7" secondAttribute="trailing" constant="30" id="piH-Nj-y91"/>
+                                                                </constraints>
+                                                            </view>
+                                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DLd-Lo-21h">
+                                                                <rect key="frame" x="0.0" y="198" width="393" height="79"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leverage:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sqx-un-yP5">
+                                                                        <rect key="frame" x="30" y="0.0" width="333" height="31"/>
+                                                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
+                                                                        <color key="textColor" name="EerieBlack"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pO9-Vm-Rmf" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
+                                                                        <rect key="frame" x="20" y="39" width="353" height="40"/>
+                                                                        <subviews>
+                                                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Levrage" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fw0-ny-03p">
+                                                                                <rect key="frame" x="12" y="5" width="296" height="30"/>
+                                                                                <color key="textColor" name="EerieBlack"/>
+                                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                                                <textInputTraits key="textInputTraits" textContentType="username"/>
+                                                                            </textField>
+                                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_down" translatesAutoresizingMaskIntoConstraints="NO" id="PyW-YK-EVM">
+                                                                                <rect key="frame" x="318" y="10" width="20" height="20"/>
+                                                                                <constraints>
+                                                                                    <constraint firstAttribute="width" secondItem="PyW-YK-EVM" secondAttribute="height" multiplier="1:1" id="F1W-5E-30R"/>
+                                                                                </constraints>
+                                                                            </imageView>
+                                                                        </subviews>
+                                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                                        <constraints>
+                                                                            <constraint firstAttribute="bottom" secondItem="fw0-ny-03p" secondAttribute="bottom" constant="5" id="2Cp-4Y-7eM"/>
+                                                                            <constraint firstAttribute="trailing" secondItem="PyW-YK-EVM" secondAttribute="trailing" constant="15" id="4Uk-dm-R6c"/>
+                                                                            <constraint firstItem="fw0-ny-03p" firstAttribute="leading" secondItem="pO9-Vm-Rmf" secondAttribute="leading" constant="12" id="Thz-RS-KF3"/>
+                                                                            <constraint firstItem="PyW-YK-EVM" firstAttribute="top" secondItem="pO9-Vm-Rmf" secondAttribute="top" constant="10" id="h8l-o7-mqg"/>
+                                                                            <constraint firstItem="fw0-ny-03p" firstAttribute="top" secondItem="pO9-Vm-Rmf" secondAttribute="top" constant="5" id="jXW-GS-0ED"/>
+                                                                            <constraint firstAttribute="bottom" secondItem="PyW-YK-EVM" secondAttribute="bottom" constant="10" id="k3f-em-AwY"/>
+                                                                            <constraint firstAttribute="height" constant="40" id="qVY-Pw-rw2"/>
+                                                                            <constraint firstItem="PyW-YK-EVM" firstAttribute="leading" secondItem="fw0-ny-03p" secondAttribute="trailing" constant="10" id="zZx-k4-jUN"/>
+                                                                        </constraints>
+                                                                        <userDefinedRuntimeAttributes>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                                <real key="value" value="20"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                                                <real key="value" value="1"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                                <color key="value" name="Silver"/>
+                                                                            </userDefinedRuntimeAttribute>
+                                                                        </userDefinedRuntimeAttributes>
+                                                                    </view>
+                                                                </subviews>
+                                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                <constraints>
+                                                                    <constraint firstItem="Sqx-un-yP5" firstAttribute="top" secondItem="DLd-Lo-21h" secondAttribute="top" id="34I-HM-7xs"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="Sqx-un-yP5" secondAttribute="trailing" constant="30" id="BXM-MQ-SPk"/>
+                                                                    <constraint firstItem="pO9-Vm-Rmf" firstAttribute="top" secondItem="Sqx-un-yP5" secondAttribute="bottom" constant="8" id="InL-hc-sVl"/>
+                                                                    <constraint firstAttribute="trailing" secondItem="pO9-Vm-Rmf" secondAttribute="trailing" constant="20" id="Q6X-r7-XVa"/>
+                                                                    <constraint firstAttribute="bottom" secondItem="pO9-Vm-Rmf" secondAttribute="bottom" id="fHp-rY-dR1"/>
+                                                                    <constraint firstItem="pO9-Vm-Rmf" firstAttribute="leading" secondItem="DLd-Lo-21h" secondAttribute="leading" constant="20" id="qb0-0d-ohh"/>
+                                                                    <constraint firstItem="Sqx-un-yP5" firstAttribute="leading" secondItem="DLd-Lo-21h" secondAttribute="leading" constant="30" id="rHt-pG-qOH"/>
+                                                                </constraints>
+                                                            </view>
+                                                        </subviews>
+                                                    </stackView>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="duT-jG-yzt" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
+                                                        <rect key="frame" x="96.666666666666686" y="337" width="200" height="40"/>
+                                                        <color key="backgroundColor" name="VividCerulean"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" secondItem="duT-jG-yzt" secondAttribute="height" multiplier="5:1" id="eTn-sd-UBj"/>
+                                                            <constraint firstAttribute="height" constant="40" id="f8d-cy-ysf"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="18"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Create Account">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="10"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="createAction:" destination="wwu-td-JRb" eventType="touchUpInside" id="nuV-qE-939"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstItem="duT-jG-yzt" firstAttribute="centerX" secondItem="qXu-jC-LBL" secondAttribute="centerX" id="8G2-LA-X47"/>
+                                                    <constraint firstAttribute="bottom" secondItem="duT-jG-yzt" secondAttribute="bottom" constant="30" id="EgL-QB-DTT"/>
+                                                    <constraint firstItem="3cA-Pl-KCK" firstAttribute="top" secondItem="qXu-jC-LBL" secondAttribute="top" constant="30" id="LZq-JE-J3G"/>
+                                                    <constraint firstItem="3cA-Pl-KCK" firstAttribute="leading" secondItem="qXu-jC-LBL" secondAttribute="leading" id="dbf-Cu-MoR"/>
+                                                    <constraint firstAttribute="trailing" secondItem="3cA-Pl-KCK" secondAttribute="trailing" id="jge-gb-u7h"/>
+                                                    <constraint firstItem="duT-jG-yzt" firstAttribute="top" secondItem="3cA-Pl-KCK" secondAttribute="bottom" constant="30" id="lxq-8K-pBW"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="qXu-jC-LBL" firstAttribute="top" secondItem="RXt-Lb-pzB" secondAttribute="top" id="HZ8-4K-Iac"/>
+                                            <constraint firstItem="qXu-jC-LBL" firstAttribute="leading" secondItem="730-gt-eFS" secondAttribute="leading" id="OnC-zj-vxf"/>
+                                            <constraint firstItem="qXu-jC-LBL" firstAttribute="leading" secondItem="RXt-Lb-pzB" secondAttribute="leading" id="Zpo-Jf-PdV"/>
+                                            <constraint firstItem="qXu-jC-LBL" firstAttribute="top" secondItem="730-gt-eFS" secondAttribute="top" id="erd-W8-86P"/>
+                                            <constraint firstAttribute="trailing" secondItem="qXu-jC-LBL" secondAttribute="trailing" id="vvw-9j-aLq"/>
+                                            <constraint firstItem="RXt-Lb-pzB" firstAttribute="trailing" secondItem="qXu-jC-LBL" secondAttribute="trailing" id="yET-Yr-HKt"/>
+                                            <constraint firstAttribute="bottom" secondItem="qXu-jC-LBL" secondAttribute="bottom" id="yt7-H1-fKK"/>
+                                        </constraints>
+                                        <viewLayoutGuide key="contentLayoutGuide" id="sim-4t-MAO"/>
+                                        <viewLayoutGuide key="frameLayoutGuide" id="RXt-Lb-pzB"/>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="730-gt-eFS" firstAttribute="leading" secondItem="jLT-iY-PRH" secondAttribute="leading" id="L36-q5-sqZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="730-gt-eFS" secondAttribute="trailing" id="mqM-FC-R8h"/>
+                                    <constraint firstItem="730-gt-eFS" firstAttribute="top" secondItem="jLT-iY-PRH" secondAttribute="top" id="qtu-RY-OTk"/>
+                                    <constraint firstAttribute="bottom" secondItem="730-gt-eFS" secondAttribute="bottom" id="xWv-Iz-YkN"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="FC4-8q-eGg"/>
+                        <color key="backgroundColor" name="ColorPrimary"/>
+                        <constraints>
+                            <constraint firstItem="jLT-iY-PRH" firstAttribute="leading" secondItem="FC4-8q-eGg" secondAttribute="leading" id="4AP-kM-cNP"/>
+                            <constraint firstItem="qce-KU-gZb" firstAttribute="top" secondItem="FC4-8q-eGg" secondAttribute="top" constant="20" id="Ecb-vp-0Wq"/>
+                            <constraint firstItem="qce-KU-gZb" firstAttribute="leading" secondItem="FC4-8q-eGg" secondAttribute="leading" constant="30" id="GY6-IR-LlO"/>
+                            <constraint firstItem="qcb-be-b6k" firstAttribute="top" secondItem="qce-KU-gZb" secondAttribute="top" id="Gb6-6b-The"/>
+                            <constraint firstItem="qcb-be-b6k" firstAttribute="bottom" secondItem="qce-KU-gZb" secondAttribute="bottom" id="Pal-32-7EE"/>
+                            <constraint firstItem="jLT-iY-PRH" firstAttribute="top" secondItem="qce-KU-gZb" secondAttribute="bottom" constant="35" id="QpX-id-dGg"/>
+                            <constraint firstItem="qcb-be-b6k" firstAttribute="centerX" secondItem="FC4-8q-eGg" secondAttribute="centerX" id="TOs-RJ-tdS"/>
+                            <constraint firstAttribute="bottom" secondItem="jLT-iY-PRH" secondAttribute="bottom" id="ZtT-LZ-oWN"/>
+                            <constraint firstItem="FC4-8q-eGg" firstAttribute="trailing" secondItem="jLT-iY-PRH" secondAttribute="trailing" id="wIG-uv-FeM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tfAccType" destination="p6U-eb-Wtf" id="r2z-0d-hdi"/>
+                        <outlet property="tfLevrage" destination="fw0-ny-03p" id="e8X-F4-eP7"/>
+                        <outlet property="tfPlateForm" destination="UCH-lz-tNP" id="sfd-Jr-p57"/>
+                        <outlet property="vcTitleLbl" destination="qcb-be-b6k" id="kz0-ca-ENU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="v3i-aC-5P5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3897" y="673"/>
+        </scene>
     </scenes>
     <designables>
         <designable name="Cf1-Vd-fBl">
-            <size key="intrinsicContentSize" width="108" height="30"/>
+            <size key="intrinsicContentSize" width="102" height="29"/>
         </designable>
         <designable name="Gi7-vn-2Zp">
-            <size key="intrinsicContentSize" width="115" height="30"/>
+            <size key="intrinsicContentSize" width="103" height="29"/>
         </designable>
         <designable name="HfQ-pf-Hsv">
-            <size key="intrinsicContentSize" width="46" height="30"/>
+            <size key="intrinsicContentSize" width="44" height="29"/>
         </designable>
         <designable name="Ld6-wb-NkW">
-            <size key="intrinsicContentSize" width="105" height="30"/>
+            <size key="intrinsicContentSize" width="98" height="29"/>
         </designable>
         <designable name="SZA-Q5-Qah">
-            <size key="intrinsicContentSize" width="78" height="30"/>
+            <size key="intrinsicContentSize" width="70" height="29"/>
         </designable>
         <designable name="a5I-yQ-Vwv">
-            <size key="intrinsicContentSize" width="52" height="30"/>
+            <size key="intrinsicContentSize" width="49" height="29"/>
         </designable>
         <designable name="bCq-Nd-ydR">
-            <size key="intrinsicContentSize" width="78" height="30"/>
+            <size key="intrinsicContentSize" width="70" height="29"/>
+        </designable>
+        <designable name="duT-jG-yzt">
+            <size key="intrinsicContentSize" width="126" height="33"/>
         </designable>
         <designable name="eFm-fq-fLN">
-            <size key="intrinsicContentSize" width="52" height="30"/>
+            <size key="intrinsicContentSize" width="49" height="29"/>
         </designable>
         <designable name="irS-AS-UHI">
-            <size key="intrinsicContentSize" width="120" height="30"/>
+            <size key="intrinsicContentSize" width="115" height="29"/>
         </designable>
         <designable name="sXe-GJ-YOd">
-            <size key="intrinsicContentSize" width="120" height="30"/>
+            <size key="intrinsicContentSize" width="115" height="29"/>
         </designable>
     </designables>
     <resources>

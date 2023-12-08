@@ -18,6 +18,7 @@ internal struct ApiPaths {
     static let profileChangePass = "my/change-password"
     static let banner = "banners"
     static let accounts = "accounts"
+    static let accounttypes = "account-types"
     static let changePass = "/change-password"
     static let close = "/close-positions"
     static let open = "/open-positions"
