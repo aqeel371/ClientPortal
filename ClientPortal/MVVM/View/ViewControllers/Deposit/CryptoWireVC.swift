@@ -104,7 +104,7 @@ extension CryptoWireVC{
             self.embedPerfectMoney()
         case .Stick:
             lblTitleVC.text = "Stick"
-            gateway = "stickpay"
+            gateway = "sticpay"
             innerView.isHidden = false
             banksTV.isHidden = true
             self.embedStick()

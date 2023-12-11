@@ -135,6 +135,8 @@ extension ReportsVC:UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTF = textField
+        
+        tfSearch.text = searchTypes[0]
     }
     
     func setupDatePicker(){

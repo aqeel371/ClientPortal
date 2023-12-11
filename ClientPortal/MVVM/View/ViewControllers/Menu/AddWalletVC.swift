@@ -134,6 +134,12 @@ extension AddWalletVC:UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDat
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTF = textField
+
+        if activeTF == tfNetWork{
+            tfNetWork.text = networks[0]
+        }else{
+            tfCurrency.text = currency[0]
+        }
     }
     
 }

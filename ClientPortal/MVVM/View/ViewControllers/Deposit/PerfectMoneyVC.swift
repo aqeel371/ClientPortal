@@ -8,7 +8,7 @@
 import UIKit
 
 class PerfectMoneyVC: UIViewController {
-
+    
     //MARK: - IBOutlets
     @IBOutlet weak var tfTradingAccount: UITextField!
     @IBOutlet weak var tfPayeeAccount: UITextField!
@@ -19,12 +19,12 @@ class PerfectMoneyVC: UIViewController {
     var spinner:LoadingViewNib?
     var accountPicker = UIPickerView()
     var accountTypes = [AccountsDatum]()
-    var accID = 0
+    var accID = 143
     var payeeAccount = ["U35900420 - USD","E3329162 - EUR"]
     var payee = ""
     var activeTF :UITextField?
-    var gateway = ""
-    var currency = "AED"
+    var gateway = "perfectmoney"
+    var currency = "USD"
     
     
     override func viewDidLoad() {
@@ -55,7 +55,6 @@ class PerfectMoneyVC: UIViewController {
         
     }
     
-
 }
 
 //MARK: - UITextView Delegate
@@ -74,6 +73,15 @@ extension PerfectMoneyVC:UITextViewDelegate,UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTF = textField
+        
+        if activeTF == tfTradingAccount{
+            tfTradingAccount.text = (accountTypes[0].platform ?? "") + " - " + "\(accountTypes[0].login ?? 0)"
+            self.accID = accountTypes[0].id ?? 0
+        }else{
+            tfPayeeAccount.text = payeeAccount[0]
+            self.payee = "U35900420"
+            self.currency = "USD"
+        }
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
@@ -119,7 +127,13 @@ extension PerfectMoneyVC: UIPickerViewDelegate, UIPickerViewDataSource{
             self.accID = accountTypes[row].id ?? 0
         }else{
             tfPayeeAccount.text = payeeAccount[row]
-            self.payee = payeeAccount[row]
+            if row == 0{
+                self.payee = "U35900420"
+                self.currency = "USD"
+            }else{
+                self.currency = "EUR"
+                self.payee = "E3329162"
+            }
         }
     }
     
@@ -142,8 +156,22 @@ extension PerfectMoneyVC{
                 self.spinner?.removeFromSuperview()
                 if let payResp:PayResponse = self.handleResponse(data: data as! Data){
                     if payResp.status ?? false {
+                        
+                        let url = URL(string: "https://perfectmoney.com/api/step1.asp")!
+                        //                        let urlString = "https://perfectmoney.com/api/step1.asp"
+                        let data = [
+                            "PAYEE_ACCOUNT": self.payee,
+                            "PAYEE_NAME": "GodoFx",
+                            "PAYMENT_ID": "\(payResp.result?.id ?? 0)",
+                            "PAYMENT_AMOUNT": "\(pay.amount ?? 0)",
+                            "PAYMENT_UNITS": payResp.result?.currency ?? "",
+                            "PAYMENT_URL": ApiConstants.base_url + ApiPaths.deposit, // Replace with the actual payment URL
+                            "NOPAYMENT_URL": ApiConstants.base_url +  ApiPaths.deposit, // Replace with the actual no payment URL
+                            "PAYMENT_URL_METHOD": "LINK"
+                        ]
+                        
                         let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
-                            self.navigationController?.popViewController(animated: true)
+                            self.openWindowWithPost(url: url, data: data)
                         }
                         self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
                     }else{
@@ -157,7 +185,29 @@ extension PerfectMoneyVC{
             
         })
         
+    }
+    
+    func openWindowWithPost(url: URL, data: [String: String]) {
+        // Create a form
+        var form = URLRequest(url: url)
+        form.httpMethod = "POST"
+        form.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        form.setValue("application/json", forHTTPHeaderField: "Accept")
         
+        // Set up the form data
+        var bodyString = ""
+        for (key, value) in data {
+            bodyString += "\(key)=\(value)&"
+        }
+        form.httpBody = bodyString.data(using: .utf8)
+        
+        let webVC = WebViewController.loadFromNib()
+        webVC.url = ""
+        webVC.modalPresentationStyle = .fullScreen
+        self.present(webVC, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
+            webVC.webView.load(form)
+        })
     }
     
 }

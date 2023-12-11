@@ -725,91 +725,96 @@
                                 <rect key="frame" x="0.0" y="138" width="393" height="714"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-kg-HUB" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="30" y="40" width="333" height="525"/>
+                                        <rect key="frame" x="30" y="40" width="333" height="529"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZH-RH-jhd">
-                                                <rect key="frame" x="24" y="24.000000000000004" width="285" height="40.333333333333343"/>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Irr-SX-ZaS">
+                                                <rect key="frame" x="24" y="24" width="285" height="180"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpq-IY-qYr">
-                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="17.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
-                                                        <color key="textColor" name="SonicSilver"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tether (USDT) | TRC20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsB-cl-XOg">
-                                                        <rect key="frame" x="0.0" y="22.666666666666657" width="285" height="17.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
-                                                        <color key="textColor" name="EerieBlack"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZH-RH-jhd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Network" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bpq-IY-qYr">
+                                                                <rect key="frame" x="0.0" y="0.0" width="285" height="17.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                                <color key="textColor" name="SonicSilver"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tether (USDT) | TRC20" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsB-cl-XOg">
+                                                                <rect key="frame" x="0.0" y="22.666666666666657" width="285" height="27.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                                                <color key="textColor" name="EerieBlack"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="bpq-IY-qYr" firstAttribute="leading" secondItem="cZH-RH-jhd" secondAttribute="leading" id="39e-dc-a1f"/>
+                                                            <constraint firstAttribute="trailing" secondItem="bpq-IY-qYr" secondAttribute="trailing" id="BsQ-xY-gzs"/>
+                                                            <constraint firstAttribute="bottom" secondItem="MsB-cl-XOg" secondAttribute="bottom" id="Hbj-EI-fQA"/>
+                                                            <constraint firstItem="MsB-cl-XOg" firstAttribute="top" secondItem="bpq-IY-qYr" secondAttribute="bottom" constant="5" id="RtA-W3-zRn"/>
+                                                            <constraint firstItem="MsB-cl-XOg" firstAttribute="leading" secondItem="cZH-RH-jhd" secondAttribute="leading" id="bQA-fC-SiR"/>
+                                                            <constraint firstItem="bpq-IY-qYr" firstAttribute="top" secondItem="cZH-RH-jhd" secondAttribute="top" id="iuI-3S-xfU"/>
+                                                            <constraint firstAttribute="trailing" secondItem="MsB-cl-XOg" secondAttribute="trailing" id="lUb-LU-PHA"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KV-JZ-JAv">
+                                                        <rect key="frame" x="0.0" y="65" width="285" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-el-LC1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="285" height="27.333333333333332"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                                <color key="textColor" name="SonicSilver"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensure the network is Tron (TRC20)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVK-IH-lXf">
+                                                                <rect key="frame" x="0.0" y="32.333333333333314" width="285" height="17.666666666666671"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                                                <color key="textColor" name="EerieBlack"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="wGq-el-LC1" secondAttribute="trailing" id="Ucy-fk-o3M"/>
+                                                            <constraint firstItem="IVK-IH-lXf" firstAttribute="leading" secondItem="6KV-JZ-JAv" secondAttribute="leading" id="Vdr-7r-ExX"/>
+                                                            <constraint firstItem="wGq-el-LC1" firstAttribute="leading" secondItem="6KV-JZ-JAv" secondAttribute="leading" id="b4M-RX-ehd"/>
+                                                            <constraint firstItem="IVK-IH-lXf" firstAttribute="top" secondItem="wGq-el-LC1" secondAttribute="bottom" constant="5" id="icY-tH-gnA"/>
+                                                            <constraint firstAttribute="bottom" secondItem="IVK-IH-lXf" secondAttribute="bottom" id="mii-5n-6Gm"/>
+                                                            <constraint firstItem="wGq-el-LC1" firstAttribute="top" secondItem="6KV-JZ-JAv" secondAttribute="top" id="txS-cN-5oT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="IVK-IH-lXf" secondAttribute="trailing" id="vLl-ER-2uE"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9et-uu-0cO">
+                                                        <rect key="frame" x="0.0" y="130" width="285" height="50"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADT-uu-hq1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="285" height="17.666666666666668"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                                                                <color key="textColor" name="SonicSilver"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TLu3ozcMbyaQcFp9o46kaUTzscQ2cJjHgg" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shh-Ao-CHo">
+                                                                <rect key="frame" x="0.0" y="22.666666666666686" width="285" height="27.333333333333329"/>
+                                                                <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                                                                <color key="textColor" name="EerieBlack"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <constraints>
+                                                            <constraint firstItem="ADT-uu-hq1" firstAttribute="top" secondItem="9et-uu-0cO" secondAttribute="top" id="40t-uq-2tA"/>
+                                                            <constraint firstItem="ADT-uu-hq1" firstAttribute="leading" secondItem="9et-uu-0cO" secondAttribute="leading" id="DpW-h3-Mv6"/>
+                                                            <constraint firstAttribute="bottom" secondItem="shh-Ao-CHo" secondAttribute="bottom" id="G0c-ha-akp"/>
+                                                            <constraint firstItem="shh-Ao-CHo" firstAttribute="leading" secondItem="9et-uu-0cO" secondAttribute="leading" id="bkx-9D-sG8"/>
+                                                            <constraint firstItem="shh-Ao-CHo" firstAttribute="top" secondItem="ADT-uu-hq1" secondAttribute="bottom" constant="5" id="dDc-Ua-ehW"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ADT-uu-hq1" secondAttribute="trailing" id="ffo-YY-ygv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="shh-Ao-CHo" secondAttribute="trailing" id="piy-gS-ZQq"/>
+                                                        </constraints>
+                                                    </view>
                                                 </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="bpq-IY-qYr" firstAttribute="leading" secondItem="cZH-RH-jhd" secondAttribute="leading" id="39e-dc-a1f"/>
-                                                    <constraint firstAttribute="trailing" secondItem="bpq-IY-qYr" secondAttribute="trailing" id="BsQ-xY-gzs"/>
-                                                    <constraint firstAttribute="bottom" secondItem="MsB-cl-XOg" secondAttribute="bottom" id="Hbj-EI-fQA"/>
-                                                    <constraint firstItem="MsB-cl-XOg" firstAttribute="top" secondItem="bpq-IY-qYr" secondAttribute="bottom" constant="5" id="RtA-W3-zRn"/>
-                                                    <constraint firstItem="MsB-cl-XOg" firstAttribute="leading" secondItem="cZH-RH-jhd" secondAttribute="leading" id="bQA-fC-SiR"/>
-                                                    <constraint firstItem="bpq-IY-qYr" firstAttribute="top" secondItem="cZH-RH-jhd" secondAttribute="top" id="iuI-3S-xfU"/>
-                                                    <constraint firstAttribute="trailing" secondItem="MsB-cl-XOg" secondAttribute="trailing" id="lUb-LU-PHA"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KV-JZ-JAv">
-                                                <rect key="frame" x="24" y="79.333333333333314" width="285" height="40.333333333333343"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Note" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wGq-el-LC1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="17.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
-                                                        <color key="textColor" name="SonicSilver"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ensure the network is Tron (TRC20)" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IVK-IH-lXf">
-                                                        <rect key="frame" x="0.0" y="22.666666666666686" width="285" height="17.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
-                                                        <color key="textColor" name="EerieBlack"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstAttribute="trailing" secondItem="wGq-el-LC1" secondAttribute="trailing" id="Ucy-fk-o3M"/>
-                                                    <constraint firstItem="IVK-IH-lXf" firstAttribute="leading" secondItem="6KV-JZ-JAv" secondAttribute="leading" id="Vdr-7r-ExX"/>
-                                                    <constraint firstItem="wGq-el-LC1" firstAttribute="leading" secondItem="6KV-JZ-JAv" secondAttribute="leading" id="b4M-RX-ehd"/>
-                                                    <constraint firstItem="IVK-IH-lXf" firstAttribute="top" secondItem="wGq-el-LC1" secondAttribute="bottom" constant="5" id="icY-tH-gnA"/>
-                                                    <constraint firstAttribute="bottom" secondItem="IVK-IH-lXf" secondAttribute="bottom" id="mii-5n-6Gm"/>
-                                                    <constraint firstItem="wGq-el-LC1" firstAttribute="top" secondItem="6KV-JZ-JAv" secondAttribute="top" id="txS-cN-5oT"/>
-                                                    <constraint firstAttribute="trailing" secondItem="IVK-IH-lXf" secondAttribute="trailing" id="vLl-ER-2uE"/>
-                                                </constraints>
-                                            </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9et-uu-0cO">
-                                                <rect key="frame" x="24" y="134.66666666666669" width="285" height="40.333333333333343"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADT-uu-hq1">
-                                                        <rect key="frame" x="0.0" y="0.0" width="285" height="17.666666666666668"/>
-                                                        <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
-                                                        <color key="textColor" name="SonicSilver"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TLu3ozcMbyaQcFp9o46kaUTzscQ2cJjHgg" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="shh-Ao-CHo">
-                                                        <rect key="frame" x="0.0" y="22.666666666666629" width="285" height="17.666666666666671"/>
-                                                        <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
-                                                        <color key="textColor" name="EerieBlack"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                <constraints>
-                                                    <constraint firstItem="ADT-uu-hq1" firstAttribute="top" secondItem="9et-uu-0cO" secondAttribute="top" id="40t-uq-2tA"/>
-                                                    <constraint firstItem="ADT-uu-hq1" firstAttribute="leading" secondItem="9et-uu-0cO" secondAttribute="leading" id="DpW-h3-Mv6"/>
-                                                    <constraint firstAttribute="bottom" secondItem="shh-Ao-CHo" secondAttribute="bottom" id="G0c-ha-akp"/>
-                                                    <constraint firstItem="shh-Ao-CHo" firstAttribute="leading" secondItem="9et-uu-0cO" secondAttribute="leading" id="bkx-9D-sG8"/>
-                                                    <constraint firstItem="shh-Ao-CHo" firstAttribute="top" secondItem="ADT-uu-hq1" secondAttribute="bottom" constant="5" id="dDc-Ua-ehW"/>
-                                                    <constraint firstAttribute="trailing" secondItem="ADT-uu-hq1" secondAttribute="trailing" id="ffo-YY-ygv"/>
-                                                    <constraint firstAttribute="trailing" secondItem="shh-Ao-CHo" secondAttribute="trailing" id="piy-gS-ZQq"/>
-                                                </constraints>
-                                            </view>
+                                            </stackView>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_qr" translatesAutoresizingMaskIntoConstraints="NO" id="FYH-Fj-2uT">
-                                                <rect key="frame" x="56.666666666666686" y="215" width="220" height="220"/>
+                                                <rect key="frame" x="56.666666666666686" y="219" width="220" height="220"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" secondItem="FYH-Fj-2uT" secondAttribute="height" multiplier="1:1" id="k8t-gs-HIz"/>
                                                 </constraints>
@@ -817,18 +822,12 @@
                                         </subviews>
                                         <color key="backgroundColor" name="GhostWhite"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Irr-SX-ZaS" secondAttribute="trailing" constant="24" id="4Wk-x2-8Qh"/>
                                             <constraint firstAttribute="bottom" secondItem="FYH-Fj-2uT" secondAttribute="bottom" constant="90" id="5Z9-Hn-wBn"/>
-                                            <constraint firstItem="9et-uu-0cO" firstAttribute="trailing" secondItem="6KV-JZ-JAv" secondAttribute="trailing" id="6Nt-yD-Dpt"/>
-                                            <constraint firstItem="6KV-JZ-JAv" firstAttribute="top" secondItem="cZH-RH-jhd" secondAttribute="bottom" constant="15" id="9sc-Pu-vQi"/>
-                                            <constraint firstItem="6KV-JZ-JAv" firstAttribute="trailing" secondItem="cZH-RH-jhd" secondAttribute="trailing" id="CK2-FU-pEC"/>
-                                            <constraint firstItem="6KV-JZ-JAv" firstAttribute="leading" secondItem="cZH-RH-jhd" secondAttribute="leading" id="DCK-uX-Ixy"/>
-                                            <constraint firstAttribute="trailing" secondItem="cZH-RH-jhd" secondAttribute="trailing" constant="24" id="chS-bv-XoB"/>
+                                            <constraint firstItem="FYH-Fj-2uT" firstAttribute="top" secondItem="Irr-SX-ZaS" secondAttribute="bottom" constant="15" id="bMx-uc-O9f"/>
                                             <constraint firstItem="FYH-Fj-2uT" firstAttribute="centerX" secondItem="PbD-kg-HUB" secondAttribute="centerX" id="gBe-cx-wVp"/>
-                                            <constraint firstItem="9et-uu-0cO" firstAttribute="leading" secondItem="6KV-JZ-JAv" secondAttribute="leading" id="p5x-dq-bib"/>
-                                            <constraint firstItem="9et-uu-0cO" firstAttribute="top" secondItem="6KV-JZ-JAv" secondAttribute="bottom" constant="15" id="p8b-HQ-jvM"/>
-                                            <constraint firstItem="cZH-RH-jhd" firstAttribute="top" secondItem="PbD-kg-HUB" secondAttribute="top" constant="24" id="sMC-rG-Vl7"/>
-                                            <constraint firstItem="FYH-Fj-2uT" firstAttribute="top" secondItem="9et-uu-0cO" secondAttribute="bottom" constant="40" id="uQt-4c-DhL"/>
-                                            <constraint firstItem="cZH-RH-jhd" firstAttribute="leading" secondItem="PbD-kg-HUB" secondAttribute="leading" constant="24" id="uUU-Aa-BRw"/>
+                                            <constraint firstItem="Irr-SX-ZaS" firstAttribute="leading" secondItem="PbD-kg-HUB" secondAttribute="leading" constant="24" id="oUj-hT-4b3"/>
+                                            <constraint firstItem="Irr-SX-ZaS" firstAttribute="top" secondItem="PbD-kg-HUB" secondAttribute="top" constant="24" id="sOo-7x-Kx3"/>
                                             <constraint firstItem="FYH-Fj-2uT" firstAttribute="width" secondItem="PbD-kg-HUB" secondAttribute="width" multiplier="0.660661" id="zrL-Ol-MNI"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>

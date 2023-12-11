@@ -56,6 +56,9 @@
 		C58305E02B1735680084AD07 /* TransferTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58305DE2B1735680084AD07 /* TransferTVC.xib */; };
 		C58305E22B17396B0084AD07 /* CryptoWireVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E12B17396B0084AD07 /* CryptoWireVC.swift */; };
 		C58305E42B174E1A0084AD07 /* CryptoDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */; };
+		C584FE3B2B26EFE300F86CC1 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584FE3A2B26EFE300F86CC1 /* CurrencyModel.swift */; };
+		C584FE3D2B272BF600F86CC1 /* BanksNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C584FE3C2B272BF600F86CC1 /* BanksNibView.xib */; };
+		C584FE3F2B272C0200F86CC1 /* BankNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584FE3E2B272C0200F86CC1 /* BankNibView.swift */; };
 		C585F6EC2B21B44A00CF8E5F /* InternalTransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */; };
 		C585F6F02B21E2F900CF8E5F /* PayTrnasctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */; };
 		C585F6F22B21EDAC00CF8E5F /* PlateformsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */; };
@@ -176,6 +179,9 @@
 		C58305DE2B1735680084AD07 /* TransferTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TransferTVC.xib; path = ClientPortal/MVVM/View/ViewControllers/Deposit/TransferTVC.xib; sourceTree = SOURCE_ROOT; };
 		C58305E12B17396B0084AD07 /* CryptoWireVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoWireVC.swift; sourceTree = "<group>"; };
 		C58305E32B174E1A0084AD07 /* CryptoDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoDetailsVC.swift; sourceTree = "<group>"; };
+		C584FE3A2B26EFE300F86CC1 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyModel.swift; path = ClientPortal/MVVM/View/ViewControllers/Main/CurrencyModel.swift; sourceTree = SOURCE_ROOT; };
+		C584FE3C2B272BF600F86CC1 /* BanksNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BanksNibView.xib; sourceTree = "<group>"; };
+		C584FE3E2B272C0200F86CC1 /* BankNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankNibView.swift; sourceTree = "<group>"; };
 		C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalTransferModel.swift; path = ClientPortal/MVVM/View/Cells/InternalTransferModel.swift; sourceTree = SOURCE_ROOT; };
 		C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PayTrnasctionModel.swift; path = ClientPortal/MVVM/View/Cells/PayTrnasctionModel.swift; sourceTree = SOURCE_ROOT; };
 		C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlateformsModel.swift; path = ClientPortal/MVVM/View/Cells/PlateformsModel.swift; sourceTree = SOURCE_ROOT; };
@@ -427,6 +433,7 @@
 				C585F6F82B21F53F00CF8E5F /* LogsModel.swift */,
 				C503F1152B235E7400FD2D56 /* AccountTypeModel.swift */,
 				C503F1192B236CA000FD2D56 /* AddAccountModel.swift */,
+				C584FE3A2B26EFE300F86CC1 /* CurrencyModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -516,6 +523,8 @@
 				C58E8B282B177D6A00E7F3D3 /* TradeMTView.xib */,
 				C5D435E12B206D33003C90B8 /* PositionHeaderCRV.swift */,
 				C5D435E22B206D33003C90B8 /* PositionHeaderCRV.xib */,
+				C584FE3C2B272BF600F86CC1 /* BanksNibView.xib */,
+				C584FE3E2B272C0200F86CC1 /* BankNibView.swift */,
 			);
 			path = Nibs;
 			sourceTree = "<group>";
@@ -654,6 +663,7 @@
 				F2B384142B14973E00F4FB60 /* LoadingViewNib.xib in Resources */,
 				C55F0E632B18D276004EE83E /* MyChatTVC.xib in Resources */,
 				C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */,
+				C584FE3D2B272BF600F86CC1 /* BanksNibView.xib in Resources */,
 				F2657FB12B1491EC00CDEEF3 /* Assets.xcassets in Resources */,
 				C5FF1CC52B160EFC000CFA0F /* AccountsCVC.xib in Resources */,
 				C5D435E42B206D33003C90B8 /* PositionHeaderCRV.xib in Resources */,
@@ -760,6 +770,7 @@
 				C5FF1CA62B15C574000CFA0F /* SigninVC.swift in Sources */,
 				C55F0E462B188403004EE83E /* ReportsVC.swift in Sources */,
 				F2B384132B14973A00F4FB60 /* LoadingViewNib.swift in Sources */,
+				C584FE3B2B26EFE300F86CC1 /* CurrencyModel.swift in Sources */,
 				C5FF1CAE2B15C7B0000CFA0F /* UIViewX.swift in Sources */,
 				C585F6F02B21E2F900CF8E5F /* PayTrnasctionModel.swift in Sources */,
 				C5D435DB2B206902003C90B8 /* TradesDetailCVC.swift in Sources */,
@@ -770,6 +781,7 @@
 				C585F6F92B21F53F00CF8E5F /* LogsModel.swift in Sources */,
 				C58305DF2B1735680084AD07 /* TransferTVC.swift in Sources */,
 				C55F0E5E2B18CEEE004EE83E /* SupportVC.swift in Sources */,
+				C584FE3F2B272C0200F86CC1 /* BankNibView.swift in Sources */,
 				C58E8B252B1779E300E7F3D3 /* MenuTrainingVC.swift in Sources */,
 				F2B384092B1495FF00F4FB60 /* API.swift in Sources */,
 				C5D435E62B207368003C90B8 /* PositionResponse.swift in Sources */,

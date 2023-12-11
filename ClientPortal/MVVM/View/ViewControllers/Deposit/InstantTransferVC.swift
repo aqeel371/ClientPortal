@@ -18,11 +18,12 @@ class InstantTransferVC: UIViewController {
     var spinner :LoadingViewNib?
     var instantPicker = UIPickerView()
     var accountTypes = [AccountsDatum]()
-    var accID = 0
-    var currencyTypes = ["AED","SAR","QAR","OMR"]
+    var accID = 143
+    var currencyTypes = [CurrencyModel]()
     var currency = ""
     var activeTF:UITextField?
     var gateway = ""
+    var fee = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,17 +37,19 @@ class InstantTransferVC: UIViewController {
     
     @IBAction func depositAction(_ sender: Any) {
         
+//        if  let currency = tfCurrency.text, let amount = tfAmount.text{
         if let account = tfTradingAccount.text, let currency = tfCurrency.text, let amount = tfAmount.text{
             
             if account.isEmpty{
                 self.showAlert(title: "Error", message: "Select account..!", actions: nil)
             }else if currency.isEmpty{
+//            if currency.isEmpty{
                 self.showAlert(title: "Error", message: "Select Currency..!", actions: nil)
             }else if amount.isEmpty{
                 self.showAlert(title: "Error", message: "Enter Amount..!", actions: nil)
             }else{
                 
-                let interPay = PayModel(accountId: accID,gateway: gateway,amount: Int(amount), currency: currency)
+                let interPay = PayModel(accountId: accID,gateway: gateway,note: "Payment", amount: Int(amount), currency: currency)
                 instatPay(pay: interPay)
             }
             
@@ -59,6 +62,13 @@ class InstantTransferVC: UIViewController {
 //MARK: - UITextField Delegate
 extension InstantTransferVC:UITextFieldDelegate{
     func setupTF(){
+        currencyTypes.append(CurrencyModel(title: "USD", rate: 1))
+        currencyTypes.append(CurrencyModel(title: "EUR", rate: 1))
+        currencyTypes.append(CurrencyModel(title: "AED", rate: 3.69))
+        currencyTypes.append(CurrencyModel(title: "SAR", rate: 3.79))
+        currencyTypes.append(CurrencyModel(title: "QAR", rate: 3.69))
+        currencyTypes.append(CurrencyModel(title: "OMR", rate: 0.43))
+        currencyTypes.append(CurrencyModel(title: "KWD", rate: 0.35))
         tfTradingAccount.delegate = self
         tfCurrency.delegate = self
         
@@ -71,6 +81,15 @@ extension InstantTransferVC:UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTF = textField
+        
+        if activeTF == tfTradingAccount{
+            tfTradingAccount.text = (accountTypes[0].platform ?? "") + " - " + "\(accountTypes[0].login ?? 0)"
+            self.accID = accountTypes[0].id ?? 0
+        }else{
+            tfCurrency.text = currencyTypes[0].title
+            self.currency = currencyTypes[0].title
+        }
+        
     }
 }
 
@@ -92,7 +111,7 @@ extension InstantTransferVC: UIPickerViewDelegate, UIPickerViewDataSource{
         if activeTF == tfTradingAccount{
             return (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
         }else{
-            return currencyTypes[row]
+            return currencyTypes[row].title
         }
     }
     
@@ -101,8 +120,15 @@ extension InstantTransferVC: UIPickerViewDelegate, UIPickerViewDataSource{
             tfTradingAccount.text = (accountTypes[row].platform ?? "") + " - " + "\(accountTypes[row].login ?? 0)"
             self.accID = accountTypes[row].id ?? 0
         }else{
-            tfCurrency.text = currencyTypes[row]
-            self.currency = currencyTypes[row]
+            tfCurrency.text = currencyTypes[row].title
+            self.currency = currencyTypes[row].title
+            if row == 0 || row == 1{
+                gateway = "solidPay"
+                fee = currencyTypes[row].rate
+            }else{
+                gateway = "stripe"
+                fee = currencyTypes[row].rate
+            }
         }
     }
     
@@ -123,7 +149,18 @@ extension InstantTransferVC{
                 if let payResp:PayResponse = self.handleResponse(data: data as! Data){
                     if payResp.status ?? false {
                         let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
-                            self.navigationController?.popViewController(animated: true)
+//                            self.navigationController?.popViewController(animated: true)
+                            var stringUrl = ""
+                            if payResp.result?.gateway == "stripe"{
+                                stringUrl = payResp.result?.link ?? ""
+                            }else{
+                                stringUrl = "https://solidpayments.net/v1/paymentWidgets.js?checkoutId=" + (payResp.result?.link ?? "")
+                            }
+                            
+                            let webVC = WebViewController.loadFromNib()
+                            webVC.url = stringUrl
+                            webVC.modalPresentationStyle = .fullScreen
+                            self.present(webVC, animated: true)
                         }
                         self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
                     }else{

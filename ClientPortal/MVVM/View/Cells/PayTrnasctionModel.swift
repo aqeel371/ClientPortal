@@ -32,12 +32,13 @@ struct PayResult: Codable {
     var currency, updatedAt, createdAt, note: String?
     var amount: Double?
     var fee: Double?
+    var link: String?
     var customerID, accountID: Int?
     var gateway, status: String?
     var paid: Int?
     
     enum CodingKeys: String, CodingKey {
-        case id, currency, updatedAt, createdAt, note, amount, fee
+        case id, currency, updatedAt, createdAt, note, amount, fee,link
         case customerID = "customerId"
         case accountID = "accountId"
         case gateway, status, paid

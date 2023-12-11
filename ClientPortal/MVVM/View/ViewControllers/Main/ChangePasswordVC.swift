@@ -118,6 +118,15 @@ extension ChangePasswordVC:UITextFieldDelegate{
     }
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTF = textField
+        
+        if activeTF == tfAccounttype{
+            tfAccounttype.text = "\(accountTypes[0].login ?? 1)"
+            self.accID = accountTypes[0].id ?? 0
+        }else if activeTF == tfPassType{
+            tfPassType.text = passTypes[0]
+        }else{
+            tfPlateformType.text = plateformTypes[0]
+        }
     }
 }
 

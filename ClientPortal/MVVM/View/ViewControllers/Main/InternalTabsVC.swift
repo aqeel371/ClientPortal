@@ -161,6 +161,24 @@ extension InternalTabsVC:UITextViewDelegate,UITextFieldDelegate{
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
         activeTF = textField
+        
+        if activeTF == tfWithdrawMethod{
+            tfWithdrawMethod.text = withdraw[0]
+            self.gateway = withdraw[0]
+        }else if activeTF == tfWithdrawAcount{
+            tfWithdrawAcount.text = (accounts[0].platform ?? "") + " - " + "\(accounts[0].login ?? 0)"
+            self.withdrawAccID = accounts[0].id ?? 0
+        }else if activeTF == tfDepositAccount{
+            self.depositAccID = accounts[0].id ?? 0
+            tfDepositAccount.text = (accounts[0].platform ?? "") + " - " + "\(accounts[0].login ?? 0)"
+        }else if activeTF == tfTransferAccount{
+            tfTransferAccount.text = (accounts[0].platform ?? "") + " - " + "\(accounts[0].login ?? 0)"
+            self.transferToID = accounts[0].id ?? 0
+        }else if activeTF == tfTransferToAccount{
+            tfTransferToAccount.text = (accounts[0].platform ?? "") + " - " + "\(accounts[0].login ?? 0)"
+            self.transferfromID = accounts[0].id ?? 0
+        }
+        
     }
     
     func textViewDidBeginEditing(_ textView: UITextView) {
