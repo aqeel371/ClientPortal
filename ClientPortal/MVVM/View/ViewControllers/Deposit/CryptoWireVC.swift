@@ -18,7 +18,7 @@ class CryptoWireVC: UIViewController {
     var vcType:TransferType?
     var liveAccount = [AccountsDatum]()
     var gateway = ""
-    
+    var banks = [Banks]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,15 +50,17 @@ extension CryptoWireVC:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if vcType == .Crypto{
-            return 5
+            return banks.count
         }else if vcType == .Wire{
-            return 7
+            return banks.count
         }
         return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransferTVC", for: indexPath) as! TransferTVC
+        cell.bankName.text = banks[indexPath.row].title
+        cell.bankIcon.image = UIImage(named: banks[indexPath.row].icon)
         cell.selectionStyle = .none
         return cell
     }
@@ -66,9 +68,14 @@ extension CryptoWireVC:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if vcType == .Wire{
             let vc = ViewControllers.WireTransferDetailsVC.getViewController() as WireTransferDetailsVC
+            vc.banksData = banks[indexPath.row].banksData
+            vc.vcTitle = banks[indexPath.row].title
             self.navigationController?.pushViewController(vc, animated: true)
         }else if vcType == .Crypto{
             let vc = ViewControllers.CryptoDetailsVC.getViewController() as CryptoDetailsVC
+            vc.qr = banks[indexPath.row].qrCode ?? ""
+            vc.vcTitle = banks[indexPath.row].title
+            vc.banksData = banks[indexPath.row].banksData
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

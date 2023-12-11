@@ -872,6 +872,8 @@
                         <outlet property="networkLbl" destination="MsB-cl-XOg" id="8ZT-Xh-CqN"/>
                         <outlet property="noteLbl" destination="IVK-IH-lXf" id="gQ2-HX-Zs4"/>
                         <outlet property="qrIcon" destination="FYH-Fj-2uT" id="caW-nj-PaY"/>
+                        <outlet property="stackView" destination="Irr-SX-ZaS" id="6rm-ex-vlH"/>
+                        <outlet property="titleVClbl" destination="Grm-5l-kdh" id="Js7-dW-Ujv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7JI-LV-Xvf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1252,10 +1254,14 @@
                             <constraint firstItem="K1X-rF-RxI" firstAttribute="leading" secondItem="aDF-ED-uU9" secondAttribute="leading" constant="30" id="ywZ-CT-Ejb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="stackView" destination="lvo-tc-ue9" id="O2V-qX-9LC"/>
+                        <outlet property="titleVCLbl" destination="m7I-hY-DOr" id="gJd-AR-ME1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8xi-fF-jIb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="333"/>
+            <point key="canvasLocation" x="2371.7557251908397" y="332.3943661971831"/>
         </scene>
         <!--Instant TransferVC-->
         <scene sceneID="xk5-un-DfB">

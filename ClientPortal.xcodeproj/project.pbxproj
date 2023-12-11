@@ -59,6 +59,7 @@
 		C584FE3B2B26EFE300F86CC1 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584FE3A2B26EFE300F86CC1 /* CurrencyModel.swift */; };
 		C584FE3D2B272BF600F86CC1 /* BanksNibView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C584FE3C2B272BF600F86CC1 /* BanksNibView.xib */; };
 		C584FE3F2B272C0200F86CC1 /* BankNibView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584FE3E2B272C0200F86CC1 /* BankNibView.swift */; };
+		C584FE412B27452C00F86CC1 /* BanksDetailsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584FE402B27452C00F86CC1 /* BanksDetailsModel.swift */; };
 		C585F6EC2B21B44A00CF8E5F /* InternalTransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */; };
 		C585F6F02B21E2F900CF8E5F /* PayTrnasctionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */; };
 		C585F6F22B21EDAC00CF8E5F /* PlateformsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */; };
@@ -182,6 +183,7 @@
 		C584FE3A2B26EFE300F86CC1 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CurrencyModel.swift; path = ClientPortal/MVVM/View/ViewControllers/Main/CurrencyModel.swift; sourceTree = SOURCE_ROOT; };
 		C584FE3C2B272BF600F86CC1 /* BanksNibView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BanksNibView.xib; sourceTree = "<group>"; };
 		C584FE3E2B272C0200F86CC1 /* BankNibView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankNibView.swift; sourceTree = "<group>"; };
+		C584FE402B27452C00F86CC1 /* BanksDetailsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BanksDetailsModel.swift; path = ClientPortal/MVVM/View/Nibs/BanksDetailsModel.swift; sourceTree = SOURCE_ROOT; };
 		C585F6EB2B21B44A00CF8E5F /* InternalTransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = InternalTransferModel.swift; path = ClientPortal/MVVM/View/Cells/InternalTransferModel.swift; sourceTree = SOURCE_ROOT; };
 		C585F6EF2B21E2F900CF8E5F /* PayTrnasctionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PayTrnasctionModel.swift; path = ClientPortal/MVVM/View/Cells/PayTrnasctionModel.swift; sourceTree = SOURCE_ROOT; };
 		C585F6F12B21EDAC00CF8E5F /* PlateformsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PlateformsModel.swift; path = ClientPortal/MVVM/View/Cells/PlateformsModel.swift; sourceTree = SOURCE_ROOT; };
@@ -434,6 +436,7 @@
 				C503F1152B235E7400FD2D56 /* AccountTypeModel.swift */,
 				C503F1192B236CA000FD2D56 /* AddAccountModel.swift */,
 				C584FE3A2B26EFE300F86CC1 /* CurrencyModel.swift */,
+				C584FE402B27452C00F86CC1 /* BanksDetailsModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -762,6 +765,7 @@
 				C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */,
 				C5FF1CC12B160E09000CFA0F /* AccountsVC.swift in Sources */,
 				C58305D42B17194A0084AD07 /* ProfileVC.swift in Sources */,
+				C584FE412B27452C00F86CC1 /* BanksDetailsModel.swift in Sources */,
 				C58E8B212B17781000E7F3D3 /* MenuAccountsVC.swift in Sources */,
 				C55F0E532B18B774004EE83E /* LogsCVC.swift in Sources */,
 				C5D435ED2B20B4ED003C90B8 /* DocumentsCVC.swift in Sources */,

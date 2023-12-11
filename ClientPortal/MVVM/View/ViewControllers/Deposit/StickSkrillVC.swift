@@ -18,10 +18,10 @@ class StickSkrillVC: UIViewController {
     var spinner :LoadingViewNib?
     var accountPicker = UIPickerView()
     var accountTypes = [AccountsDatum]()
-    var accID = 0
+    var accID = 143
     var type:TransferType?
     var gateway = ""
-    var currency = "AED"
+    var currency = "USD"
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +33,10 @@ class StickSkrillVC: UIViewController {
     @IBAction func depositAction(_ sender: Any) {
         if let account = tfTradingAccount.text, let amount = tfAmount.text, let notes = tvNotes.text{
             
-            if account.isEmpty{
-                self.showAlert(title: "Error", message: "Select account..!", actions: nil)
-            }else if amount.isEmpty{
+//            if account.isEmpty{
+//                self.showAlert(title: "Error", message: "Select account..!", actions: nil)
+            if amount.isEmpty{
+//            }else if amount.isEmpty{
                 self.showAlert(title: "Error", message: "Enter Amount..!", actions: nil)
             }else{
                 
@@ -118,8 +119,29 @@ extension StickSkrillVC{
                 self.spinner?.removeFromSuperview()
                 if let payResp:PayResponse = self.handleResponse(data: data as! Data){
                     if payResp.status ?? false {
+                        
+                        let url = URL(string: "https://pay.skrill.com")!
+                        let randomNumber = Int(arc4random_uniform(900) + 100)
+
+                        let data = [
+                            "pay_to_email":"ea@godofx.com",
+                            "amount": payResp.result?.amount ?? 0.0,
+                            "currency" : "USD",
+                            "recipient_description": "\(self.accID)" + " - " + "\(payResp.result?.id ?? 0)" + "" + "\(randomNumber)"
+                        ]
+                        
                         let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
-                            self.navigationController?.popViewController(animated: true)
+//                            self.navigationController?.popViewController(animated: true)
+                            if payResp.result?.gateway == "skrill"{
+                                self.openWindowWithPost(url: url, data: data)
+                            }else{
+                                let stringUrl = payResp.result?.link ?? ""
+                                let webVC = WebViewController.loadFromNib()
+                                webVC.url = stringUrl
+                                webVC.modalPresentationStyle = .fullScreen
+                                self.present(webVC, animated: true)
+                            }
+                            
                         }
                         self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
                     }else{
@@ -133,7 +155,29 @@ extension StickSkrillVC{
             
         })
         
+    }
+    
+    func openWindowWithPost(url: URL, data: [String: Any]) {
+        // Create a form
+        var form = URLRequest(url: url)
+        form.httpMethod = "POST"
+        form.setValue("application/x-www-form-urlencoded", forHTTPHeaderField: "Content-Type")
+        form.setValue("application/json", forHTTPHeaderField: "Accept")
         
+        // Set up the form data
+        var bodyString = ""
+        for (key, value) in data {
+            bodyString += "\(key)=\(value)&"
+        }
+        form.httpBody = bodyString.data(using: .utf8)
+        
+        let webVC = WebViewController.loadFromNib()
+        webVC.url = ""
+        webVC.modalPresentationStyle = .fullScreen
+        self.present(webVC, animated: true)
+        DispatchQueue.main.asyncAfter(deadline: .now()+1, execute: {
+            webVC.webView.load(form)
+        })
     }
     
 }

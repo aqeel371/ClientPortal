@@ -4,25 +4,75 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="QuicksandRegular.ttf">
+            <string>Quicksand-Regular</string>
+        </array>
+        <array key="QuicksandSemiBold.ttf">
+            <string>Quicksand-SemiBold</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" restorationIdentifier="BanksNibView" id="iN0-l3-epB" customClass="BanksNibView" customModule="ClientPortal" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3fG-7v-xcH">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-po-DT1">
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="17.333333333333332"/>
+                            <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
+                            <color key="textColor" name="SonicSilver"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="USD" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-Es-bkX">
+                            <rect key="frame" x="0.0" y="22.333333333333329" width="393" height="17.666666666666671"/>
+                            <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
+                            <color key="textColor" name="EerieBlack"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fMs-po-DT1" firstAttribute="top" secondItem="3fG-7v-xcH" secondAttribute="top" id="2GW-xx-JO9"/>
+                        <constraint firstItem="kfa-Es-bkX" firstAttribute="leading" secondItem="3fG-7v-xcH" secondAttribute="leading" id="91E-cX-F4c"/>
+                        <constraint firstAttribute="bottom" secondItem="kfa-Es-bkX" secondAttribute="bottom" id="DBH-PH-WzZ"/>
+                        <constraint firstItem="kfa-Es-bkX" firstAttribute="top" secondItem="fMs-po-DT1" secondAttribute="bottom" constant="5" id="Ldk-G7-xN5"/>
+                        <constraint firstAttribute="trailing" secondItem="kfa-Es-bkX" secondAttribute="trailing" id="VPn-E5-ffY"/>
+                        <constraint firstAttribute="trailing" secondItem="fMs-po-DT1" secondAttribute="trailing" id="WwU-9V-qmW"/>
+                        <constraint firstItem="fMs-po-DT1" firstAttribute="leading" secondItem="3fG-7v-xcH" secondAttribute="leading" id="kv1-2G-vWe"/>
+                    </constraints>
+                </view>
+            </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="3fG-7v-xcH" secondAttribute="bottom" id="ed7-cN-SXv"/>
+                <constraint firstAttribute="trailing" secondItem="3fG-7v-xcH" secondAttribute="trailing" id="jJI-rz-XdG"/>
+                <constraint firstItem="3fG-7v-xcH" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="mOM-FA-qKi"/>
+                <constraint firstItem="3fG-7v-xcH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="t7M-td-UY5"/>
+            </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="titleLbl" destination="fMs-po-DT1" id="TDY-Ql-Uhc"/>
+                <outlet property="valueLbl" destination="kfa-Es-bkX" id="rW2-vd-WSc"/>
+            </connections>
             <point key="canvasLocation" x="83" y="21"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="EerieBlack">
+            <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SonicSilver">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.45490196078431372" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

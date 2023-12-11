@@ -10,6 +10,9 @@ import UIKit
 
 class BanksNibView:UIView{
     
+    @IBOutlet weak var titleLbl: UILabel!
+    @IBOutlet weak var valueLbl: UILabel!
+    
     class func instanceFromNib() -> BanksNibView {
         
         let view = UINib(nibName: "BanksNibView", bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! BanksNibView

@@ -20,7 +20,7 @@ class InstantTransferVC: UIViewController {
     var accountTypes = [AccountsDatum]()
     var accID = 143
     var currencyTypes = [CurrencyModel]()
-    var currency = ""
+    var currency = "USD"
     var activeTF:UITextField?
     var gateway = ""
     var fee = 0.0
