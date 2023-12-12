@@ -22,6 +22,8 @@ extension API:Router{
             return ApiPaths.login
         case .Profile:
             return ApiPaths.profile
+        case .ForgetPassword:
+            return ApiPaths.forgetPass
         case .Banners:
             return ApiPaths.banner
         case .Accounts, .AddAccount:
@@ -74,7 +76,7 @@ extension API:Router{
             return .post
         case .AddBank, .AddWallet, .AddDocs, .AddAccount:
             return .post
-        case .ProfileChangePassword:
+        case .ProfileChangePassword, .ForgetPassword:
             return .post
         default:
             return .get
@@ -91,7 +93,7 @@ extension API:Router{
             return JSONEncoding.default
         case .AddBank, .AddWallet, .AddAccount:
             return JSONEncoding.default
-        case .ProfileChangePassword:
+        case .ProfileChangePassword, .ForgetPassword:
             return JSONEncoding.default
         default:
             return URLEncoding.default
@@ -103,6 +105,8 @@ extension API:Router{
         case .Login(let params):
             return params
         case .AccountChnagePass(_ ,let params):
+            return params
+        case .ForgetPassword(let params):
             return params
         case .InternalTransfer(let params):
             return params
@@ -147,7 +151,7 @@ extension API:Router{
             return jsonParams()
         case .AddBank, .AddWallet, .AddAccount:
             return jsonParams()
-        case .ProfileChangePassword:
+        case .ProfileChangePassword, .ForgetPassword:
             return jsonParams()
         default:
             return formateParams()

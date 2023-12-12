@@ -8,6 +8,7 @@
 import Foundation
 internal struct ApiConstants{
     static let base_url = "https://dev-staging.godofx.com/api/v1/cp/"
+//    static let base_url = "https://dev-api.godofx.com/api/v1/cp/"
     static let imageURL = "https://dev-staging.godofx.com/"
 }
 internal struct ApiPaths {
@@ -16,6 +17,7 @@ internal struct ApiPaths {
     static let login = "auth/login"
     static let profile = "auth/profile"
     static let profileChangePass = "my/change-password"
+    static let forgetPass = "auth/send-change-password-otp"
     static let banner = "banners"
     static let accounts = "accounts"
     static let accounttypes = "account-types"

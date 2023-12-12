@@ -44,7 +44,7 @@ struct TransferResult: Codable {
     var updatedAt, createdAt: String?
     var paid: Int?
     var note: String?
-    var fee:Int?
+    var fee:Double?
     var accountFrom, amount, accountTo: Int?
     var type: String?
     var isDeleted: Bool?

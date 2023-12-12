@@ -108,6 +108,12 @@ extension SigninVC:UITabBarControllerDelegate{
             }
             tradeView.selectCallBack = {
                 tabBarController.selectedIndex = 1
+                
+                let urlString = "https://godotrader.com/"
+                let webVC = WebViewController.loadFromNib()
+                webVC.url = urlString
+                webVC.modalPresentationStyle = .fullScreen
+                self.present(webVC, animated: true)
             }
         }
     }

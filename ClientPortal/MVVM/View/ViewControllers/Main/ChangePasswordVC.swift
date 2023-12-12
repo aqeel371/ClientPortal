@@ -120,7 +120,7 @@ extension ChangePasswordVC:UITextFieldDelegate{
         activeTF = textField
         
         if activeTF == tfAccounttype{
-            tfAccounttype.text = "\(accountTypes[0].login ?? 1)"
+            tfAccounttype.text = "\(accountTypes[0].login ?? 1)" + " - " + "\(accountTypes[0].platform ?? "")"
             self.accID = accountTypes[0].id ?? 0
         }else if activeTF == tfPassType{
             tfPassType.text = passTypes[0]
@@ -157,7 +157,7 @@ extension ChangePasswordVC: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         if activeTF == tfAccounttype{
-            tfAccounttype.text = "\(accountTypes[row].login ?? 1)"
+            tfAccounttype.text = "\(accountTypes[row].login ?? 1)" + " - " + "\(accountTypes[row].platform ?? "")"
             self.accID = accountTypes[row].id ?? 0
         }else if activeTF == tfPassType{
             tfPassType.text = passTypes[row]

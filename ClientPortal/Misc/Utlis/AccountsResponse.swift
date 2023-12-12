@@ -30,7 +30,7 @@ struct AccountsDatum: Codable {
     var isActive, isDeleted: Int?
     var platform, createdAt, updatedAt: String?
     var accountTypeID: Int?
-    var createdBy, updatedBy: String?
+    var createdBy, updatedBy: Int?
     var customerID: Int?
     var accountTypeTitle, accountTypeType, accountTypeGroupPath: String?
     var accountTypeGroupInfoID: Int?
@@ -97,10 +97,10 @@ struct AccountState: Codable {
 
 // MARK: - Margin
 struct Margin: Codable {
-    var balance, equity: Int?
+    var balance, equity: Double?
     var group: String?
-    var levelType, leverage, margin, marginFree: Int?
-    var marginLevel, marginType, volume: Int?
+    var levelType, leverage, margin, marginFree: Double?
+    var marginLevel, marginType, volume: Double?
 
     enum CodingKeys: String, CodingKey {
         case balance, equity, group

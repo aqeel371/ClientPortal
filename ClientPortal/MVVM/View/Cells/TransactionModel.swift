@@ -17,7 +17,7 @@ struct TransactionResponse: Codable {
 
 // MARK: - Result
 struct TransactionResult: Codable {
-    var prevPage: String?
+    var prevPage: Int?
     var data: [TransactionDatum]?
     var totalPages, limit, totalDocs: Int?
     var hasNextPage, hasPrevPage: Bool?
@@ -32,12 +32,12 @@ struct TransactionDatum: Codable {
     var isDeleted: Int?
     var accountToLogin, accountFromLogin: Int?
     var status: TransactionStatus?
-    var amount: Int?
+    var amount: Double?
     var currency: String?
     var isActive, customerID: Int?
     var createdAt, gateway, type, updatedAt: String?
     var paid, id: Int?
-    var createdBy, updatedBy: String?
+    var createdBy, updatedBy: Int?
     var note: String?
     var fee: Int?
     var reason: String?

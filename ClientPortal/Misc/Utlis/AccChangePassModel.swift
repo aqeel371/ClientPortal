@@ -17,3 +17,18 @@ struct ChangePassResponse:Codable{
     var status,result,isSuccess:Bool?
     var message :String?
 }
+
+struct ForgetPass:Codable{
+    var email:String?
+}
+
+struct ForgetPassResponse:Codable{
+    var code: Int?
+    var result:ResultPass?
+    var message: String?
+    var isSuccess, isError,status: Bool?
+}
+
+struct ResultPass:Codable{
+    
+}

@@ -19,9 +19,9 @@ struct OpenPositionResponse: Codable {
 struct OpenPositionResult: Codable {
     var page, limit, totalDocs, totalPages: Int?
     var hasNextPage, hasPrevPage: Bool?
-    var nextPage: String?
+    var nextPage: Int?
     var pagingCounter: Int?
-    var prevPage: String?
+    var prevPage: Int?
     var data: [OpenPositionDatum]?
 }
 

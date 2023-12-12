@@ -19,9 +19,9 @@ struct BanksResponse: Codable {
 struct BanksResult: Codable {
     var page, limit, totalDocs, totalPages: Int?
     var hasNextPage, hasPrevPage: Bool?
-    var nextPage: String?
+    var nextPage: Int?
     var pagingCounter: Int?
-    var prevPage: String?
+    var prevPage: Int?
     var data: [BankDatum]?
 }
 
@@ -33,7 +33,7 @@ struct BankDatum: Codable {
     var isActive, isDeleted: Int?
     var createdAt, updatedAt: String?
     var customerID: Int?
-    var createdBy, updatedBy: String?
+    var createdBy, updatedBy: Int?
 
     enum CodingKeys: String, CodingKey {
         case id, accountHolderName, bankName, bankAddress, accountNumber, swiftCode, address, iban, currency, isActive, isDeleted, createdAt, updatedAt

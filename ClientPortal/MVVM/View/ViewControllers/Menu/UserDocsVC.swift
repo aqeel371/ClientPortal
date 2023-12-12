@@ -90,7 +90,11 @@ class UserDocsVC: UIViewController {
     }
     
     @IBAction func uploadAction(_ sender: Any) {
-        uploadDocs()
+        if docsData == [:]{
+            self.showAlert(title: "Error", message: "Select At least One Document..!", actions: nil)
+        }else{
+            uploadDocs()
+        }
     }
     
     @IBAction func infoAction(_ sender: Any) {
@@ -99,7 +103,6 @@ class UserDocsVC: UIViewController {
         let contectVC = ViewControllers.DocsInfoVC.getViewController() as DocsInfoVC
         fpc.set(contentViewController: contectVC)
         fpc.contentMode = .fitToBounds
-//        fpc.layout = ResetPassPanelLayout()
         fpc.isRemovalInteractionEnabled = true
         appearance.cornerRadius = 20.0
         fpc.surfaceView.appearance = appearance
@@ -224,12 +227,15 @@ extension UserDocsVC{
                 self.spinner?.removeFromSuperview()
                 if let docsResp:UploadDocsResponse = self.handleResponse(data: data as! Data){
                     if docsResp.status ?? false {
-                        self.docsData = [:]
-                        self.lblIncome.text = "Upload File"
-                        self.lblIdentity.text = "Upload File"
-                        self.lblAddress.text = "Upload File"
-                        self.lblAddition.text = "Upload File"
-                        self.getDocs()
+                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+                            self.docsData = [:]
+                            self.lblIncome.text = "Upload File"
+                            self.lblIdentity.text = "Upload File"
+                            self.lblAddress.text = "Upload File"
+                            self.lblAddition.text = "Upload File"
+                            self.getDocs()
+                        }
+                        self.showAlert(title: "Success", message: "Document Upload Succesfully...!", actions: [okAction])
                     }else{
                         self.showAlert(title: "Error", message: docsResp.message, actions: nil)
                     }

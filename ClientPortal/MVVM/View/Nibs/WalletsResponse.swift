@@ -19,9 +19,9 @@ struct WalletsResponse: Codable {
 struct WalletResult: Codable {
     var page, limit, totalDocs, totalPages: Int?
     var hasNextPage, hasPrevPage: Bool?
-    var nextPage: String?
+    var nextPage: Int?
     var pagingCounter: Int?
-    var prevPage: String?
+    var prevPage: Int?
     var data: [WalletDatum]?
 }
 
@@ -32,7 +32,7 @@ struct WalletDatum: Codable {
     var isActive, isDeleted: Int?
     var createdAt, updatedAt: String?
     var customerID: Int?
-    var createdBy, updatedBy: String?
+    var createdBy, updatedBy: Int?
 
     enum CodingKeys: String, CodingKey {
         case id, currency, network, note, address, isActive, isDeleted, createdAt, updatedAt

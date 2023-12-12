@@ -15,14 +15,14 @@ struct ProfileResponse: Codable {
     var isSuccess: Bool?
 }
 
-// MARK: - Result
+/// MARK: - Result
 struct ProfileResult: Codable {
     var id: Int?
     var title, firstName, lastName, email: String?
     var city, state, country, nationality: String?
-    var phone, mobile, dob, callStatus: String?
-    var gender, address, address2, zipCode: String?
-    var referral, language: String?
+    var phone, mobile, dob, gender: String?
+    var address, address2, zipCode, referral: String?
+    var language: String?
     var fatca, politicallyExposed, workedInCrypto: Bool?
     var taxIdentificationNumber, source, docType, documentNo: String?
     var dateOfIssue, dateOfExpiry, countryOfIssue, employmentStatus: String?
@@ -40,16 +40,18 @@ struct ProfileResult: Codable {
     var sharesFrequency, netWorth, investmentPurpose, riskLevel: String?
     var affiliateID, utmCampaign, utmSource, utmMedium: String?
     var utmTerm, utmContent, utmCategory, website: String?
-    var newsLetters, tradeDisabled, complianceCompleted, emailOptOut: String?
-    var leadConverted, acceptedTerms, acceptedMandatoryInfo, acceptedExecutionPolicy: String?
-    var acceptedSourceIncome, acceptedWarning, acceptedCliebntAgrement, acceptedPrivacy: String?
-    var acceptedConflicts, acceptedRisk, acceptedCategoriztionPolicy, acceptedStatenebt: String?
-    var acceptedCookies, ibid, createdAt, updatedAt: String?
+    var newsLetters, tradeDisabled, complianceCompleted, emailOptOut: Bool?
+    var leadConverted, acceptedTerms, acceptedMandatoryInfo, acceptedExecutionPolicy: Bool?
+    var acceptedSourceIncome, acceptedWarning, acceptedCliebntAgrement, acceptedPrivacy: Bool?
+    var acceptedConflicts, acceptedRisk, acceptedCategoriztionPolicy, acceptedStatenebt: Bool?
+    var acceptedCookies: Bool?
+    var ibid: Int?
+    var createdAt, updatedAt: String?
     var agentID, createdBy, updatedBy: Int?
-    var user: User?
+    var user: ProfileUser?
 
     enum CodingKeys: String, CodingKey {
-        case id, title, firstName, lastName, email, city, state, country, nationality, phone, mobile, dob, callStatus, gender, address, address2, zipCode, referral, language, fatca, politicallyExposed, workedInCrypto, taxIdentificationNumber, source, docType, documentNo, dateOfIssue, dateOfExpiry, countryOfIssue, employmentStatus, profession, jobTitle, employer, annualIncome, sourceOfFunds, workedInFinancial, kycStatus, isFunded, emailVerified, phoneVerified, startTrading, submitClientProfile, submitIbProfile, submitIbQuestionaire, isLead, isIb, isClient, isCorporate, isBlocked, isActive, isDeleted, supplier
+        case id, title, firstName, lastName, email, city, state, country, nationality, phone, mobile, dob, gender, address, address2, zipCode, referral, language, fatca, politicallyExposed, workedInCrypto, taxIdentificationNumber, source, docType, documentNo, dateOfIssue, dateOfExpiry, countryOfIssue, employmentStatus, profession, jobTitle, employer, annualIncome, sourceOfFunds, workedInFinancial, kycStatus, isFunded, emailVerified, phoneVerified, startTrading, submitClientProfile, submitIbProfile, submitIbQuestionaire, isLead, isIb, isClient, isCorporate, isBlocked, isActive, isDeleted, supplier
         case pageURL = "pageUrl"
         case entity, retention, accountStatus, clientType, accountStage, ip, lastLogin, countryOfBirth, educationLevel, ownCompany, taxResidency, cfdFrequency, forexFrequency, otherDerivativesFrequency, sharesFrequency, netWorth, investmentPurpose, riskLevel
         case affiliateID = "affiliateId"
@@ -61,6 +63,6 @@ struct ProfileResult: Codable {
 }
 
 // MARK: - User
-struct User: Codable {
+struct ProfileUser: Codable {
     var firstName, lastName, phone, email: String?
 }

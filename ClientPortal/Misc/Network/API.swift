@@ -48,6 +48,7 @@ enum API{
     case Login(params:OptionalDictionary)
     case Profile
     case ProfileChangePassword(params:OptionalDictionary)
+    case ForgetPassword(params:OptionalDictionary)
     case Banners
     case Accounts
     case GetAccountType
