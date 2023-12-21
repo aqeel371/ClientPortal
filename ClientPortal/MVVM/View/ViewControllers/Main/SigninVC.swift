@@ -115,6 +115,10 @@ extension SigninVC:UITabBarControllerDelegate{
                 webVC.modalPresentationStyle = .fullScreen
                 self.present(webVC, animated: true)
             }
+            
+            tradeView.dismissCallBack = {
+                tabBarController.selectedIndex = 1
+            }
         }
     }
     

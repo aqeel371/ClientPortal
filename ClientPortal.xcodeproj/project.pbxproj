@@ -25,6 +25,7 @@
 		C54402252B175A3D008209DD /* InstantTransferVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402242B175A3D008209DD /* InstantTransferVC.swift */; };
 		C54402272B175C03008209DD /* PerfectMoneyVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402262B175C03008209DD /* PerfectMoneyVC.swift */; };
 		C54402292B175C2A008209DD /* StickSkrillVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C54402282B175C2A008209DD /* StickSkrillVC.swift */; };
+		C547EC542B31E19C008BE347 /* QuicksandBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C5FF1CB12B15C86D000CFA0F /* QuicksandBold.ttf */; };
 		C55F0E382B186800004EE83E /* MenuPlateformVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E372B186800004EE83E /* MenuPlateformVC.swift */; };
 		C55F0E3B2B18687D004EE83E /* PlateformCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C55F0E392B18687D004EE83E /* PlateformCVC.swift */; };
 		C55F0E3C2B18687D004EE83E /* PlateformCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C55F0E3A2B18687D004EE83E /* PlateformCVC.xib */; };
@@ -676,6 +677,7 @@
 				F2657FAF2B1491EB00CDEEF3 /* Main.storyboard in Resources */,
 				C5D435EE2B20B4ED003C90B8 /* DocumentsCVC.xib in Resources */,
 				C5D435DC2B206902003C90B8 /* TradesDetailCVC.xib in Resources */,
+				C547EC542B31E19C008BE347 /* QuicksandBold.ttf in Resources */,
 				C58305D92B1729A20084AD07 /* Deposit.storyboard in Resources */,
 				C58E8B182B1764E100E7F3D3 /* WalletCVC.xib in Resources */,
 				C5FF1CBB2B15FB3F000CFA0F /* DashboradTVHeader.xib in Resources */,

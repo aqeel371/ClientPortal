@@ -21,6 +21,10 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cBy-ZJ-mBx">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                    <color key="backgroundColor" red="0.34509803921568627" green="0.34509803921568627" blue="0.34509803921568627" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AeY-4M-PGf" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                     <rect key="frame" x="35" y="350.66666666666669" width="323" height="151"/>
                     <subviews>
@@ -181,9 +185,16 @@
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AeY-4M-PGf" secondAttribute="trailing" constant="35" id="7QY-7k-o4c"/>
                 <constraint firstItem="AeY-4M-PGf" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="G1v-NT-hsY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="cBy-ZJ-mBx" secondAttribute="trailing" id="Gdi-NT-MJz"/>
                 <constraint firstItem="AeY-4M-PGf" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="L5i-pf-pmf"/>
+                <constraint firstItem="cBy-ZJ-mBx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="WUM-IU-6Gl"/>
                 <constraint firstItem="AeY-4M-PGf" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="35" id="bdE-Vp-0Ip"/>
+                <constraint firstAttribute="bottom" secondItem="cBy-ZJ-mBx" secondAttribute="bottom" id="jKd-uk-3s0"/>
+                <constraint firstItem="cBy-ZJ-mBx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="pVh-Qa-HdD"/>
             </constraints>
+            <connections>
+                <outlet property="bgView" destination="cBy-ZJ-mBx" id="oVc-ul-JxY"/>
+            </connections>
             <point key="canvasLocation" x="81.679389312977094" y="20.422535211267608"/>
         </view>
     </objects>
