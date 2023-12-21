@@ -33,10 +33,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xnf-lk-kbe" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="30" y="79" width="24" height="24"/>
+                                <rect key="frame" x="30" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="shY-u2-cVI">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_back"/>
                                         <connections>
@@ -46,30 +46,30 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="1G2-03-W7y"/>
+                                    <constraint firstAttribute="width" constant="34" id="1G2-03-W7y"/>
                                     <constraint firstAttribute="bottom" secondItem="shY-u2-cVI" secondAttribute="bottom" constant="-10" id="Ggx-3w-rNt"/>
                                     <constraint firstAttribute="trailing" secondItem="shY-u2-cVI" secondAttribute="trailing" constant="-10" id="Q3N-Sz-95i"/>
                                     <constraint firstItem="shY-u2-cVI" firstAttribute="top" secondItem="xnf-lk-kbe" secondAttribute="top" constant="-10" id="ZKO-88-KFB"/>
-                                    <constraint firstAttribute="height" constant="24" id="jhz-Xf-SY9"/>
+                                    <constraint firstAttribute="height" constant="34" id="jhz-Xf-SY9"/>
                                     <constraint firstItem="shY-u2-cVI" firstAttribute="leading" secondItem="xnf-lk-kbe" secondAttribute="leading" constant="-10" id="thL-6D-xJe"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deposit" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vbx-jP-DTb">
-                                <rect key="frame" x="159.66666666666666" y="79" width="74" height="24"/>
+                                <rect key="frame" x="159.66666666666666" y="79" width="74" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XMF-Mh-9Ct" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="339" y="79" width="24" height="24"/>
+                                <rect key="frame" x="329" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUx-ci-KSQ">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <color key="tintColor" name="ColorPrimary"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_user"/>
@@ -82,22 +82,22 @@
                                 <constraints>
                                     <constraint firstItem="UUx-ci-KSQ" firstAttribute="leading" secondItem="XMF-Mh-9Ct" secondAttribute="leading" constant="-10" id="6sZ-9T-Oyx"/>
                                     <constraint firstItem="UUx-ci-KSQ" firstAttribute="top" secondItem="XMF-Mh-9Ct" secondAttribute="top" constant="-10" id="HBm-sp-w5y"/>
-                                    <constraint firstAttribute="width" constant="24" id="HTO-qI-Min"/>
+                                    <constraint firstAttribute="width" constant="34" id="HTO-qI-Min"/>
                                     <constraint firstAttribute="bottom" secondItem="UUx-ci-KSQ" secondAttribute="bottom" constant="-10" id="Oaa-B0-wXY"/>
                                     <constraint firstAttribute="trailing" secondItem="UUx-ci-KSQ" secondAttribute="trailing" constant="-10" id="btM-0X-xIF"/>
-                                    <constraint firstAttribute="height" constant="24" id="ztA-L1-kTb"/>
+                                    <constraint firstAttribute="height" constant="34" id="ztA-L1-kTb"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JWa-uL-vsV" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138" width="393" height="714"/>
+                                <rect key="frame" x="0.0" y="148" width="393" height="704"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Mn-pt-acc">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="704"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sON-wk-YX8">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="562"/>
@@ -531,10 +531,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GT0-kJ-Ifh" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="30" y="79" width="24" height="24"/>
+                                <rect key="frame" x="30" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eXQ-LB-ZDJ">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_back"/>
                                         <connections>
@@ -544,30 +544,30 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="LFj-c5-JZc"/>
+                                    <constraint firstAttribute="width" constant="34" id="LFj-c5-JZc"/>
                                     <constraint firstItem="eXQ-LB-ZDJ" firstAttribute="leading" secondItem="GT0-kJ-Ifh" secondAttribute="leading" constant="-10" id="fS7-Jd-MzU"/>
                                     <constraint firstAttribute="bottom" secondItem="eXQ-LB-ZDJ" secondAttribute="bottom" constant="-10" id="q4h-VH-RO6"/>
                                     <constraint firstItem="eXQ-LB-ZDJ" firstAttribute="top" secondItem="GT0-kJ-Ifh" secondAttribute="top" constant="-10" id="r9H-qf-2Ru"/>
-                                    <constraint firstAttribute="height" constant="24" id="wNc-6Q-lTs"/>
+                                    <constraint firstAttribute="height" constant="34" id="wNc-6Q-lTs"/>
                                     <constraint firstAttribute="trailing" secondItem="eXQ-LB-ZDJ" secondAttribute="trailing" constant="-10" id="wUK-1A-iiZ"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Crypto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="73a-N0-kNA">
-                                <rect key="frame" x="163.33333333333334" y="79" width="66.333333333333343" height="24"/>
+                                <rect key="frame" x="163.33333333333334" y="79" width="66.333333333333343" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kSO-bt-AMA" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="339" y="79" width="24" height="24"/>
+                                <rect key="frame" x="329" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rru-ds-HgD">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <color key="tintColor" name="ColorPrimary"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_user"/>
@@ -581,21 +581,21 @@
                                     <constraint firstAttribute="bottom" secondItem="rru-ds-HgD" secondAttribute="bottom" constant="-10" id="3c0-3Q-myL"/>
                                     <constraint firstItem="rru-ds-HgD" firstAttribute="top" secondItem="kSO-bt-AMA" secondAttribute="top" constant="-10" id="L1J-j3-Lyq"/>
                                     <constraint firstItem="rru-ds-HgD" firstAttribute="leading" secondItem="kSO-bt-AMA" secondAttribute="leading" constant="-10" id="RMD-jh-qmE"/>
-                                    <constraint firstAttribute="width" constant="24" id="dG8-vp-BPC"/>
-                                    <constraint firstAttribute="height" constant="24" id="mEv-mK-h23"/>
+                                    <constraint firstAttribute="width" constant="34" id="dG8-vp-BPC"/>
+                                    <constraint firstAttribute="height" constant="34" id="mEv-mK-h23"/>
                                     <constraint firstAttribute="trailing" secondItem="rru-ds-HgD" secondAttribute="trailing" constant="-10" id="oAI-qt-2F7"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mBK-90-giS" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138" width="393" height="714"/>
+                                <rect key="frame" x="0.0" y="148" width="393" height="704"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="3Ok-4q-E2i">
-                                        <rect key="frame" x="30" y="30" width="333" height="664"/>
+                                        <rect key="frame" x="30" y="30" width="333" height="654"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
                                             <outlet property="dataSource" destination="143-ab-SYw" id="dGh-Of-mMi"/>
@@ -603,7 +603,7 @@
                                         </connections>
                                     </tableView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5dr-uP-xjF">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="704"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     </view>
                                 </subviews>
@@ -661,10 +661,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pRr-Vc-bRh" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="30" y="79" width="24" height="24"/>
+                                <rect key="frame" x="30" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrR-dS-3LE">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_back"/>
                                         <connections>
@@ -675,29 +675,29 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="JrR-dS-3LE" firstAttribute="top" secondItem="pRr-Vc-bRh" secondAttribute="top" constant="-10" id="7uK-9i-w0x"/>
-                                    <constraint firstAttribute="width" constant="24" id="80d-fr-TJU"/>
+                                    <constraint firstAttribute="width" constant="34" id="80d-fr-TJU"/>
                                     <constraint firstAttribute="trailing" secondItem="JrR-dS-3LE" secondAttribute="trailing" constant="-10" id="RqW-mR-Vkm"/>
                                     <constraint firstAttribute="bottom" secondItem="JrR-dS-3LE" secondAttribute="bottom" constant="-10" id="fsj-Jr-3UX"/>
-                                    <constraint firstAttribute="height" constant="24" id="pr2-uh-b5W"/>
+                                    <constraint firstAttribute="height" constant="34" id="pr2-uh-b5W"/>
                                     <constraint firstItem="JrR-dS-3LE" firstAttribute="leading" secondItem="pRr-Vc-bRh" secondAttribute="leading" constant="-10" id="vVT-mh-4oG"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tether | TRC20" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Grm-5l-kdh">
-                                <rect key="frame" x="126" y="79" width="141" height="24"/>
+                                <rect key="frame" x="126" y="79" width="141" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ANg-G8-RTE" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="339" y="79" width="24" height="24"/>
+                                <rect key="frame" x="329" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G2C-Jj-aRP">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <color key="tintColor" name="ColorPrimary"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_user"/>
@@ -710,19 +710,19 @@
                                 <constraints>
                                     <constraint firstItem="G2C-Jj-aRP" firstAttribute="leading" secondItem="ANg-G8-RTE" secondAttribute="leading" constant="-10" id="7Yc-0k-hJo"/>
                                     <constraint firstAttribute="trailing" secondItem="G2C-Jj-aRP" secondAttribute="trailing" constant="-10" id="FkP-38-Sim"/>
-                                    <constraint firstAttribute="height" constant="24" id="HGL-yB-b0z"/>
-                                    <constraint firstAttribute="width" constant="24" id="NkY-kv-hp8"/>
+                                    <constraint firstAttribute="height" constant="34" id="HGL-yB-b0z"/>
+                                    <constraint firstAttribute="width" constant="34" id="NkY-kv-hp8"/>
                                     <constraint firstAttribute="bottom" secondItem="G2C-Jj-aRP" secondAttribute="bottom" constant="-10" id="US6-0p-KQ7"/>
                                     <constraint firstItem="G2C-Jj-aRP" firstAttribute="top" secondItem="ANg-G8-RTE" secondAttribute="top" constant="-10" id="nMZ-KN-8Eo"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jKD-hZ-zW6" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138" width="393" height="714"/>
+                                <rect key="frame" x="0.0" y="148" width="393" height="704"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PbD-kg-HUB" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                                         <rect key="frame" x="30" y="40" width="333" height="529"/>
@@ -889,10 +889,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K1X-rF-RxI" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="30" y="79" width="24" height="24"/>
+                                <rect key="frame" x="30" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef2-MJ-veY">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_back"/>
                                         <connections>
@@ -905,27 +905,27 @@
                                     <constraint firstItem="ef2-MJ-veY" firstAttribute="top" secondItem="K1X-rF-RxI" secondAttribute="top" constant="-10" id="61Q-VV-eH9"/>
                                     <constraint firstItem="ef2-MJ-veY" firstAttribute="leading" secondItem="K1X-rF-RxI" secondAttribute="leading" constant="-10" id="GmK-gw-Qv4"/>
                                     <constraint firstAttribute="bottom" secondItem="ef2-MJ-veY" secondAttribute="bottom" constant="-10" id="Yba-lb-Cq9"/>
-                                    <constraint firstAttribute="width" constant="24" id="br3-Zs-g9O"/>
+                                    <constraint firstAttribute="width" constant="34" id="br3-Zs-g9O"/>
                                     <constraint firstAttribute="trailing" secondItem="ef2-MJ-veY" secondAttribute="trailing" constant="-10" id="oZy-5B-IDd"/>
-                                    <constraint firstAttribute="height" constant="24" id="qMb-Ub-pxa"/>
+                                    <constraint firstAttribute="height" constant="34" id="qMb-Ub-pxa"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wire Transfer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m7I-hY-DOr">
-                                <rect key="frame" x="130.66666666666666" y="79" width="131.99999999999997" height="24"/>
+                                <rect key="frame" x="130.66666666666666" y="79" width="131.99999999999997" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNL-EK-JD4" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="339" y="79" width="24" height="24"/>
+                                <rect key="frame" x="329" y="79" width="34" height="34"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XXF-Si-IEf">
-                                        <rect key="frame" x="-10" y="-10" width="44" height="44"/>
+                                        <rect key="frame" x="-10" y="-10" width="54" height="54"/>
                                         <color key="tintColor" name="ColorPrimary"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" image="ic_user"/>
@@ -936,24 +936,24 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="24" id="3e0-ET-Ucy"/>
+                                    <constraint firstAttribute="width" constant="34" id="3e0-ET-Ucy"/>
                                     <constraint firstAttribute="trailing" secondItem="XXF-Si-IEf" secondAttribute="trailing" constant="-10" id="3xp-Sw-Ytr"/>
                                     <constraint firstItem="XXF-Si-IEf" firstAttribute="leading" secondItem="gNL-EK-JD4" secondAttribute="leading" constant="-10" id="TMf-AT-eqK"/>
                                     <constraint firstAttribute="bottom" secondItem="XXF-Si-IEf" secondAttribute="bottom" constant="-10" id="Z0m-kA-i1H"/>
-                                    <constraint firstAttribute="height" constant="24" id="diN-gC-4HJ"/>
+                                    <constraint firstAttribute="height" constant="34" id="diN-gC-4HJ"/>
                                     <constraint firstItem="XXF-Si-IEf" firstAttribute="top" secondItem="gNL-EK-JD4" secondAttribute="top" constant="-10" id="eVA-vq-EL3"/>
                                 </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="12"/>
+                                        <real key="value" value="17"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aId-HK-bIh" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="138" width="393" height="714"/>
+                                <rect key="frame" x="0.0" y="148" width="393" height="704"/>
                                 <subviews>
                                     <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="idk-1S-zVp">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="714"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="704"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wX-ps-HsR">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="553"/>
@@ -1290,13 +1290,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLC-c7-zDg">
-                                <rect key="frame" x="50" y="240" width="293" height="16.333333333333314"/>
+                                <rect key="frame" x="50" y="240" width="293" height="17.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1be-9V-HHJ" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="264.33333333333331" width="313" height="40"/>
+                                <rect key="frame" x="40" y="265.66666666666669" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-pd-WKS">
                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1336,13 +1336,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN2-D7-VRn">
-                                <rect key="frame" x="50" y="324.33333333333331" width="293" height="16.333333333333314"/>
+                                <rect key="frame" x="50" y="325.66666666666669" width="293" height="17.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68F-jy-3uv" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="348.66666666666669" width="313" height="40"/>
+                                <rect key="frame" x="40" y="351.33333333333331" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Curency" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-gB-YWb">
                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1382,13 +1382,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-2Y-uMG">
-                                <rect key="frame" x="50" y="408.66666666666669" width="293" height="16.333333333333314"/>
+                                <rect key="frame" x="50" y="411.33333333333331" width="293" height="17.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-7D-Zqp" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="433" width="313" height="40"/>
+                                <rect key="frame" x="40" y="437" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHO-vO-xT4">
                                         <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1418,7 +1418,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I55-DF-si4" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="513" width="313" height="40"/>
+                                <rect key="frame" x="40" y="517" width="313" height="40"/>
                                 <color key="backgroundColor" name="VividCerulean"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Dsr-kn-Ggh"/>
@@ -1488,16 +1488,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Um-Jg-yEs">
-                                <rect key="frame" x="0.0" y="59" width="393" height="512.33333333333337"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="517.66666666666663"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-rc-4Np">
-                                        <rect key="frame" x="50" y="25" width="293" height="16.333333333333329"/>
+                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu7-lJ-vMH" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="49.333333333333329" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="50.666666666666671" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9U-vn-8Rs">
                                                 <rect key="frame" x="12" y="5" width="250" height="30"/>
@@ -1536,13 +1536,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payee Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-Ch-bdG">
-                                        <rect key="frame" x="50" y="109.33333333333334" width="293" height="16.333333333333329"/>
+                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cie-SP-Mnj" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="133.66666666666666" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="136.33333333333334" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgR-IP-r6l">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1572,13 +1572,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-iU-lPn">
-                                        <rect key="frame" x="50" y="193.66666666666666" width="293" height="16.333333333333343"/>
+                                        <rect key="frame" x="50" y="196.33333333333334" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-Hj-IRx" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="218" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="222" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eth-T3-Zwu">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1608,13 +1608,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-Vo-2et">
-                                        <rect key="frame" x="50" y="278" width="293" height="16.333333333333314"/>
+                                        <rect key="frame" x="50" y="282" width="293" height="17.666666666666686"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-TU-4Rf" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="302.33333333333331" width="313" height="100"/>
+                                        <rect key="frame" x="40" y="307.66666666666669" width="313" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vYE-G7-BHP">
                                                 <rect key="frame" x="10" y="5" width="293" height="90"/>
@@ -1645,7 +1645,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFv-la-bjP" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="442.33333333333331" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="447.66666666666669" width="313" height="40"/>
                                         <color key="backgroundColor" name="VividCerulean"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="deb-Qh-p87"/>
@@ -1726,16 +1726,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-UZ-BPY">
-                                <rect key="frame" x="0.0" y="59" width="393" height="428"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="432"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuO-ym-vcS">
-                                        <rect key="frame" x="50" y="25" width="293" height="16.333333333333329"/>
+                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-J9-8eg" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="49.333333333333329" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="50.666666666666671" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-Wg-VkB">
                                                 <rect key="frame" x="12" y="5" width="250" height="30"/>
@@ -1774,13 +1774,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-7r-KFU">
-                                        <rect key="frame" x="50" y="109.33333333333334" width="293" height="16.333333333333329"/>
+                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZS-Hs-Ovc" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="133.66666666666666" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="136.33333333333334" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-qN-iSC">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1810,13 +1810,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL8-Ga-gXK">
-                                        <rect key="frame" x="50" y="193.66666666666666" width="293" height="16.333333333333343"/>
+                                        <rect key="frame" x="50" y="196.33333333333334" width="293" height="17.666666666666657"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-wX-pIc" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="218" width="313" height="100"/>
+                                        <rect key="frame" x="40" y="222" width="313" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A3E-xS-f9j">
                                                 <rect key="frame" x="10" y="5" width="293" height="90"/>
@@ -1847,7 +1847,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcW-si-frn" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="358" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="362" width="313" height="40"/>
                                         <color key="backgroundColor" name="VividCerulean"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7rP-re-BN9"/>
@@ -1915,13 +1915,13 @@
     </scenes>
     <designables>
         <designable name="I55-DF-si4">
-            <size key="intrinsicContentSize" width="49" height="29"/>
+            <size key="intrinsicContentSize" width="52" height="30"/>
         </designable>
         <designable name="OcW-si-frn">
-            <size key="intrinsicContentSize" width="49" height="29"/>
+            <size key="intrinsicContentSize" width="52" height="30"/>
         </designable>
         <designable name="bFv-la-bjP">
-            <size key="intrinsicContentSize" width="49" height="29"/>
+            <size key="intrinsicContentSize" width="52" height="30"/>
         </designable>
     </designables>
     <resources>
