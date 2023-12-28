@@ -38,7 +38,7 @@ class AddAccountVC: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        vcTitleLbl.text = "Open a New " + titleVC + " Account"
+        vcTitleLbl.text = "Open " + titleVC + " Account"
         for acc in accTypes{
             if acc.platform == "MT4"{
                 mt4Acc.append(acc)

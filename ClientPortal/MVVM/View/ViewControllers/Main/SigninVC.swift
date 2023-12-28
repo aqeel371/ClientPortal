@@ -139,13 +139,17 @@ extension SigninVC{
                                     print("\(item) selected")
                                     let vc = ViewControllers.InternalTabsVC.getViewController() as InternalTabsVC
                                     if item.title == menuEntries[0]{
-                                        vc.typeVc = .deposit
+//                                        vc.typeVc = .deposit
+                                        let vc = ViewControllers.DepositVC.getViewController()
+                                        self.navigationController?.pushViewController(vc, animated: true)
                                     }else if item.title == menuEntries[1]{
                                         vc.typeVc = .withdraw
+                                        self.navigationController?.pushViewController(vc, animated: true)
                                     }else{
                                         vc.typeVc = .transfer
+                                        self.navigationController?.pushViewController(vc, animated: true)
                                     }
-                                    self.navigationController?.pushViewController(vc, animated: true)
+                                    
                                 })
         })
         menu.icon = UIImage(named: "ic_g")

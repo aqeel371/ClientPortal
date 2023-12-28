@@ -82,7 +82,7 @@ extension DashboardViewController:UICollectionViewDelegate,UICollectionViewDataS
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let width = collectionView.bounds.width - 40
+        let width = collectionView.bounds.width - 60
         let height = 180.0
         
         return CGSize(width: width, height: height)
@@ -113,6 +113,11 @@ extension DashboardViewController:UITableViewDelegate,UITableViewDataSource{
             cell.cellView.backgroundColor = UIColor.GhostWhite
         }
         cell.selectionStyle = .none
+        
+        cell.depositCallBack = {
+            let vc = ViewControllers.DepositVC.getViewController()
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         
         return cell
     }

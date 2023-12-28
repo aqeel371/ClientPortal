@@ -18,6 +18,8 @@ class DashboardTVC: UITableViewCell {
     @IBOutlet weak var lblLevrage: UILabel!
     @IBOutlet weak var lblDeposit: UILabel!
     
+    var depositCallBack: (()->Void)? = nil
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -38,5 +40,12 @@ class DashboardTVC: UITableViewCell {
         lblLevrage.text = "$\(data.state?.margin?.leverage ?? 0)"
         lblDeposit.text = "Deposit"
     }
+    
+    @IBAction func depositAction(_ sender: Any) {
+        if let callback = depositCallBack{
+            callback()
+        }
+    }
+    
     
 }
