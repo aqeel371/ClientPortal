@@ -20,6 +20,8 @@ class TrainingDetailsVC: UIViewController {
     
     //MARK: - Varibles
     var type:TrainingType?
+    var spinner :LoadingViewNib?
+    var trainData = [TrainingDatum]()
     var technicalHtmlString = """
 
 <div id="cincopa_274e27">...</div><script type="text/javascript">
@@ -48,6 +50,8 @@ c.parentNode.insertBefore(cp, c); })(); </script>
     override func viewDidLoad() {
         super.viewDidLoad()
         setupCV()
+        webView.isHidden = true
+        trainingCV.isHidden = false
         // Do any additional setup after loading the view.
     }
     
@@ -83,18 +87,28 @@ extension TrainingDetailsVC:UICollectionViewDelegate,UICollectionViewDataSource,
     
     func setupCV(){
         trainingCV.register(UINib(nibName: "TrainingCVC", bundle: nil), forCellWithReuseIdentifier: "TrainingCVC")
+        
+        if trainData.isEmpty{
+            self.showNoDataMessage()
+        }
+        
+//        getTraining()
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return trainData.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "TrainingCVC", for: indexPath) as! TrainingCVC
-        if indexPath.row % 2 == 0 {
-            cell.videoImage.image = UIImage(named: "ic_train1")
-        } else {
-            cell.videoImage.image = UIImage(named: "ic_train2")
+        cell.config(train: trainData[indexPath.row])
+        
+        cell.playCallBack = {
+            
+            let webVC = WebViewController.loadFromNib()
+            webVC.url = self.trainData[indexPath.row].url ?? ""
+            webVC.modalPresentationStyle = .fullScreen
+            self.present(webVC, animated: true)
         }
         
         return cell
@@ -106,5 +120,41 @@ extension TrainingDetailsVC:UICollectionViewDelegate,UICollectionViewDataSource,
         let height = 175.0
         return CGSize(width: width, height: height)
     }
+    
+}
+
+
+//MARK: API
+
+extension TrainingDetailsVC{
+    
+    
+    func getTraining(){
+        spinner = self.showSpinner()
+        
+        ApiManager.shared.request(with: .getTrainingVideos, completion: {resp in
+            
+            switch resp{
+            case .Success(let data):
+                self.spinner?.removeFromSuperview()
+                if let trainResp:TrainingVideosResponse = self.handleResponse(data: data as! Data){
+                    if trainResp.status ?? false {
+                        if let training = trainResp.result?.data{
+                            self.trainData = training
+//                            self.filtreTrainingVideos(training: training)
+                        }
+                    }else{
+                        self.showAlert(title: "Error", message: trainResp.message, actions: nil)
+                    }
+                }
+            case .Failure(let error):
+                self.spinner?.removeFromSuperview()
+                self.handleError(error: error)
+            }
+            
+        })
+        
+    }
+    
     
 }

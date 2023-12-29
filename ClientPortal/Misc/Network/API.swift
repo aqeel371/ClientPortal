@@ -69,6 +69,8 @@ enum API{
     case Pay(params:OptionalDictionary)
     case GetLogs
     
+    case getTrainingVideos
+    
     static func mapKeysAndValues(keys : [String]?, values : [AnyObject]?) -> [String : AnyObject]? {
         guard let tempValues = values,let tempKeys = keys else { return nil}
         var params = [String : AnyObject]()

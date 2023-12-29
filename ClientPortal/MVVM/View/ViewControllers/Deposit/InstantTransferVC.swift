@@ -148,7 +148,7 @@ extension InstantTransferVC{
                 self.spinner?.removeFromSuperview()
                 if let payResp:PayResponse = self.handleResponse(data: data as! Data){
                     if payResp.status ?? false {
-                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+//                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
 //                            self.navigationController?.popViewController(animated: true)
                             var stringUrl = ""
                             if payResp.result?.gateway == "stripe"{
@@ -161,8 +161,8 @@ extension InstantTransferVC{
                             webVC.url = stringUrl
                             webVC.modalPresentationStyle = .fullScreen
                             self.present(webVC, animated: true)
-                        }
-                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+//                        }
+//                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
                     }else{
                         self.showAlert(title: "Error", message: payResp.message, actions: nil)
                     }

@@ -3419,7 +3419,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <collectionView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="cvJ-yC-ZQV">
-                                                <rect key="frame" x="30" y="134" width="333" height="589"/>
+                                                <rect key="frame" x="30" y="69" width="333" height="654"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="20" minimumInteritemSpacing="10" id="Jwu-aX-F2Q">
                                                     <size key="itemSize" width="128" height="128"/>
@@ -3447,7 +3447,7 @@
                                             <constraint firstItem="cxz-L5-FPK" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="2lg-ri-2KK"/>
                                             <constraint firstItem="yMC-gF-J9U" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="B6h-bh-1hb"/>
                                             <constraint firstItem="FNR-Un-an9" firstAttribute="top" secondItem="yMC-gF-J9U" secondAttribute="bottom" constant="30" id="L07-BJ-Nwo"/>
-                                            <constraint firstItem="cvJ-yC-ZQV" firstAttribute="top" secondItem="cxz-L5-FPK" secondAttribute="bottom" constant="30" id="NEf-2F-CMM"/>
+                                            <constraint firstItem="cvJ-yC-ZQV" firstAttribute="top" secondItem="cxz-L5-FPK" secondAttribute="top" id="NEf-2F-CMM"/>
                                             <constraint firstItem="cvJ-yC-ZQV" firstAttribute="leading" secondItem="bjq-7l-dnx" secondAttribute="leading" constant="30" id="PB8-UF-Bij"/>
                                             <constraint firstAttribute="trailing" secondItem="cxz-L5-FPK" secondAttribute="trailing" constant="30" id="Q2d-lq-nCR"/>
                                             <constraint firstAttribute="trailing" secondItem="T2n-L1-eT7" secondAttribute="trailing" constant="30" id="QBb-sN-Mz1"/>

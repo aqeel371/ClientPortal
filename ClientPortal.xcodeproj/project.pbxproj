@@ -80,6 +80,8 @@
 		C58E8B2D2B1782BB00E7F3D3 /* MenuTardesVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */; };
 		C58E8B302B1783DC00E7F3D3 /* TradesCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */; };
 		C58E8B312B1783DC00E7F3D3 /* TradesCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */; };
+		C5993AA32B3ED3DF00624154 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = C5993AA22B3ED3DF00624154 /* SwiftKeychainWrapper */; };
+		C5993AA72B3EF14B00624154 /* TrainingVideoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5993AA62B3EF14B00624154 /* TrainingVideoResponse.swift */; };
 		C5A2C1D42B20C83800154DCE /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5A2C1D32B20C83800154DCE /* TransactionModel.swift */; };
 		C5C207272B1621B300AF337A /* ChangePasswordVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207262B1621B300AF337A /* ChangePasswordVC.swift */; };
 		C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C207282B162DF100AF337A /* InternalTabsVC.swift */; };
@@ -204,6 +206,7 @@
 		C58E8B2C2B1782BB00E7F3D3 /* MenuTardesVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTardesVC.swift; sourceTree = "<group>"; };
 		C58E8B2E2B1783DB00E7F3D3 /* TradesCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TradesCVC.swift; path = ClientPortal/MVVM/View/TradesCVC.swift; sourceTree = SOURCE_ROOT; };
 		C58E8B2F2B1783DC00E7F3D3 /* TradesCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = TradesCVC.xib; path = ClientPortal/MVVM/View/TradesCVC.xib; sourceTree = SOURCE_ROOT; };
+		C5993AA62B3EF14B00624154 /* TrainingVideoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingVideoResponse.swift; sourceTree = "<group>"; };
 		C5A2C1D32B20C83800154DCE /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TransactionModel.swift; path = ClientPortal/MVVM/View/Cells/TransactionModel.swift; sourceTree = SOURCE_ROOT; };
 		C5C207262B1621B300AF337A /* ChangePasswordVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordVC.swift; sourceTree = "<group>"; };
 		C5C207282B162DF100AF337A /* InternalTabsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalTabsVC.swift; sourceTree = "<group>"; };
@@ -268,6 +271,7 @@
 			files = (
 				C514D9B92B1F1DD500BD405A /* Kingfisher in Frameworks */,
 				12B4598C18C94DA0C73F4C85 /* Pods_ClientPortal.framework in Frameworks */,
+				C5993AA32B3ED3DF00624154 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -420,6 +424,7 @@
 		F2657FBC2B14944800CDEEF3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				C5993AA62B3EF14B00624154 /* TrainingVideoResponse.swift */,
 				C514D9AF2B1F10C200BD405A /* LoginModel.swift */,
 				C514D9B12B1F150800BD405A /* ProfileRespose.swift */,
 				C514D9B32B1F19A300BD405A /* BannerResponse.swift */,
@@ -613,6 +618,7 @@
 			name = ClientPortal;
 			packageProductDependencies = (
 				C514D9B82B1F1DD500BD405A /* Kingfisher */,
+				C5993AA22B3ED3DF00624154 /* SwiftKeychainWrapper */,
 			);
 			productName = ClientPortal;
 			productReference = F2657FA42B1491EB00CDEEF3 /* ClientPortal.app */;
@@ -644,6 +650,7 @@
 			mainGroup = F2657F9B2B1491EB00CDEEF3;
 			packageReferences = (
 				C514D9B72B1F1DD500BD405A /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C5993AA12B3ED3DF00624154 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = F2657FA52B1491EB00CDEEF3 /* Products */;
 			projectDirPath = "";
@@ -762,6 +769,7 @@
 				F2B384052B1495D500F4FB60 /* ApiRoutes.swift in Sources */,
 				C54402252B175A3D008209DD /* InstantTransferVC.swift in Sources */,
 				C54402232B175367008209DD /* WireTransferDetailsVC.swift in Sources */,
+				C5993AA72B3EF14B00624154 /* TrainingVideoResponse.swift in Sources */,
 				C5C207292B162DF100AF337A /* InternalTabsVC.swift in Sources */,
 				C55F0E3B2B18687D004EE83E /* PlateformCVC.swift in Sources */,
 				C514D9B02B1F10C200BD405A /* LoginModel.swift in Sources */,
@@ -1071,6 +1079,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		C5993AA12B3ED3DF00624154 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -1078,6 +1094,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = C514D9B72B1F1DD500BD405A /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		C5993AA22B3ED3DF00624154 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C5993AA12B3ED3DF00624154 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

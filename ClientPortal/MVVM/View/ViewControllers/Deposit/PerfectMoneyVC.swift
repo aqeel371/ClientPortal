@@ -170,10 +170,10 @@ extension PerfectMoneyVC{
                             "PAYMENT_URL_METHOD": "LINK"
                         ]
                         
-                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+//                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
                             self.openWindowWithPost(url: url, data: data)
-                        }
-                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+//                        }
+//                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
                     }else{
                         self.showAlert(title: "Error", message: payResp.message, actions: nil)
                     }

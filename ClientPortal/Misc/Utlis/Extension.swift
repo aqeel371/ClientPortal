@@ -69,6 +69,45 @@ extension UIViewController{
         }
         return instantiateFromNib()
     }
+    
+    func showToast(message: String) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width / 2 - 150, y: self.view.frame.size.height - 100, width: 300, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.textAlignment = .center
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10
+        toastLabel.clipsToBounds = true
+        self.view.addSubview(toastLabel)
+        
+        UIView.animate(withDuration: 2.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: { _ in
+            toastLabel.removeFromSuperview()
+        })
+    }
+    
+    func showNoDataMessage() {
+        let noDataLabel = UILabel()
+        noDataLabel.text = "No Data Found..!"
+        noDataLabel.textAlignment = .center
+        noDataLabel.textColor = .EerieBlack
+        noDataLabel.font = UIFont(name: "Quicksand-SemiBold", size: 14)
+        noDataLabel.numberOfLines = 0
+        noDataLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        // Add the label to the center of the main view
+        view.addSubview(noDataLabel)
+        
+        NSLayoutConstraint.activate([
+            noDataLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            noDataLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+            noDataLabel.leadingAnchor.constraint(greaterThanOrEqualTo: view.leadingAnchor, constant: 16),
+            noDataLabel.trailingAnchor.constraint(lessThanOrEqualTo: view.trailingAnchor, constant: -16)
+        ])
+    }
+    
 }
 
 // MARK: - UIColor

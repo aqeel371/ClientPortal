@@ -56,6 +56,12 @@ class WireTransferDetailsVC: UIViewController {
             view.titleLbl.text = b.title
             view.valueLbl.text = b.value
             
+            view.copyCallBack = {
+                UIPasteboard.general.string = b.value
+                
+                self.showToast(message: "Copied to clipboard")
+            }
+            
             stackView.addArrangedSubview(view)
         }
         

@@ -130,7 +130,7 @@ extension StickSkrillVC{
                             "recipient_description": "\(self.accID)" + " - " + "\(payResp.result?.id ?? 0)" + "" + "\(randomNumber)"
                         ]
                         
-                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
+//                        let okAction = UIAlertAction(title: "Okay", style: .cancel){ _ in
 //                            self.navigationController?.popViewController(animated: true)
                             if payResp.result?.gateway == "skrill"{
                                 self.openWindowWithPost(url: url, data: data)
@@ -142,8 +142,8 @@ extension StickSkrillVC{
                                 self.present(webVC, animated: true)
                             }
                             
-                        }
-                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
+//                        }
+//                        self.showAlert(title: "Success", message: "Transaction Complete Succesfully...!", actions: [okAction])
                     }else{
                         self.showAlert(title: "Error", message: payResp.message, actions: nil)
                     }

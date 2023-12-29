@@ -8,6 +8,7 @@
 import UIKit
 import CBTabBarController
 import FloatingPanel
+import SwiftKeychainWrapper
 
 class SigninVC: UIViewController {
 
@@ -23,7 +24,9 @@ class SigninVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        autoLogin()
+        
         // Do any additional setup after loading the view.
     }
     override func viewWillAppear(_ animated: Bool) {
@@ -77,6 +80,16 @@ class SigninVC: UIViewController {
         } else {
             passwordTF.isSecureTextEntry = false
             eyeIcon.image = UIImage(named: "ic_eye")
+        }
+    }
+    
+    //MARK: - Session Retreive
+    
+    func autoLogin(){
+        let retrievedString: String? = KeychainWrapper.standard.string(forKey: "myLogin")
+        Global.shared.tokken = retrievedString ?? ""
+        if retrievedString != nil{
+            self.setupTabBar()
         }
     }
     
@@ -194,6 +207,12 @@ extension SigninVC{
                     self.spinner?.removeFromSuperview()
                     if loginResp.status ?? false {
                         Global.shared.tokken = loginResp.result?.token ?? ""
+                        
+                        if let token = Global.shared.tokken{
+                            let saveSuccessful: Bool = KeychainWrapper.standard.set(token, forKey: "myLogin")
+                            UserDefaults.standard.set(saveSuccessful, forKey: "isLoggedIn")
+                        }
+                        
                         self.setupTabBar()
                     }else{
                         self.showAlert(title: "Error", message: loginResp.message, actions: nil)

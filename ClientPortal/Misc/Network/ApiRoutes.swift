@@ -56,6 +56,8 @@ extension API:Router{
             return ApiPaths.profileChangePass
         case .GetAccountType:
             return ApiPaths.accounttypes
+        case .getTrainingVideos:
+            return ApiPaths.training
         }
     }
     

@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import SwiftKeychainWrapper
 
 class DashboardViewController: UIViewController {
 
@@ -41,7 +42,14 @@ class DashboardViewController: UIViewController {
     //MARK: - IBActions
     
     @IBAction func backAction(_ sender: Any) {
-        self.navigationController?.popViewController(animated: true)
+        let cancelAction = UIAlertAction(title: -("Cancel"), style: .cancel)
+        let confirmAction = UIAlertAction(title: -("Logout"), style: .destructive) { _ in
+            KeychainWrapper.standard.removeObject(forKey: "myLogin")
+            UserDefaults.standard.set(false, forKey: "isLoggedIn")
+            
+            self.navigationController?.popViewController(animated: true)
+        }
+        self.showAlert(title: -("Logout"), message: -("Are you sure you want to log out?"), actions: [cancelAction,confirmAction])
     }
     
     @IBAction func profileAction(_ sender: Any) {

@@ -78,6 +78,14 @@ class DepositVC: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    
+    @IBAction func netellerAction(_ sender: Any) {
+    }
+    
+    @IBAction func paypalAction(_ sender: Any) {
+    }
+    
+    
     //MARK: - Add Banks
     func addCrptoBanksData(){
         var banks1 = [BankData]()

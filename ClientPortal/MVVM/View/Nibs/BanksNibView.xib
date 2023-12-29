@@ -27,25 +27,40 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fMs-po-DT1">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="17.333333333333332"/>
+                            <rect key="frame" x="0.0" y="0.0" width="393" height="17"/>
                             <fontDescription key="fontDescription" name="Quicksand-Regular" family="Quicksand" pointSize="14"/>
                             <color key="textColor" name="SonicSilver"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="USD" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-Es-bkX">
-                            <rect key="frame" x="0.0" y="22.333333333333329" width="393" height="17.666666666666671"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="249" verticalCompressionResistancePriority="751" text="USD" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfa-Es-bkX">
+                            <rect key="frame" x="0.0" y="22" width="353" height="18"/>
                             <fontDescription key="fontDescription" name="Quicksand-SemiBold" family="Quicksand" pointSize="14"/>
                             <color key="textColor" name="EerieBlack"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qS3-69-YgF">
+                            <rect key="frame" x="375" y="22" width="18" height="18"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="18" id="1Z6-eu-q9k"/>
+                                <constraint firstAttribute="width" secondItem="qS3-69-YgF" secondAttribute="height" multiplier="1:1" id="jZo-qo-vdp"/>
+                            </constraints>
+                            <color key="tintColor" name="SonicSilver"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="ic_copy"/>
+                            <connections>
+                                <action selector="copyAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Mct-vd-ix4"/>
+                            </connections>
+                        </button>
                     </subviews>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="fMs-po-DT1" firstAttribute="top" secondItem="3fG-7v-xcH" secondAttribute="top" id="2GW-xx-JO9"/>
+                        <constraint firstAttribute="trailing" secondItem="qS3-69-YgF" secondAttribute="trailing" id="65s-Gv-GaN"/>
                         <constraint firstItem="kfa-Es-bkX" firstAttribute="leading" secondItem="3fG-7v-xcH" secondAttribute="leading" id="91E-cX-F4c"/>
                         <constraint firstAttribute="bottom" secondItem="kfa-Es-bkX" secondAttribute="bottom" id="DBH-PH-WzZ"/>
+                        <constraint firstItem="qS3-69-YgF" firstAttribute="top" secondItem="kfa-Es-bkX" secondAttribute="top" id="I9V-H7-ulx"/>
+                        <constraint firstAttribute="trailing" secondItem="kfa-Es-bkX" secondAttribute="trailing" constant="40" id="IUx-8A-BKD"/>
                         <constraint firstItem="kfa-Es-bkX" firstAttribute="top" secondItem="fMs-po-DT1" secondAttribute="bottom" constant="5" id="Ldk-G7-xN5"/>
-                        <constraint firstAttribute="trailing" secondItem="kfa-Es-bkX" secondAttribute="trailing" id="VPn-E5-ffY"/>
                         <constraint firstAttribute="trailing" secondItem="fMs-po-DT1" secondAttribute="trailing" id="WwU-9V-qmW"/>
                         <constraint firstItem="fMs-po-DT1" firstAttribute="leading" secondItem="3fG-7v-xcH" secondAttribute="leading" id="kv1-2G-vWe"/>
                     </constraints>
@@ -68,6 +83,7 @@
         </view>
     </objects>
     <resources>
+        <image name="ic_copy" width="64" height="64"/>
         <namedColor name="EerieBlack">
             <color red="0.11372549019607843" green="0.11372549019607843" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
