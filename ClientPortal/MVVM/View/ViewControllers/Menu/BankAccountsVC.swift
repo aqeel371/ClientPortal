@@ -86,6 +86,7 @@ extension BankAccountsVC{
                             if banks.isEmpty{
                                 self.btnHeight.constant = 40
                                 self.addButton.isHidden = false
+                                self.showNoDataMessage()
                             }else{
                                 self.btnHeight.constant = 0
                                 self.addButton.isHidden = true

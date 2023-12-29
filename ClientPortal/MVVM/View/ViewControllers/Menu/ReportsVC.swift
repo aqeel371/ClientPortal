@@ -215,6 +215,7 @@ extension ReportsVC{
                                 self.transactiosn = []
                                 self.reportsCV.reloadData()
                                 self.showAlert(title: "Error", message: "No Data Found..!", actions: nil)
+                                self.showNoDataMessage()
                             }else{
                                 self.transactiosn = transaction
                                 self.reportsCV.reloadData()

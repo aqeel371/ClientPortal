@@ -42,17 +42,17 @@ class MenuTransactionVC: UIViewController {
     
     
     @IBAction func bankAction(_ sender: Any) {
-        let vc = ViewControllers.BankAccountsVC.getViewController()
+        let vc = ViewControllers.BankAccountsVC.getViewController() as BankAccountsVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func walletAction(_ sender: Any) {
-        let vc = ViewControllers.WalletsVC.getViewController()
+        let vc = ViewControllers.WalletsVC.getViewController() as WalletsVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func reportAction(_ sender: Any) {
-        let vc = ViewControllers.ReportsVC.getViewController()
+        let vc = ViewControllers.ReportsVC.getViewController() as ReportsVC
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

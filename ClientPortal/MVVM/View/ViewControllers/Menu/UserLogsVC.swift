@@ -78,8 +78,12 @@ extension UserLogsVC{
                 if let logResp:LogsResponse = self.handleResponse(data: data as! Data){
                     if logResp.status ?? false {
                         if let logs = logResp.result?.data{
-                            self.logs = logs
-                            self.logsCV.reloadData()
+                            if logs.isEmpty{
+                                self.showNoDataMessage()
+                            }else{
+                                self.logs = logs
+                                self.logsCV.reloadData()
+                            }
                         }
                     }else{
                         self.showAlert(title: "Error", message: logResp.message, actions: nil)

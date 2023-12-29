@@ -88,6 +88,7 @@ extension WalletsVC{
                             if wallets.isEmpty{
                                 self.btnHeight.constant = 40
                                 self.addBtn.isHidden = false
+                                self.showNoDataMessage()
                             }else{
                                 self.btnHeight.constant = 0
                                 self.addBtn.isHidden = true

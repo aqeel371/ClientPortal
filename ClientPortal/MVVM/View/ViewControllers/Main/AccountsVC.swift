@@ -57,6 +57,11 @@ extension AccountsVC:UICollectionViewDelegate,UICollectionViewDataSource,UIColle
     
     func setupCV(){
         accountCV.register(UINib(nibName: "AccountsCVC", bundle: nil), forCellWithReuseIdentifier: "AccountsCVC")
+        
+        if accounts.isEmpty{
+            self.showNoDataMessage()
+        }
+        
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

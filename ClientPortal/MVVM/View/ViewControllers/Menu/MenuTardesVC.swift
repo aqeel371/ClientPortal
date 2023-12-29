@@ -80,8 +80,12 @@ extension MenuTardesVC{
                 if let accResp:AccountsResponse = self.handleResponse(data: data as! Data){
                     if accResp.status ?? false {
                         if let accounts = accResp.result?.data{
-                            self.accounts = accounts
-                            self.tradesCV.reloadData()
+                            if accounts.isEmpty{
+                                self.showNoDataMessage()
+                            }else{
+                                self.accounts = accounts
+                                self.tradesCV.reloadData()
+                            }
                         }
                     }else{
                         self.showAlert(title: "Error", message: accResp.message, actions: nil)

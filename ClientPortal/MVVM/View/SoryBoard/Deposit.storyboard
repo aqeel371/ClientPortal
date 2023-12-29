@@ -1407,13 +1407,13 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLC-c7-zDg">
-                                <rect key="frame" x="50" y="240" width="293" height="17.666666666666686"/>
+                                <rect key="frame" x="50" y="240" width="293" height="16.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1be-9V-HHJ" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="265.66666666666669" width="313" height="40"/>
+                                <rect key="frame" x="40" y="264.33333333333331" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0z9-pd-WKS">
                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1453,13 +1453,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kN2-D7-VRn">
-                                <rect key="frame" x="50" y="325.66666666666669" width="293" height="17.666666666666686"/>
+                                <rect key="frame" x="50" y="324.33333333333331" width="293" height="16.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68F-jy-3uv" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="351.33333333333331" width="313" height="40"/>
+                                <rect key="frame" x="40" y="348.66666666666669" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Select Curency" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lny-gB-YWb">
                                         <rect key="frame" x="12" y="5" width="251" height="30"/>
@@ -1499,13 +1499,13 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIs-2Y-uMG">
-                                <rect key="frame" x="50" y="411.33333333333331" width="293" height="17.666666666666686"/>
+                                <rect key="frame" x="50" y="408.66666666666669" width="293" height="16.333333333333314"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                 <color key="textColor" name="EerieBlack"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mCt-7D-Zqp" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="437" width="313" height="40"/>
+                                <rect key="frame" x="40" y="433" width="313" height="40"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XHO-vO-xT4">
                                         <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1535,7 +1535,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I55-DF-si4" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                <rect key="frame" x="40" y="517" width="313" height="40"/>
+                                <rect key="frame" x="40" y="513" width="313" height="40"/>
                                 <color key="backgroundColor" name="VividCerulean"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Dsr-kn-Ggh"/>
@@ -1605,16 +1605,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Um-Jg-yEs">
-                                <rect key="frame" x="0.0" y="59" width="393" height="517.66666666666663"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="512.33333333333337"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LkC-rc-4Np">
-                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
+                                        <rect key="frame" x="50" y="25" width="293" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yu7-lJ-vMH" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="50.666666666666671" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="49.333333333333329" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="I9U-vn-8Rs">
                                                 <rect key="frame" x="12" y="5" width="250" height="30"/>
@@ -1653,13 +1653,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payee Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JI-Ch-bdG">
-                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="109.33333333333334" width="293" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cie-SP-Mnj" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="136.33333333333334" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="133.66666666666666" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Account Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgR-IP-r6l">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1689,13 +1689,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TQH-iU-lPn">
-                                        <rect key="frame" x="50" y="196.33333333333334" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="193.66666666666666" width="293" height="16.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tpf-Hj-IRx" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="222" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="218" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eth-T3-Zwu">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1725,13 +1725,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QvI-Vo-2et">
-                                        <rect key="frame" x="50" y="282" width="293" height="17.666666666666686"/>
+                                        <rect key="frame" x="50" y="278" width="293" height="16.333333333333314"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gfb-TU-4Rf" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="307.66666666666669" width="313" height="100"/>
+                                        <rect key="frame" x="40" y="302.33333333333331" width="313" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="vYE-G7-BHP">
                                                 <rect key="frame" x="10" y="5" width="293" height="90"/>
@@ -1762,7 +1762,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bFv-la-bjP" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="447.66666666666669" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="442.33333333333331" width="313" height="40"/>
                                         <color key="backgroundColor" name="VividCerulean"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="deb-Qh-p87"/>
@@ -1843,16 +1843,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDO-UZ-BPY">
-                                <rect key="frame" x="0.0" y="59" width="393" height="432"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="428"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Trading Account" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RuO-ym-vcS">
-                                        <rect key="frame" x="50" y="25" width="293" height="17.666666666666671"/>
+                                        <rect key="frame" x="50" y="25" width="293" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F4E-J9-8eg" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="50.666666666666671" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="49.333333333333329" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Bank Transfer" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wgY-Wg-VkB">
                                                 <rect key="frame" x="12" y="5" width="250" height="30"/>
@@ -1891,13 +1891,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBP-7r-KFU">
-                                        <rect key="frame" x="50" y="110.66666666666666" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="109.33333333333334" width="293" height="16.333333333333329"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oZS-Hs-Ovc" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="136.33333333333334" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="133.66666666666666" width="313" height="40"/>
                                         <subviews>
                                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Enter Amount" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iHh-qN-iSC">
                                                 <rect key="frame" x="12" y="5" width="289" height="30"/>
@@ -1927,13 +1927,13 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QL8-Ga-gXK">
-                                        <rect key="frame" x="50" y="196.33333333333334" width="293" height="17.666666666666657"/>
+                                        <rect key="frame" x="50" y="193.66666666666666" width="293" height="16.333333333333343"/>
                                         <fontDescription key="fontDescription" name="Quicksand-Medium" family="Quicksand" pointSize="14"/>
                                         <color key="textColor" name="EerieBlack"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1ze-wX-pIc" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="222" width="313" height="100"/>
+                                        <rect key="frame" x="40" y="218" width="313" height="100"/>
                                         <subviews>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Enter Notes" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="A3E-xS-f9j">
                                                 <rect key="frame" x="10" y="5" width="293" height="90"/>
@@ -1964,7 +1964,7 @@
                                         </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OcW-si-frn" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
-                                        <rect key="frame" x="40" y="362" width="313" height="40"/>
+                                        <rect key="frame" x="40" y="358" width="313" height="40"/>
                                         <color key="backgroundColor" name="VividCerulean"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="7rP-re-BN9"/>
@@ -2032,13 +2032,13 @@
     </scenes>
     <designables>
         <designable name="I55-DF-si4">
-            <size key="intrinsicContentSize" width="52" height="30"/>
+            <size key="intrinsicContentSize" width="49" height="29"/>
         </designable>
         <designable name="OcW-si-frn">
-            <size key="intrinsicContentSize" width="52" height="30"/>
+            <size key="intrinsicContentSize" width="49" height="29"/>
         </designable>
         <designable name="bFv-la-bjP">
-            <size key="intrinsicContentSize" width="52" height="30"/>
+            <size key="intrinsicContentSize" width="49" height="29"/>
         </designable>
     </designables>
     <resources>

@@ -1810,7 +1810,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bank Accounts" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MV6-bt-GJn">
-                                <rect key="frame" x="125.33333333333333" y="79" width="142.66666666666669" height="34"/>
+                                <rect key="frame" x="128.66666666666666" y="79" width="135.99999999999997" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -1975,7 +1975,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </view>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wallets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4of-ob-HMq">
-                                                <rect key="frame" x="160.66666666666666" y="0.0" width="72" height="34"/>
+                                                <rect key="frame" x="164.33333333333334" y="0.0" width="64.666666666666657" height="34"/>
                                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -2756,13 +2756,13 @@
                                 <rect key="frame" x="0.0" y="60" width="393" height="792"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qfq-xU-ILc">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1095.6666666666667"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="1095"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arc" translatesAutoresizingMaskIntoConstraints="NO" id="h6H-Zm-eHP">
                                                 <rect key="frame" x="0.0" y="0.0" width="393" height="268"/>
                                             </imageView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yaw-0P-9GU">
-                                                <rect key="frame" x="0.0" y="15" width="393" height="1080.6666666666667"/>
+                                                <rect key="frame" x="0.0" y="15" width="393" height="1080"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vfT-kh-jcT" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
                                                         <rect key="frame" x="30" y="0.0" width="34" height="34"/>
@@ -2792,7 +2792,7 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Documents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eq4-fd-Xbv">
-                                                        <rect key="frame" x="141.66666666666666" y="4.6666666666666714" width="109.66666666666666" height="25"/>
+                                                        <rect key="frame" x="145.33333333333334" y="5.3333333333333268" width="102.66666666666666" height="23.333333333333329"/>
                                                         <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -2827,16 +2827,16 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SJy-xh-2mi" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="30" y="69" width="333" height="657.66666666666663"/>
+                                                        <rect key="frame" x="30" y="69" width="333" height="657"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload Your Documents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="T1C-Ga-TQg">
-                                                                <rect key="frame" x="61" y="40" width="211" height="22.666666666666671"/>
+                                                                <rect key="frame" x="68" y="40" width="197" height="22"/>
                                                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
                                                                 <color key="textColor" name="ColorPrimary"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4xs-7R-nB3">
-                                                                <rect key="frame" x="282" y="40" width="19.666666666666686" height="22.666666666666671"/>
+                                                                <rect key="frame" x="275" y="40" width="19.666666666666686" height="22"/>
                                                                 <color key="tintColor" name="ColorPrimary"/>
                                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                                 <state key="normal" image="info.circle" catalog="system"/>
@@ -2845,7 +2845,7 @@
                                                                 </connections>
                                                             </button>
                                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="9yz-aW-St8">
-                                                                <rect key="frame" x="24" y="96.666666666666629" width="285" height="436"/>
+                                                                <rect key="frame" x="24" y="96" width="285" height="436"/>
                                                                 <subviews>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fFE-AJ-uEQ">
                                                                         <rect key="frame" x="0.0" y="0.0" width="285" height="91"/>
@@ -2857,10 +2857,10 @@
                                                                                 <nil key="highlightedColor"/>
                                                                             </label>
                                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRC-vy-7ip" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                                                <rect key="frame" x="0.0" y="36.000000000000028" width="285" height="55"/>
+                                                                                <rect key="frame" x="0.0" y="36" width="285" height="55"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload File" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0J-co-jNw">
-                                                                                        <rect key="frame" x="20" y="18.666666666666629" width="245" height="18"/>
+                                                                                        <rect key="frame" x="20" y="18.666666666666686" width="245" height="18"/>
                                                                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                                                         <color key="textColor" name="DarkSilver"/>
                                                                                         <nil key="highlightedColor"/>
@@ -2912,7 +2912,7 @@
                                                                         </constraints>
                                                                     </view>
                                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pJp-Af-AUg">
-                                                                        <rect key="frame" x="0.0" y="115.00000000000003" width="285" height="91"/>
+                                                                        <rect key="frame" x="0.0" y="115" width="285" height="91"/>
                                                                         <subviews>
                                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Proof of Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fk9-8e-CmK">
                                                                                 <rect key="frame" x="0.0" y="0.0" width="285" height="20"/>
@@ -2924,7 +2924,7 @@
                                                                                 <rect key="frame" x="0.0" y="36" width="285" height="55"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload File" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HLO-RA-bf4">
-                                                                                        <rect key="frame" x="20" y="18.666666666666629" width="245" height="18"/>
+                                                                                        <rect key="frame" x="20" y="18.666666666666686" width="245" height="18"/>
                                                                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                                                         <color key="textColor" name="DarkSilver"/>
                                                                                         <nil key="highlightedColor"/>
@@ -2988,7 +2988,7 @@
                                                                                 <rect key="frame" x="0.0" y="36" width="285" height="55"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload File" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kE3-bc-AIs">
-                                                                                        <rect key="frame" x="20" y="18.666666666666686" width="245" height="18"/>
+                                                                                        <rect key="frame" x="20" y="18.666666666666629" width="245" height="18"/>
                                                                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                                                         <color key="textColor" name="DarkSilver"/>
                                                                                         <nil key="highlightedColor"/>
@@ -3052,7 +3052,7 @@
                                                                                 <rect key="frame" x="0.0" y="36" width="285" height="55"/>
                                                                                 <subviews>
                                                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Upload File" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2tV-ov-Rls">
-                                                                                        <rect key="frame" x="20" y="18.666666666666742" width="245" height="18"/>
+                                                                                        <rect key="frame" x="20" y="18.666666666666629" width="245" height="18"/>
                                                                                         <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="16"/>
                                                                                         <color key="textColor" name="DarkSilver"/>
                                                                                         <nil key="highlightedColor"/>
@@ -3106,7 +3106,7 @@
                                                                 </subviews>
                                                             </stackView>
                                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="OXT-TS-8hM">
-                                                                <rect key="frame" x="24" y="582.66666666666663" width="285" height="35"/>
+                                                                <rect key="frame" x="24" y="582" width="285" height="35"/>
                                                                 <subviews>
                                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVq-LR-zAv" customClass="UIButtonX" customModule="ClientPortal" customModuleProvider="target">
                                                                         <rect key="frame" x="0.0" y="0.0" width="130.66666666666666" height="35"/>
@@ -3170,23 +3170,23 @@
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sRi-eP-Lva" customClass="UIViewX" customModule="ClientPortal" customModuleProvider="target">
-                                                        <rect key="frame" x="30" y="750.66666666666663" width="333" height="299.99999999999989"/>
+                                                        <rect key="frame" x="30" y="750" width="333" height="300"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KYC Documents" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5wQ-i9-CH4">
-                                                                <rect key="frame" x="24" y="24" width="285" height="20"/>
+                                                                <rect key="frame" x="24" y="24" width="285" height="18.666666666666671"/>
                                                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="16"/>
                                                                 <color key="textColor" name="EerieBlack"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x8o-LE-JED">
-                                                                <rect key="frame" x="24" y="52" width="285" height="1"/>
+                                                                <rect key="frame" x="24" y="50.666666666666629" width="285" height="1"/>
                                                                 <color key="backgroundColor" name="AliceBlue"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="height" constant="1" id="yFB-6X-Iyp"/>
                                                                 </constraints>
                                                             </view>
                                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="opT-SP-tZx">
-                                                                <rect key="frame" x="24" y="63" width="285" height="212"/>
+                                                                <rect key="frame" x="24" y="61.666666666666643" width="285" height="213.33333333333337"/>
                                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Mhl-Uh-e3r">
                                                                     <size key="itemSize" width="128" height="128"/>
@@ -3540,7 +3540,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Bank Account" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sX-qd-eEt">
-                                <rect key="frame" x="108.66666666666669" y="79" width="176" height="34"/>
+                                <rect key="frame" x="112.33333333333333" y="79" width="168.33333333333337" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -4125,7 +4125,7 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add Wallet" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qnH-1a-gMn">
-                                <rect key="frame" x="144" y="79" width="105.33333333333331" height="34"/>
+                                <rect key="frame" x="148" y="79" width="97" height="34"/>
                                 <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="20"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
@@ -4668,22 +4668,22 @@
     </scenes>
     <designables>
         <designable name="CGu-Ei-wrQ">
-            <size key="intrinsicContentSize" width="93" height="35"/>
+            <size key="intrinsicContentSize" width="88" height="33"/>
         </designable>
         <designable name="Tgr-gb-xlV">
-            <size key="intrinsicContentSize" width="93" height="35"/>
+            <size key="intrinsicContentSize" width="88" height="33"/>
         </designable>
         <designable name="YVq-LR-zAv">
-            <size key="intrinsicContentSize" width="46" height="30"/>
+            <size key="intrinsicContentSize" width="44" height="29"/>
         </designable>
         <designable name="fzB-KQ-yL4">
-            <size key="intrinsicContentSize" width="82" height="35"/>
+            <size key="intrinsicContentSize" width="80" height="33"/>
         </designable>
         <designable name="vPN-Qf-aKz">
-            <size key="intrinsicContentSize" width="82" height="35"/>
+            <size key="intrinsicContentSize" width="80" height="33"/>
         </designable>
         <designable name="z1g-D3-6WN">
-            <size key="intrinsicContentSize" width="49" height="30"/>
+            <size key="intrinsicContentSize" width="46" height="29"/>
         </designable>
     </designables>
     <resources>

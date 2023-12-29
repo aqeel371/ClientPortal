@@ -45,6 +45,8 @@ extension TradeDetailsVC:UICollectionViewDelegate,UICollectionViewDataSource,UIC
         positionsCV.collectionViewLayout = UICollectionViewFlowLayout()
         (positionsCV.collectionViewLayout as? UICollectionViewFlowLayout)?.sectionHeadersPinToVisibleBounds = true
         openTrades(acc: account?.id ?? 0)
+        
+        self.showNoData()
 
     }
     
@@ -145,6 +147,7 @@ extension TradeDetailsVC{
                     if posResp.status ?? false {
                         if let positions = posResp.result?.data{
                             self.closeData = positions
+                            self.showNoData()
                             self.positionsCV.reloadData()
                         }
                     }else{
@@ -157,6 +160,15 @@ extension TradeDetailsVC{
             }
             
         })
+    }
+    
+    func showNoData(){
+        if openData.isEmpty || closeData.isEmpty{
+            self.showNoDataMessage()
+            positionsCV.isHidden = true
+        }else{
+            positionsCV.isHidden = false
+        }
     }
     
 }
